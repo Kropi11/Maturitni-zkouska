@@ -1,4 +1,18 @@
 *.docx
 *.xlsx
 *.odt
+
+## Core latex/pdflatex auxiliary files:
 *LaTeX_manuál
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
