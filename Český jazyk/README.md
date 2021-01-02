@@ -1,0 +1,45 @@
+# Literatura 0/20
+
+## 1. Česká a světová literatura do konce 18. století
+###  Požadavek 0/2
+
+|    Autor          | Dílo          | splněno  |
+| ------------------|:-------------:| --------:|
+|                   |               |          |
+|                   |               |          |
+|                   |               |          |
+
+## 2. Česká a světová literatura do konce 19. století
+### Požadavek 0/3
+
+|    Autor               | Dílo          | splněno  |
+| ---------------------- |:-------------:| --------:|
+|                        |               |          |
+|                        |               |          |
+|                        |               |          |
+
+## 3. Světová literatura 20. a 21. století
+### Požadavek 0/4
+
+|    Autor               | Dílo          | splněno  |
+| ---------------------- |:-------------:| --------:|
+|                        |               |          |
+|                        |               |          |
+|                        |               |          |
+|                        |               |          |
+|                        |               |          |
+
+## 4. Česká literatura 20. a 21. století
+### požadavek 0/5
+
+|    Autor                       | Dílo                   | splněno  |
+| ------------------------------ |:----------------------:| --------:|
+|                                |                        |          |
+|                                |                        |          |
+|                                |                        |          |
+|                                |                        |          |
+|                                |                        |          |
+|                                |                        |          |
+|                                |                        |          |
+|                                |                        |          |
+|                                |                        |          |
