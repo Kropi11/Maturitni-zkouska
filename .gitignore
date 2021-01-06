@@ -1,6 +1,7 @@
 *.docx
 *.xlsx
 *.odt
+*.ppt
 
 ## Core latex/pdflatex auxiliary files:
 *LaTeX_manuál
