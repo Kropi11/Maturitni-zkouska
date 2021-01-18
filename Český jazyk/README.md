@@ -5,7 +5,7 @@
 
 |    Autor          | Dílo          | splněno  |
 | ------------------|:-------------:| --------:|
-|                   |               |          |
+|Moliére            |Lakomec        |          |
 |                   |               |          |
 |                   |               |          |
 
@@ -14,7 +14,7 @@
 
 |    Autor               | Dílo          | splněno  |
 | ---------------------- |:-------------:| --------:|
-|                        |               |          |
+|Gogol Nikolaj Vasiljevič|Revizor        |          |
 |                        |               |          |
 |                        |               |          |
 
@@ -23,7 +23,7 @@
 
 |    Autor               | Dílo          | splněno  |
 | ---------------------- |:-------------:| --------:|
-|                        |               |          |
+|Orwell George           |1984           |          |
 |                        |               |          |
 |                        |               |          |
 |                        |               |          |
@@ -34,10 +34,10 @@
 
 |    Autor                       | Dílo                   | splněno  |
 | ------------------------------ |:----------------------:| --------:|
-|                                |                        |          |
-|                                |                        |          |
-|                                |                        |          |
-|                                |                        |          |
+|Čapek Karel                     |Bílá nemoc              |          |
+|Čapek Karel                     |Válka s mloky           |          |
+|Jirotka Zdeněk                  |Saturnin                |          |
+|Smoljak Ladislav, Svěrák Zdeněk |Dobytí severního pólu   |          |
 |                                |                        |          |
 |                                |                        |          |
 |                                |                        |          |
