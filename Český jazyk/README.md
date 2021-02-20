@@ -1,4 +1,4 @@
-# Seznam literatury 7/20
+# Seznam literatury 2/20
 
 ## 1. Česká a světová literatura do konce 18. století
 ###  Požadavek 0/2
