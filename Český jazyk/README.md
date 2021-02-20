@@ -24,22 +24,22 @@
 
 |    Autor                | Dílo                  | Přečteno | Zpracováno |
 | ------------------------|:---------------------:|:--------:|-----------:|
-|Orwell George            |1984                   |          |            |
-|Orwell George            |Farma zvířat           |          |            |
+|Orwell George            |1984                   |ANO       |ANO         |
+|Orwell George            |Farma zvířat           |ANO       |            |
 |Remarque Erich Maria     |Na západní frontě klid |          |            |
 |Saint-Exupéry de Antoine |Malý princ             |          |            |
 
 ## 4. Česká literatura 20. a 21. století
-### požadavek 4/5
+### požadavek 2/5
 
 |    Autor                       | Dílo                 | Přečteno | Zpracováno |
 | -------------------------------|:--------------------:|:--------:|-----------:|
-|Čapek Karel                     |Bílá nemoc            |          |            |
-|Čapek Karel                     |Válka s Mloky         |          |            |
-|Fuks Ladislav                   |Spalovač mrtvol       |          |            |
+|Čapek Karel                     |Bílá nemoc            |          |ANO         |
+|Čapek Karel                     |Válka s Mloky         |ANO       |ANO         |
+|Fuks Ladislav                   |Spalovač mrtvol       |          |ANO         |
 |Hrabal Bohumil                  |Ostře sledované vlaky |          |            |
 |Hrabal Bohumil                  |Postřižiny            |          |            |
-|Jirotka Zdeněk                  |Saturnin              |          |            |
-|Pavel Ota                       |Smrt krásných srnců   |          |            |
-|Smoljak Ladislav, Svěrák Zdeněk |Dobytí severního pólu |          |            |
+|Jirotka Zdeněk                  |Saturnin              |ANO       |ANO         |
+|Pavel Ota                       |Smrt krásných srnců   |          |ANO         |
+|Smoljak Ladislav, Svěrák Zdeněk |Dobytí severního pólu |          |ANO         |
 |Vančura Vladislav               |Rozmarné léto         |          |            |
