@@ -14,7 +14,7 @@
 |    Autor                | Dílo           | Přečteno | Zpracováno |
 | ------------------------|:--------------:|:--------:|-----------:|
 |Erben Karel Jaromír      |Kytice          |          |            |
-|Gogol Nikolaj Vasiljevič |Revizor         |          |            |
+|Gogol Nikolaj Vasiljevič |Revizor         |          |ANO         |
 |Havlíček Borovský Karel  |Král Lávra      |          |			   |
 |Havlíček Borovský Karel  |Tyroslké elegie |          |            |
 |Mrštíkové A. a V.        |Maryša          |          |            |
