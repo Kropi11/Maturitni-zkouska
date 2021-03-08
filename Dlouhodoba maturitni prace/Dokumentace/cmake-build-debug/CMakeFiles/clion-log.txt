@@ -1,0 +1,1 @@
+CMakeLists.txt not found in C:\Users\risak\Documents\Richard\Škola\Stredni_skola\Maturitni-zkouska\Dlouhodoba maturitni prace\Dokumentace Select CMakeLists.txt
