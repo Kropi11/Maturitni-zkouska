@@ -1,0 +1,22 @@
+﻿\zadani{31. březen 2021}
+	{
+		\bod{Proveďte teoretický úvod k problematice řešící návrh webové aplikace pro odevzdávání, třídění a kontrolu odevzdaných povinných prací (výběr vhodné technologie) v rozsahu max. 6 stran.}
+		\bod{Realizujete vlastní řešení v následujících bodech (v dokumentaci min. 8 stran).}
+			\begin{enumerate}
+				\item
+				Proveďte rodělení uživatelských skupin a jejich oprávnění.
+				\item
+				Napište program umožňující správu školních povinných prací.
+				\item
+				Vyřešte přihlašování uživatelů, pokud možno využijte školní LDAP server.
+				\item
+				Navrhněte a realizujte propojení s vhodnou databází.
+			\end{enumerate}
+		\bod{Zpracujte dokumentaci dle metodického návrhu a ppt prezentaci pro účely obhajoby.}
+		\bod{Zpracujte materiál pro propagaci výsledků své práce - ppt prezentaci nebo vytvořte poster, nebo informační www stránku, nebo promo video apod.}
+	}
+	{škola/firma/žák}
+	{školy/firmy/žáka}
+	{16. 11. 2020}
+
+	\licencniSmlouva{16. 11. 2020}

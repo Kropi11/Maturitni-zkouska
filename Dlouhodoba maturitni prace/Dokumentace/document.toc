@@ -1,15 +1,17 @@
 \babel@toc {czech}{}
-\contentsline {chapter}{\numberline {1}Úvod}{11}{chapter.1}%
-\contentsline {section}{\numberline {1.1}C\#}{11}{section.1.1}%
-\contentsline {section}{\numberline {1.2}ASP.NET}{11}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}ASP.NET}{11}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}ASP.NET Core}{11}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}MySQL}{11}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Uživatelské rozhraní}{12}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Student}{12}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Učitel}{12}{section.2.2}%
-\contentsline {chapter}{\numberline {3}Přihlašování a registrace}{13}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Databáze}{14}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Závěr}{15}{chapter.5}%
-\contentsline {chapter}{Přílohy}{17}{chapter*.3}%
-\contentsline {chapter}{\numberline {A}Příloha}{18}{appendix.A}%
+\contentsline {chapter}{\numberline {1}Úvod}{4}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Teorie C\# webových aplikací}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Programovací jazyk C\#}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}ASP.NET}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}ASP.NET}{5}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}ASP.NET Core}{5}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}MySQL}{5}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Uživatelské rozhraní}{6}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Student}{6}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Učitel}{6}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Administrator}{6}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Přihlašování a registrace}{7}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Databáze}{8}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Závěr}{9}{chapter.6}%
+\contentsline {chapter}{Přílohy}{11}{chapter*.3}%
+\contentsline {chapter}{\numberline {A}Příloha}{12}{appendix.A}%
