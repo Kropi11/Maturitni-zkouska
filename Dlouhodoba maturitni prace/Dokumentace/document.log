@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  15 MAR 2021 21:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.12) (preloaded format=pdflatex 2020.12.30)  15 MAR 2021 21:23
 entering extended mode
 **./document.tex
 (document.tex
@@ -914,7 +914,7 @@ Kapitola 3.
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 48.
+(hyperref)                removing `\textasciicaron' on input line 49.
 
 [6
 
@@ -923,7 +923,7 @@ Kapitola 4.
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 50.
+(hyperref)                removing `\textasciicaron' on input line 51.
 
 [7
 
@@ -936,7 +936,7 @@ Kapitola 6.
 
 Package hyperref Warning: Composite letter `\textasciicaron+e'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 53.
+(hyperref)                removing `\textasciicaron' on input line 54.
 
 [9
 
@@ -954,7 +954,7 @@ Package hyperref Warning: Composite letter `\textasciicaron+e'
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 61.
+(hyperref)                removing `\textasciicaron' on input line 62.
 
 [11
 
@@ -963,13 +963,13 @@ P\v {r}\'{\i }loha A.
 
 Package hyperref Warning: Composite letter `\textasciicaron+r'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 61.
+(hyperref)                removing `\textasciicaron' on input line 62.
 
 [12
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 7
-1.
+2.
  ("D:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd"
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) [13
@@ -978,10 +978,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.nazevCit
 ace}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.73 \end{document}
+l.74 \end{document}
                    ] (document.aux)
 Package rerunfilecheck Info: File `document.out' has not changed.
-(rerunfilecheck)             Checksum: 592A7352B86DF0466245DE6EDFB91392;900.
+(rerunfilecheck)             Checksum: 5D81AC6B1C6366C571938319BD0139B5;885.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1006,10 +1006,10 @@ ts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\risak\AppData\Local\MiKT
 eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\risak\AppData\Loca
 l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk>
 Output written on "C:/Users\risak\Documents\Richard\Škola\Stredni_skola\Maturi
-tni-zkouska\Dlouhodoba maturitni prace\Dokumentace\document.pdf" (14 pages, 189
-688 bytes).
+tni-zkouska\Dlouhodoba maturitni prace\Dokumentace\document.pdf" (14 pages, 187
+972 bytes).
 PDF statistics:
- 481 PDF objects out of 1000 (max. 8388607)
+ 477 PDF objects out of 1000 (max. 8388607)
  34 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
