@@ -1,0 +1,56 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{Dostupn� z: }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\selectlanguage}[1]{\relax}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{ASPNETCORE_ASPNET}
+ASP.NET vs ASP.NET Core. 2017, [cit. 2021-4-4].
+\newline\urlprefix\url{https://thienn.com/images/aspnetcore.png}
+
+\bibitem{MVC}
+Microsoft Corporation: \emph{ASP.NET MVC Pattern}. 2021, [Online; cit.
+  2021-4-5].
+\newline\urlprefix\url{https://dotnet.microsoft.com/apps/aspnet/mvc}
+
+\bibitem{ASP.NET}
+Microsoft Corporation: \emph{What is ASP.NET?} 2021, [Online; cit. 2021-4-4].
+\newline\urlprefix\url{https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet}
+
+\bibitem{ASP.NET_Core}
+Microsoft Corporation: \emph{What is ASP.NET Core?} 2021, [Online; cit.
+  2021-4-4].
+\newline\urlprefix\url{https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core}
+
+\bibitem{MVC_Wiki_CZ}
+Model–view–controller. 2021, [cit. 2021-04-05].
+\newline\urlprefix\url{https://cs.wikipedia.org/wiki/Model-view-controller}
+
+\bibitem{MVC_Wiki_EN}
+Model–view–controller. 2021, [cit. 2021-04-05].
+\newline\urlprefix\url{https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller}
+
+\bibitem{ASP.NET_Lekce1}
+ČÁPKA, D.: \emph{Lekce 1 - Úvod do ASP.NET}. 2012, [cit. 2021-4-4].
+\newline\urlprefix\url{https://www.itnetwork.cz/csharp/asp-net-core/zaklady/tutorial-uvod-do-asp-dot-net}
+
+\bibitem{ASP.NET_Lekce8}
+ČÁPKA, D.: \emph{Lekce 8 - Scaffolding a Entity Framework v ASP.NET MVC}.
+  2014, [cit. 2021-4-5].
+\newline\urlprefix\url{https://www.itnetwork.cz/csharp/asp-net-mvc/zaklady/asp-dot-net-mvc-tutorial-scaffolding-entity-framework-editor-clanku}
+
+\bibitem{EF6_EFCore}
+VICKERS, A.; OLPROD: \emph{Porovnání EF Core a EF6}. Microsoft Corporation,
+  2019, [Online; cit. 2021-4-5].
+\newline\urlprefix\url{https://docs.microsoft.com/cs-cz/ef/efcore-and-ef6/}
+
+\bibitem{CSharp}
+WAGNER, B.; OLPROD: \emph{Prohlídka jazyka C\#}. Microsoft Corporation, 2021,
+  [Online; cit. 2021-3-25].
+\newline\urlprefix\url{https://docs.microsoft.com/cs-cz/dotnet/csharp/tour-of-csharp/}
+
+\end{thebibliography}
