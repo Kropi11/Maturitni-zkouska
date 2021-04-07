@@ -1,24 +1,25 @@
 \babel@toc {czech}{}
-\contentsline {chapter}{\numberline {1}Úvod}{4}{chapter.1}%
-\contentsline {chapter}{\numberline {2}Teoretický úvod}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Programovací jazyk C\#}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}ASP.NET, ASP.NET CORE}{5}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}ASP.NET}{6}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}ASP.NET Core}{6}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}EF6 a EF Core}{6}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Entity Framework 6}{7}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Entity Framework Core}{7}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}MVC}{7}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Model}{7}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}View}{8}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Controller}{8}{subsection.2.4.3}%
-\contentsline {section}{\numberline {2.5}MySQL}{8}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Uživatelské rozhraní}{9}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Student}{9}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Učitel}{9}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Administrator}{9}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Přihlašování a registrace}{10}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Databáze}{11}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Závěr}{12}{chapter.6}%
-\contentsline {chapter}{Přílohy}{16}{chapter*.4}%
-\contentsline {chapter}{\numberline {A}Příloha}{17}{appendix.A}%
+\contentsline {chapter}{\numberline {1}Úvod}{5}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Teoretický úvod}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Programovací jazyk C\#}{6}{section.2.1}%
+\contentsline {section}{\numberline {2.2}ASP.NET, ASP.NET CORE}{6}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}ASP.NET}{7}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}ASP.NET Core}{7}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}EF6 a EF Core}{7}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Entity Framework 6}{8}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Entity Framework Core}{8}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}MVC}{8}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Model}{8}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}View}{9}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Controller}{9}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}Razor}{9}{section.2.5}%
+\contentsline {section}{\numberline {2.6}MySQL}{9}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Uživatelské rozhraní}{10}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Student}{10}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Učitel}{10}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Administrator}{10}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Přihlašování a registrace}{11}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Databáze}{12}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Závěr}{13}{chapter.6}%
+\contentsline {chapter}{Přílohy}{17}{chapter*.4}%
+\contentsline {chapter}{\numberline {A}Příloha}{18}{appendix.A}%

@@ -1,6 +1,6 @@
 \begin{thebibliography}{10}
 \providecommand{\url}[1]{\texttt{#1}}
-\providecommand{\urlprefix}{Dostupn� z: }
+\providecommand{\urlprefix}{Dostupn�: }
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
@@ -33,6 +33,10 @@ Model–view–controller. 2021, [cit. 2021-04-05].
 \bibitem{MVC_Wiki_EN}
 Model–view–controller. 2021, [cit. 2021-04-05].
 \newline\urlprefix\url{https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller}
+
+\bibitem{MySQL_Wiki_CZ}
+MySQL. 2021, [cit. 2021-04-06].
+\newline\urlprefix\url{https://cs.wikipedia.org/wiki/MySQL}
 
 \bibitem{ASP.NET_Lekce1}
 ČÁPKA, D.: \emph{Lekce 1 - Úvod do ASP.NET}. 2012, [cit. 2021-4-4].

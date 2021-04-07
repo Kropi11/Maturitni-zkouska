@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  6 APR 2021 03:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  7 APR 2021 03:03
 entering extended mode
 **./main.tex
 (main.tex
@@ -887,7 +887,7 @@ doba maturitni prace\Dokumentace\auxil\main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-<images//logo.jpg, id=98, 114.318pt x 131.0715pt>
+<images//logo.jpg, id=102, 114.318pt x 131.0715pt>
 File: images//logo.jpg Graphic file (type jpg)
 <use images//logo.jpg>
 Package pdftex.def Info: images//logo.jpg  used on input line 21.
@@ -909,15 +909,15 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 4.
-)
+ [3
+
+])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [3
-
-]
+ [4]
 Kapitola 1.
-[4
+[5
 
 ]
 Kapitola 2.
@@ -925,7 +925,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 43.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 43.
-<images//aspnetcore_aspnet.png, id=151, 1270.14525pt x 572.73975pt>
+<images//aspnetcore_aspnet.png, id=160, 1270.14525pt x 572.73975pt>
 File: images//aspnetcore_aspnet.png Graphic file (type png)
 <use images//aspnetcore_aspnet.png>
 Package pdftex.def Info: images//aspnetcore_aspnet.png  used on input line 48.
@@ -936,23 +936,23 @@ Overfull \hbox (6.43306pt too wide) in paragraph at lines 50--52
 na do-tazy u�i-va-tele/klienta.
  []
 
-[5
+[6
 
-] [6 <./images//aspnetcore_aspnet.png>] [7] [8]
+] [7 <./images//aspnetcore_aspnet.png>] [8] [9]
 Kapitola 3.
-[9
-
-]
-Kapitola 4.
 [10
 
 ]
-Kapitola 5.
+Kapitola 4.
 [11
 
 ]
-Kapitola 6.
+Kapitola 5.
 [12
+
+]
+Kapitola 6.
+[13
 
 ]
 (C:/Users\risak\Documents\Richard\Škola\Stredni_skola\Maturitni-zkouska\Dlouho
@@ -960,7 +960,7 @@ doba maturitni prace\Dokumentace\auxil\main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [13
+ [14
 
 ]
 (C:/Users\risak\Documents\Richard\Škola\Stredni_skola\Maturitni-zkouska\Dlouho
@@ -970,7 +970,7 @@ doba maturitni prace\Dokumentace\auxil\main.lof)
 
 
 (C:/Users\risak\Documents\Richard\Škola\Stredni_skola\Maturitni-zkouska\Dlouho
-doba maturitni prace\Dokumentace\auxil\main.bbl [14
+doba maturitni prace\Dokumentace\auxil\main.bbl [15
 
 ]
 
@@ -982,19 +982,14 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.13 \newline\urlprefix
-                       \url{https://thienn.com/images/aspnetcore.png}
+l.13 \newline\urlprefix\url
+                           {https://thienn.com/images/aspnetcore.png}
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
 or specify an encoding such as \usepackage [latin1]{inputenc}
 in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-3.
-(D:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
 
 C:/Users\risak\Documents\Richard\Škola\Stredni_skola\Maturitni-zkouska\Dlouhod
 oba maturitni prace\Dokumentace\auxil\main.bbl:18: Package inputenc Error: Inva
@@ -1004,8 +999,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18 \newline\urlprefix
-                       \url{https://dotnet.microsoft.com/apps/aspnet/mvc}
+l.18 \newline\urlprefix\url
+                           {https://dotnet.microsoft.com/apps/aspnet/mvc}
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
 or specify an encoding such as \usepackage [latin1]{inputenc}
@@ -1021,8 +1016,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.22 \newline\urlprefix
-                       \url{https://dotnet.microsoft.com/learn/aspnet/what-i...
+l.22 \newline\urlprefix\url
+                           {https://dotnet.microsoft.com/learn/aspnet/what-i...
 
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -1039,8 +1034,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.27 \newline\urlprefix
-                       \url{https://dotnet.microsoft.com/learn/aspnet/what-i...
+l.27 \newline\urlprefix\url
+                           {https://dotnet.microsoft.com/learn/aspnet/what-i...
 
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -1057,8 +1052,8 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.31 \newline\urlprefix
-                       \url{https://cs.wikipedia.org/wiki/Model-view-control...
+l.31 \newline\urlprefix\url
+                           {https://cs.wikipedia.org/wiki/Model-view-control...
 
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -1075,20 +1070,14 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.35 \newline\urlprefix
-                       \url{https://en.wikipedia.org/wiki/Model%E2%80%93view...
+l.35 \newline\urlprefix\url
+                           {https://en.wikipedia.org/wiki/Model%E2%80%93view...
 
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
 or specify an encoding such as \usepackage [latin1]{inputenc}
 in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 34--36
-\T1/cmr/m/n/12 Dostupn []$\T1/cmtt/m/n/12 https : / / en . wikipedia . org / wi
-ki / Model % E2 % 80 % 93view % E2 % 80 %
- []
 
 
 C:/Users\risak\Documents\Richard\Škola\Stredni_skola\Maturitni-zkouska\Dlouhod
@@ -1099,8 +1088,25 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.39 \newline\urlprefix
-                       \url{https://www.itnetwork.cz/csharp/asp-net-core/zak...
+l.39 \newline\urlprefix\url
+                           {https://cs.wikipedia.org/wiki/MySQL}
+The document does not appear to be in UTF-8 encoding.
+Try adding \UseRawInputEncoding as the first line of the file
+or specify an encoding such as \usepackage [latin1]{inputenc}
+in the document preamble.
+Alternatively, save the file in UTF-8 using your editor or another tool
+
+
+C:/Users\risak\Documents\Richard\Škola\Stredni_skola\Maturitni-zkouska\Dlouhod
+oba maturitni prace\Dokumentace\auxil\main.bbl:43: Package inputenc Error: Inva
+lid UTF-8 byte sequence.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 \newline\urlprefix\url
+                           {https://www.itnetwork.cz/csharp/asp-net-core/zak...
 
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -1109,22 +1115,22 @@ in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--40
-\T1/cmr/m/n/12 Dostupn []$\T1/cmtt/m/n/12 https : / / www . itnetwork . cz / cs
-harp / asp-[]net-[]core / zaklady /
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
+\T1/cmr/m/n/12 Dostupnhttps://www.itnetwork.cz/csharp/asp-net-core/zaklady/tuto
+rial-uvod-do-
  []
 
 
 C:/Users\risak\Documents\Richard\Škola\Stredni_skola\Maturitni-zkouska\Dlouhod
-oba maturitni prace\Dokumentace\auxil\main.bbl:44: Package inputenc Error: Inva
+oba maturitni prace\Dokumentace\auxil\main.bbl:48: Package inputenc Error: Inva
 lid UTF-8 byte sequence.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.44 \newline\urlprefix
-                       \url{https://www.itnetwork.cz/csharp/asp-net-mvc/zakl...
+l.48 \newline\urlprefix\url
+                           {https://www.itnetwork.cz/csharp/asp-net-mvc/zakl...
 
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -1133,22 +1139,22 @@ in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--45
-\T1/cmr/m/n/12 Dostupn []$\T1/cmtt/m/n/12 https : / / www . itnetwork . cz / cs
-harp / asp-[]net-[]mvc / zaklady /
+Underfull \hbox (badness 10000) in paragraph at lines 46--49
+\T1/cmr/m/n/12 Dostupnhttps://www.itnetwork.cz/csharp/asp-net-mvc/zaklady/asp-d
+ot-net-mvc-
  []
 
 
 C:/Users\risak\Documents\Richard\Škola\Stredni_skola\Maturitni-zkouska\Dlouhod
-oba maturitni prace\Dokumentace\auxil\main.bbl:49: Package inputenc Error: Inva
+oba maturitni prace\Dokumentace\auxil\main.bbl:53: Package inputenc Error: Inva
 lid UTF-8 byte sequence.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.49 \newline\urlprefix
-                       \url{https://docs.microsoft.com/cs-cz/ef/efcore-and-e...
+l.53 \newline\urlprefix\url
+                           {https://docs.microsoft.com/cs-cz/ef/efcore-and-e...
 
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -1158,15 +1164,15 @@ Alternatively, save the file in UTF-8 using your editor or another tool
 
 
 C:/Users\risak\Documents\Richard\Škola\Stredni_skola\Maturitni-zkouska\Dlouhod
-oba maturitni prace\Dokumentace\auxil\main.bbl:54: Package inputenc Error: Inva
+oba maturitni prace\Dokumentace\auxil\main.bbl:58: Package inputenc Error: Inva
 lid UTF-8 byte sequence.
 
 See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.54 \newline\urlprefix
-                       \url{https://docs.microsoft.com/cs-cz/dotnet/csharp/t...
+l.58 \newline\urlprefix\url
+                           {https://docs.microsoft.com/cs-cz/dotnet/csharp/t...
 
 The document does not appear to be in UTF-8 encoding.
 Try adding \UseRawInputEncoding as the first line of the file
@@ -1174,44 +1180,59 @@ or specify an encoding such as \usepackage [latin1]{inputenc}
 in the document preamble.
 Alternatively, save the file in UTF-8 using your editor or another tool
 
-[15
+[16
 
-]) [16]
+]
+C:/Users\risak\Documents\Richard\Škola\Stredni_skola\Maturitni-zkouska\Dlouhod
+oba maturitni prace\Dokumentace\auxil\main.bbl:60: Missing } inserted.
+<inserted text> 
+                }
+l.60 \end{thebibliography}
+                          
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+) [17]
 P\v {r}\'{\i }loha A.
-[17
+[18
 
 ]
 (C:/Users\risak\Documents\Richard\Škola\Stredni_skola\Maturitni-zkouska\Dlouho
 doba maturitni prace\Dokumentace\auxil\main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D90ECE812F269637F599CB0C28AD49A4;2612.
+(rerunfilecheck)             Checksum: C2602C7A595DB702BB0B0313857F65C6;2692.
  ) 
 Here is how much of TeX's memory you used:
- 31204 strings out of 479324
- 669859 string characters out of 2866691
- 1024312 words of memory out of 3000000
- 48111 multiletter control sequences out of 15000+600000
- 415969 words of font info for 50 fonts, out of 8000000 for 9000
+ 31189 strings out of 479324
+ 669329 string characters out of 2866691
+ 1023348 words of memory out of 3000000
+ 48097 multiletter control sequences out of 15000+600000
+ 415656 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,8n,117p,1628b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 116i,8n,117p,1628b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti
 1200.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ectt1200.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\tcrm1200.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecbx1440.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\risak\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\risak\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\risak\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\risak\AppDat
-a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\risak\
-AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\
-risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk>
+0\tcrm1200.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecbx1440.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecrm1000.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\risak\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\risak\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\risak\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\risak\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\risak\
+AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk>
 Output written on "C:/Users\risak\Documents\Richard\Škola\Stredni_skola\Maturi
-tni-zkouska\Dlouhodoba maturitni prace\Dokumentace\out\main.pdf" (18 pages, 432
-504 bytes).
+tni-zkouska\Dlouhodoba maturitni prace\Dokumentace\out\main.pdf" (19 pages, 419
+348 bytes).
 PDF statistics:
- 716 PDF objects out of 1000 (max. 8388607)
- 58 named destinations out of 1000 (max. 500000)
- 207 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 678 PDF objects out of 1000 (max. 8388607)
+ 61 named destinations out of 1000 (max. 500000)
+ 215 words of extra memory for PDF output out of 10000 (max. 10000000)
 

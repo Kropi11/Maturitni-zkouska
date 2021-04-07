@@ -13,7 +13,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a539ca8c-993a-43fc-abac-e6df811116a6" name="Default Changelist" comment="Dokumentace">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/main.aux" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/main.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.bbl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/main.blg" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.blg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/main.lof" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.lof" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/main.out" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/main.toc" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/main.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/czechiso.bst" beforeDir="false" afterPath="$PROJECT_DIR$/src/czechiso.bst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.bib" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.bib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,9 +87,9 @@
       </texify-bibtex>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="LaTeX" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
@@ -138,7 +150,9 @@
       <workItem from="1617581280133" duration="4687000" />
       <workItem from="1617622381651" duration="13995000" />
       <workItem from="1617667144013" duration="1239000" />
-      <workItem from="1617668448658" duration="3620000" />
+      <workItem from="1617668448658" duration="3649000" />
+      <workItem from="1617755414788" duration="980000" />
+      <workItem from="1617756819374" duration="643000" />
     </task>
     <task id="LOCAL-00001" summary="Dokumentace">
       <created>1617586762359</created>
@@ -147,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617586762359</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Dokumentace">
+      <created>1617672120789</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617672120789</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
