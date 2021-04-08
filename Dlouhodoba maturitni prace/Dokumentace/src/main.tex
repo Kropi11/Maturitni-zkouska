@@ -39,7 +39,7 @@
 
 		\podkapitola{ASP.NET, ASP.NET CORE}
 			\begin{figure}[h!]
-				\includegraphics[scale=0.3]{aspnetcore_aspnet}
+				\includegraphics[width=\textwidth]{aspnetcore_aspnet}
 				\caption{Porovnání ASP.NET Core a ASP.NET \cite{ASPNETCORE_ASPNET}}
 				\label{ASP.NET Core a ASP.NET}
 			\end{figure}
@@ -57,26 +57,25 @@
 				Entity Framework 6 (EF6) je ORM, primárně navržený pro .NET Framework, ale zároveň s podporou pro .NET Core. EF6 je stabilní, podporovaný produkt, ale již se aktivně nevyvíjí.\cite{EF6_EFCore}
 			\podpodkapitola{Entity Framework Core}
 				Entity Framework Core (EF Core) je moderní ORM pro .NET. Podporuje dotazy LINQ, sledování změn, aktualizace a migrace schématu.\par
-				EF Core pracuje s SQL Server/SQL Azure, SQLite, Azure Cosmos DB, MySQL, PostgreSQL a mnoha dalšími databázemi prostřednictvím modelu modulů plug-in zprostředkovatele databáze.
-				\cite{EF6_EFCore}
+				EF Core pracuje s SQL Server/SQL Azure, SQLite, Azure Cosmos DB, MySQL, PostgreSQL a mnoha dalšími druhy databází.\cite{EF6_EFCore}
 
 		\podkapitola{MVC}
 		Model-View-Controller (MVC) je návrhový vzor používaný k rozdělení webové aplikace na 3 komponenty.
 		\begin{itemize}
-			\item Model - Data
+			\item Model - Práce s daty
 			\item View - Uživatelské rozhraní
 			\item Controller - Logická část aplikace
-		\end{itemize}
+		\end{itemize}\path
 		Pomocí vzoru MVC pro webové aplikace jsou požadavky směrovány na controller, který je zodpovědný za práci s modelem. Model provádí akce a načítá data za databáze. Controller poté zvolí zobrazení (view), které se má zobrazit, a poskytne mu model. View už pouze vykreslí stránku na základě dat získaných z modelu.\cite{MVC}
 				\podpodkapitola{Model}
 				Jedná se o dynamickou datovou strukturu aplikace, nezávislou na uživatelském rozhraní. Jejím úkolem je spravovat data, pravida a logiku aplikace.\par
 				V ASP.NET Core MVC má model podobu třídy, která je provázaná s databází. Pomocí atributů definuje pravidla, která se aplikují na klienta a server.\cite{MVC_Wiki_EN}
 				\podpodkapitola{View}
 				Převádí data reprezentovaná modelem do podoby vhodné k interaktivní prezentaci uživateli.\cite{MVC_Wiki_CZ} Může se jednat o jakoukoliv reprezentaci dat (graf, diagram, tabulka, atd.).\par
-				V ASP.NET Core se využívá syntaxe Razor, kterou popisuji níže v této kapitole. Ta poskytuje jednoduchý, čistý a lehký způsob vykreslení obsahu HTML stránek na základě view. Razor umožňuje vykreslit stránku pomocí C\# a vytvářet webové stránky plně kompatibilní s HTML5.\cite{MVC_Wiki_EN}
+				V ASP.NET Core se využívá syntaxe Razor. Ta poskytuje jednoduchý, čistý a lehký způsob vykreslení obsahu HTML stránek na základě view. Razor umožňuje vykreslit stránku pomocí C\# a vytvářet webové stránky plně kompatibilní s HTML5.\cite{MVC_Wiki_EN}
 				\podpodkapitola{Controller}
 				Controller reaguje na vstup uživatele a provádí interakce s objekty datového modelu. Zjednodušeně to znamená, že řadič přijme vstup, ověří jej a následně ho předá modelu.\cite{MVC_Wiki_EN}\par
-				Třída controlleru obsahuje veřejné metody označené jako Action metody. V ASP.NET MVC musí každý název třídy controlleru končit klíčovým slovem "Controller" a nacházet se ve složce controllerů. To znamená, že pro domovské stránky třídu nazýváme HomeController, pro stránky studenta StudentController, apod.
+				Třída controlleru obsahuje veřejné metody označené jako Action method. V ASP.NET MVC musí každý název třídy controlleru končit klíčovým slovem "Controller". To znamená, že pro domovské stránky třídu nazýváme HomeController, pro stránky studenta StudentController, apod.
 
 	\podkapitola{Razor}
 
