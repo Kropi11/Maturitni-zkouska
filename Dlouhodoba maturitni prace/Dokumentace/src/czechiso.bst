@@ -4,11 +4,11 @@
 %%
 %% The original source files were:
 %%
-%% merlin.mbs  (with options: `head,exlang,lang,vonx,nm-rev,jnrlst,aunm-semi,nmlm,x3,m3,atit-u,vnum-nr,volp-sp,jwdpg,pp-last,jwdvol,num-xser,ser-vol,ser-ed,pg-bk,add-pub,isbn,issn,doi,edpar,edby,blk-tit,au-col,èe¹tina,pp,and-xcom,xand,eprint,url,url-nl,nfss,,{}')
-%% czech.mbs  (with options: `exlang,lang,vonx,nm-rev,jnrlst,aunm-semi,nmlm,x3,m3,atit-u,vnum-nr,volp-sp,jwdpg,pp-last,jwdvol,num-xser,ser-vol,ser-ed,pg-bk,add-pub,isbn,issn,doi,edpar,edby,blk-tit,au-col,èe¹tina,pp,and-xcom,xand,eprint,url,url-nl,nfss,,{}')
-%% merlin.mbs  (with options: `tail,exlang,lang,vonx,nm-rev,jnrlst,aunm-semi,nmlm,x3,m3,atit-u,vnum-nr,volp-sp,jwdpg,pp-last,jwdvol,num-xser,ser-vol,ser-ed,pg-bk,add-pub,isbn,issn,doi,edpar,edby,blk-tit,au-col,èe¹tina,pp,and-xcom,xand,eprint,url,url-nl,nfss,,{}')
+%% merlin.mbs  (with options: `head,exlang,lang,vonx,nm-rev,jnrlst,aunm-semi,nmlm,x3,m3,atit-u,vnum-nr,volp-sp,jwdpg,pp-last,jwdvol,num-xser,ser-vol,ser-ed,pg-bk,add-pub,isbn,issn,doi,edpar,edby,blk-tit,au-col,ï¿½eï¿½tina,pp,and-xcom,xand,eprint,url,url-nl,nfss,,{}')
+%% czech.mbs  (with options: `exlang,lang,vonx,nm-rev,jnrlst,aunm-semi,nmlm,x3,m3,atit-u,vnum-nr,volp-sp,jwdpg,pp-last,jwdvol,num-xser,ser-vol,ser-ed,pg-bk,add-pub,isbn,issn,doi,edpar,edby,blk-tit,au-col,ï¿½eï¿½tina,pp,and-xcom,xand,eprint,url,url-nl,nfss,,{}')
+%% merlin.mbs  (with options: `tail,exlang,lang,vonx,nm-rev,jnrlst,aunm-semi,nmlm,x3,m3,atit-u,vnum-nr,volp-sp,jwdpg,pp-last,jwdvol,num-xser,ser-vol,ser-ed,pg-bk,add-pub,isbn,issn,doi,edpar,edby,blk-tit,au-col,ï¿½eï¿½tina,pp,and-xcom,xand,eprint,url,url-nl,nfss,,{}')
 %% ----------------------------------------
-%% *** Styl sna¾ící se být v souladu s normou ISO 690. Pomocí latex makebst vytvoøil David Martinek. ***
+%% *** Styl snaï¿½ï¿½cï¿½ se bï¿½t v souladu s normou ISO 690. Pomocï¿½ latex makebst vytvoï¿½il David Martinek. ***
 %% 
 %% Copyright 1994-2004 Patrick W Daly
  % ===============================================================
@@ -232,7 +232,7 @@ FUNCTION {bbl.etal}
 { "aj." }
 
 FUNCTION {bbl.editors}
-{ "editoøi" }
+{ "editoï¿½i" }
 
 FUNCTION {bbl.editor}
 { "editor" }
@@ -241,19 +241,19 @@ FUNCTION {bbl.edby}
 { "editace" }
 
 FUNCTION {bbl.edition}
-{ "vydání" }
+{ "vydï¿½nï¿½" }
 
 FUNCTION {bbl.volume}
-{ "roèník" }
+{ "roï¿½nï¿½k" }
 
 FUNCTION {bbl.of}
 { "" }
 
 FUNCTION {bbl.number}
-{ "èíslo" }
+{ "ï¿½ï¿½slo" }
 
 FUNCTION {bbl.nr}
-{ "è." }
+{ "ï¿½." }
 
 FUNCTION {bbl.in}
 { "in" }
@@ -268,28 +268,28 @@ FUNCTION {bbl.chapter}
 { "kapitola" }
 
 FUNCTION {bbl.techrep}
-{ "Technická Zpráva" }
+{ "Technickï¿½ Zprï¿½va" }
 
 FUNCTION {bbl.mthesis}
-{ "Diplomová práce" }
+{ "Diplomovï¿½ prï¿½ce" }
 
 FUNCTION {bbl.phdthesis}
-{ "Dizertaèní práce" }
+{ "Dizertaï¿½nï¿½ prï¿½ce" }
 
 FUNCTION {bbl.first}
-{ "První" }
+{ "Prvnï¿½" }
 
 FUNCTION {bbl.second}
-{ "Druhé" }
+{ "Druhï¿½" }
 
 FUNCTION {bbl.third}
-{ "Tøetí" }
+{ "Tï¿½etï¿½" }
 
 FUNCTION {bbl.fourth}
-{ "Ètvrté" }
+{ "ï¿½tvrtï¿½" }
 
 FUNCTION {bbl.fifth}
-{ "Páté" }
+{ "Pï¿½tï¿½" }
 
 FUNCTION {bbl.st}
 { "" }
@@ -305,23 +305,23 @@ FUNCTION {bbl.th}
 
 MACRO {jan} {"Leden"}
 
-MACRO {feb} {"Únor"}
+MACRO {feb} {"ï¿½nor"}
 
-MACRO {mar} {"Bøezen"}
+MACRO {mar} {"Bï¿½ezen"}
 
 MACRO {apr} {"Duben"}
 
-MACRO {may} {"Kvìten"}
+MACRO {may} {"Kvï¿½ten"}
 
-MACRO {jun} {"Èerven"}
+MACRO {jun} {"ï¿½erven"}
 
-MACRO {jul} {"Èervenec"}
+MACRO {jul} {"ï¿½ervenec"}
 
 MACRO {aug} {"Srpen"}
 
-MACRO {sep} {"Záøí"}
+MACRO {sep} {"Zï¿½ï¿½ï¿½"}
 
-MACRO {oct} {"Øíjen"}
+MACRO {oct} {"ï¿½ï¿½jen"}
 
 MACRO {nov} {"Listopad"}
 
@@ -1576,7 +1576,7 @@ FUNCTION {begin.bib}
   write$ newline$
   "\providecommand{\url}[1]{\texttt{#1}}"
   write$ newline$
-  "\providecommand{\urlprefix}{Dostupné: }"
+  "\providecommand{\urlprefix}{DostupnÃ© z: }"
   write$ newline$
   "\expandafter\ifx\csname urlstyle\endcsname\relax"
   write$ newline$

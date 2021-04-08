@@ -1,6 +1,6 @@
 \begin{thebibliography}{10}
 \providecommand{\url}[1]{\texttt{#1}}
-\providecommand{\urlprefix}{Dostupn�: }
+\providecommand{\urlprefix}{Dostupné z: }
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
@@ -18,7 +18,7 @@ Microsoft Corporation: \emph{ASP.NET MVC Pattern}. 2021, [Online; cit.
 \newline\urlprefix\url{https://dotnet.microsoft.com/apps/aspnet/mvc}
 
 \bibitem{ASP.NET}
-Microsoft Corporation: \emph{What is ASP.NET?} 2021, [Online; cit. 2021-4-4].
+Microsoft Corporation: \emph{What is ASP.NET?} 2021, [cit. 2021-4-4].
 \newline\urlprefix\url{https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet}
 
 \bibitem{ASP.NET_Core}
@@ -27,11 +27,13 @@ Microsoft Corporation: \emph{What is ASP.NET Core?} 2021, [Online; cit.
 \newline\urlprefix\url{https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core}
 
 \bibitem{MVC_Wiki_CZ}
-Model–view–controller. 2021, [cit. 2021-04-05].
+Model–view–controller. In: Wikipedia: the free encyclopedia [online]. San
+  Francisco (CA): Wikimedia Foundation, 2021, [cit. 2021-04-05].
 \newline\urlprefix\url{https://cs.wikipedia.org/wiki/Model-view-controller}
 
 \bibitem{MVC_Wiki_EN}
-Model–view–controller. 2021, [cit. 2021-04-05].
+Model–view–controller. In: Wikipedia: the free encyclopedia [online]. San
+  Francisco (CA): Wikimedia Foundation, 2021, [cit. 2021-04-05].
 \newline\urlprefix\url{https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller}
 
 \bibitem{MySQL_Wiki_CZ}
