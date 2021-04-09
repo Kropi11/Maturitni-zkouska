@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  8 APR 2021 13:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  9 APR 2021 02:47
 entering extended mode
 **./main.tex
 (main.tex
@@ -786,42 +786,171 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (D:\Program Files\MiKTeX\tex/latex/latex-tools\indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
+(D:\Program Files\MiKTeX\tex/latex/minted\minted.sty
+Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
+
+(D:\Program Files\MiKTeX\tex/latex/fvextra\fvextra.sty
+Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
+
+(D:\Program Files\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
+Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count351
+\FV@InFile=\read5
+\FV@TabBox=\box81
+\c@FancyVerbLine=\count352
+\FV@StepNumber=\count353
+\FV@OutFile=\write5
+)
+(D:\Program Files\MiKTeX\tex/latex/upquote\upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+(D:\Program Files\MiKTeX\tex/latex/base\textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+))
+(D:\Program Files\MiKTeX\tex/latex/lineno\lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count354
+\output=\toks52
+\linenoprevgraf=\count355
+\linenumbersep=\dimen285
+\linenumberwidth=\dimen286
+\c@linenumber=\count356
+\c@pagewiselinenumber=\count357
+\c@LN@truepage=\count358
+\c@internallinenumber=\count359
+\c@internallinenumbers=\count360
+\quotelinenumbersep=\dimen287
+\bframerule=\dimen288
+\bframesep=\dimen289
+\bframebox=\box82
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count361
+\c@FV@TrueTabCounter=\count362
+\FV@TabBox@Group=\box83
+\FV@TmpLength=\skip52
+\c@FV@HighlightLinesStart=\count363
+\c@FV@HighlightLinesStop=\count364
+\FV@LoopCount=\count365
+\FV@NCharsBox=\box84
+\FV@BreakIndent=\dimen290
+\FV@BreakIndentNChars=\count366
+\FV@BreakSymbolSepLeft=\dimen291
+\FV@BreakSymbolSepLeftNChars=\count367
+\FV@BreakSymbolSepRight=\dimen292
+\FV@BreakSymbolSepRightNChars=\count368
+\FV@BreakSymbolIndentLeft=\dimen293
+\FV@BreakSymbolIndentLeftNChars=\count369
+\FV@BreakSymbolIndentRight=\dimen294
+\FV@BreakSymbolIndentRightNChars=\count370
+\c@FancyVerbLineBreakLast=\count371
+\FV@LineBox=\box85
+\FV@LineIndentBox=\box86
+\FV@LineWidth=\dimen295
+)
+(D:\Program Files\MiKTeX\tex/latex/latex-tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count372
+\calc@Bcount=\count373
+\calc@Adimen=\dimen296
+\calc@Bdimen=\dimen297
+\calc@Askip=\skip53
+\calc@Bskip=\skip54
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count374
+\calc@Cskip=\skip55
+)
+(D:\Program Files\MiKTeX\tex/latex/latex-tools\shellesc.sty
+Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
+)
+(D:\Program Files\MiKTeX\tex/latex/ifplatform\ifplatform.sty
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+(D:\Program Files\MiKTeX\tex/generic/catchfile\catchfile.sty
+Package: catchfile 2019/12/09 v1.8 Catch the contents of a file (HO)
+)
+(D:\Program Files\MiKTeX\tex/generic/iftex\ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+))
+(D:\Program Files\MiKTeX\tex/latex/xstring\xstring.sty
+(D:\Program Files\MiKTeX\tex/generic/xstring\xstring.tex
+\integerpart=\count375
+\decimalpart=\count376
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+(D:\Program Files\MiKTeX\tex/latex/framed\framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip56
+\fb@frw=\dimen298
+\fb@frh=\dimen299
+\FrameRule=\dimen300
+\FrameSep=\dimen301
+)
+(D:\Program Files\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count377
+\float@exts=\toks53
+\float@box=\box87
+\@float@everytoks=\toks54
+\@floatcapt=\box88
+)
+\minted@appexistsfile=\read6
+\minted@bgbox=\box89
+\minted@code=\write6
+\c@minted@FancyVerbLineTemp=\count378
+\c@minted@pygmentizecounter=\count379
+\@float@every@listing=\toks55
+\c@listing=\count380
+)
+runsystem(if not exist ..\auxil\_minted-main mkdir ..\auxil\_minted-main)...exe
+cuted.
+
+runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > ma
+in.aex <nul: /p x=^%~$PATH:i>> main.aex)...executed.
+
+runsystem(del main.aex)...executed.
+
+
 (C:/Users\risak\Documents\Richard\Å kola\Stredni_skola\Maturitni-zkouska\Dlouho
 doba maturitni prace\Dokumentace\auxil\main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 (D:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count351
-\scratchdimen=\dimen285
-\scratchbox=\box81
-\nofMPsegments=\count352
-\nofMParguments=\count353
-\everyMPshowfont=\toks52
-\MPscratchCnt=\count354
-\MPscratchDim=\dimen286
-\MPnumerator=\count355
-\makeMPintoPDFobject=\count356
-\everyMPtoPDFconversion=\toks53
+\scratchcounter=\count381
+\scratchdimen=\dimen302
+\scratchbox=\box90
+\nofMPsegments=\count382
+\nofMParguments=\count383
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count384
+\MPscratchDim=\dimen303
+\MPnumerator=\count385
+\makeMPintoPDFobject=\count386
+\everyMPtoPDFconversion=\toks57
 ) (D:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -864,7 +993,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 19.
+Package hyperref Info: Link coloring OFF on input line 21.
 (D:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -874,23 +1003,23 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (D:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count357
+\c@section@level=\count387
 )
-LaTeX Info: Redefining \ref on input line 19.
-LaTeX Info: Redefining \pageref on input line 19.
-LaTeX Info: Redefining \nameref on input line 19.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
 
 (C:/Users\risak\Documents\Richard\Å kola\Stredni_skola\Maturitni-zkouska\Dlouho
 doba maturitni prace\Dokumentace\auxil\main.out)
 (C:/Users\risak\Documents\Richard\Å kola\Stredni_skola\Maturitni-zkouska\Dlouho
 doba maturitni prace\Dokumentace\auxil\main.out)
-\@outlinefile=\write5
-\openout5 = `main.out'.
+\@outlinefile=\write7
+\openout7 = `main.out'.
 
 <images//logo.jpg, id=102, 114.318pt x 131.0715pt>
 File: images//logo.jpg Graphic file (type jpg)
 <use images//logo.jpg>
-Package pdftex.def Info: images//logo.jpg  used on input line 21.
+Package pdftex.def Info: images//logo.jpg  used on input line 23.
 (pdftex.def)             Requested size: 85.35826pt x 97.87137pt.
  [1
 
@@ -899,7 +1028,7 @@ jpg>]pdfTeX warning (ext4): destination with the same identifier (name{page.1})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29 	\podekovani
+l.31 	\podekovani
                   TÃ­mto bych chtÄ›l podÄ›kovat Mgr. Milanu JanouÅ¡kovi za v...
 [1] [2]
 (C:/Users\risak\Documents\Richard\Å kola\Stredni_skola\Maturitni-zkouska\Dlouho
@@ -913,8 +1042,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [3
 
 ])
-\tf@toc=\write6
-\openout6 = `main.toc'.
+\tf@toc=\write8
+\openout8 = `main.toc'.
 
  [4]
 Kapitola 1.
@@ -923,120 +1052,166 @@ Kapitola 1.
 ]
 Kapitola 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 37.
+(Font)              <7> on input line 39.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 37.
-<images//aspnetcore_aspnet.png, id=160, 1270.14525pt x 572.73975pt>
+(Font)              <5> on input line 39.
+\openout5 = `main.pyg'.
+
+(../auxil/_minted-main/default-pyg-prefix.pygstyle)
+(../auxil/_minted-main/friendly.pygstyle)
+(../auxil/_minted-main/95969F378B65046C2FE4A78407F3C2A48416FA4F1CF33BFA19C74531
+C7F189AA.pygtex
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
+.
+ (D:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
+)
+Package hyperref Info: bookmark level for unknown listing defaults to 0 on inpu
+t line 48.
+ [6
+
+]
+<images//aspnetcore_aspnet.png, id=172, 1270.14525pt x 572.73975pt>
 File: images//aspnetcore_aspnet.png Graphic file (type png)
 <use images//aspnetcore_aspnet.png>
-Package pdftex.def Info: images//aspnetcore_aspnet.png  used on input line 42.
+Package pdftex.def Info: images//aspnetcore_aspnet.png  used on input line 53.
 (pdftex.def)             Requested size: 455.24411pt x 205.27725pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (6.43306pt too wide) in paragraph at lines 47--48
+Overfull \hbox (6.43306pt too wide) in paragraph at lines 58--59
 \T1/cmr/m/n/12 kace je HTML stránka. ASP.NET tedy b¥ºí na ser-veru a re-a-guje 
 na do-tazy uºi-va-tele/klienta.
  []
 
-[6
+[7pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.61 			\podpodkapitola{ASP.NET Core}
+                                      <./images//aspnetcore_aspnet.png>]
+[8]
+<images//Views.png, id=206, 227.04825pt x 483.0045pt>
+File: images//Views.png Graphic file (type png)
+<use images//Views.png>
+Package pdftex.def Info: images//Views.png  used on input line 90.
+(pdftex.def)             Requested size: 136.23pt x 289.80493pt.
+ [9]
+\openout5 = `main.pyg'.
 
-] [7 <./images//aspnetcore_aspnet.png>] [8] [9]
+
+(../auxil/_minted-main/4BF9BDAB09EB6A682057DF2F4393408261C8317F8B3F2203D952A822
+0A6FB263.pygtex) [10pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.2.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.110 	\podkapitola{MySQL}
+                           <./images//Views.png>] [11]
 Kapitola 3.
-[10
-
-]
-Kapitola 4.
-[11
-
-]
-Kapitola 5.
 [12
 
 ]
-Kapitola 6.
+Kapitola 4.
 [13
+
+]
+Kapitola 5.
+[14
+
+]
+Kapitola 6.
+[15
 
 ]
 (C:/Users\risak\Documents\Richard\Å kola\Stredni_skola\Maturitni-zkouska\Dlouho
 doba maturitni prace\Dokumentace\auxil\main.lot)
-\tf@lot=\write7
-\openout7 = `main.lot'.
+\tf@lot=\write9
+\openout9 = `main.lot'.
 
- [14
+ [16
 
 ]
 (C:/Users\risak\Documents\Richard\Å kola\Stredni_skola\Maturitni-zkouska\Dlouho
 doba maturitni prace\Dokumentace\auxil\main.lof)
-\tf@lof=\write8
-\openout8 = `main.lof'.
+\tf@lof=\write10
+\openout10 = `main.lof'.
+
+ [17
+
+]
+(C:/Users\risak\Documents\Richard\Å kola\Stredni_skola\Maturitni-zkouska\Dlouho
+doba maturitni prace\Dokumentace\auxil\main.lol)
+\tf@lol=\write11
+\openout11 = `main.lol'.
 
 
 (C:/Users\risak\Documents\Richard\Å kola\Stredni_skola\Maturitni-zkouska\Dlouho
-doba maturitni prace\Dokumentace\auxil\main.bbl [15
+doba maturitni prace\Dokumentace\auxil\main.bbl [18
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-3.
+Underfull \hbox (badness 10000) in paragraph at lines 12--15
+\T1/cmr/m/n/12 Dostupné z: []$\T1/cmtt/m/n/12 https : / / docs . microsoft . co
+m / cs-[]cz / aspnet / core / mvc / views /
+ []
 
-(D:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-Underfull \hbox (badness 10000) in paragraph at lines 25--28
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--31
 \T1/cmr/m/n/12 Dostupné z: []$\T1/cmtt/m/n/12 https : / / dotnet . microsoft . 
 com / learn / aspnet /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--38
+Underfull \hbox (badness 10000) in paragraph at lines 38--41
 \T1/cmr/m/n/12 Dostupné z: []$\T1/cmtt/m/n/12 https : / / en . wikipedia . org 
 / wiki / Model % E2 % 80 % 93view % E2 % 80 %
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--46
+Underfull \hbox (badness 10000) in paragraph at lines 47--49
 \T1/cmr/m/n/12 Dostupné z: []$\T1/cmtt/m/n/12 https : / / www . itnetwork . cz 
 / csharp / asp-[]net-[]core / zaklady /
  []
 
+[19
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--51
+]
+Underfull \hbox (badness 10000) in paragraph at lines 51--54
 \T1/cmr/m/n/12 Dostupné z: []$\T1/cmtt/m/n/12 https : / / www . itnetwork . cz 
 / csharp / asp-[]net-[]mvc / zaklady /
  []
 
-[16
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 58--61
+Underfull \hbox (badness 10000) in paragraph at lines 61--64
 \T1/cmr/m/n/12 Dostupné z: []$\T1/cmtt/m/n/12 https : / / docs . microsoft . co
 m / cs-[]cz / dotnet / csharp /
  []
 
-) [17]
+) [20]
 P\v {r}\'{\i }loha A.
-[18
+[21
 
 ]
 (C:/Users\risak\Documents\Richard\Å kola\Stredni_skola\Maturitni-zkouska\Dlouho
 doba maturitni prace\Dokumentace\auxil\main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C2602C7A595DB702BB0B0313857F65C6;2692.
+(rerunfilecheck)             Checksum: E8E491A4E66A71265EDB34EA08DAB651;2692.
+runsystem(del ..\auxil\\main.pyg)...executed.
+
  ) 
 Here is how much of TeX's memory you used:
- 31215 strings out of 479324
- 670004 string characters out of 2866691
- 1024363 words of memory out of 3000000
- 48119 multiletter control sequences out of 15000+600000
+ 34186 strings out of 479324
+ 733605 string characters out of 2866691
+ 1128509 words of memory out of 3000000
+ 51004 multiletter control sequences out of 15000+600000
  415969 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,8n,117p,1628b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 116i,8n,117p,1628b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti
 1200.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ectt1200.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\tcrm1200.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecbx1440.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour
+0\tcrm1200.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecbx1440.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ectt1200.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour
 /jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/
 ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\risak\AppData\Local\MiKTeX\fon
 ts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\risak\AppData\Local\MiKT
@@ -1046,10 +1221,10 @@ a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\risak\
 AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\
 risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk>
 Output written on "C:/Users\risak\Documents\Richard\Å kola\Stredni_skola\Maturi
-tni-zkouska\Dlouhodoba maturitni prace\Dokumentace\out\main.pdf" (19 pages, 436
-067 bytes).
+tni-zkouska\Dlouhodoba maturitni prace\Dokumentace\out\main.pdf" (22 pages, 469
+700 bytes).
 PDF statistics:
- 735 PDF objects out of 1000 (max. 8388607)
- 61 named destinations out of 1000 (max. 500000)
- 215 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 792 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
+ 220 words of extra memory for PDF output out of 10000 (max. 10000000)
 

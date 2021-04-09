@@ -3,7 +3,9 @@
 \usepackage{hyperref}
 \usepackage{indentfirst}
 \graphicspath{{images/}}
-%\usepackage[outputdir=../out]{minted}
+
+\usepackage[outputdir=../auxil]{minted}
+\usemintedstyle{friendly}
 
 \student{Richard Kropáček}
 \trida{B4.I}
@@ -21,7 +23,7 @@
 	\titulniStrana
 	
 	\anotace Výstupem mé maturitní práce je fungující systém, jehož úkolem je správa povinných prácí odevzdaných za uplynulý školní rok žáky. Učitelé následně mohou práce procházet, stahovat a hodnotit.\\
-	\textbf{Klíčová slova: }	C\#; ASP.NET Core; Entity Framework Core; HTML; JavaScript; CSS; Bootstrap; MySQL; WebApp
+	\textbf{Klíčová slova: } C\#; ASP.NET Core; Entity Framework Core; HTML; JavaScript; CSS; Bootstrap; MySQL; WebApp
 
 	\annotation The output of my graduation thesis is a functioning system, the task of which is the administration of compulsory work submitted by pupils for the past school year. Teachers can then browse, download and evaluate the work.\\
 	\textbf{Key words: } C\#; ASP.NET Core; Entity Framework Core; HTML; JavaScript; CSS; Bootstrap; MySQL; WebApp
@@ -36,7 +38,9 @@
 		\podkapitola{Programovací jazyk C\#}
 			C\# je moderní, vysokoúrovňový objektově orientovaný programocí jazyk vyvinutý společností Microsoft. Jazyk C\# se řadí mezi typově bezpečné programovací jazyky. To znamená, že nedovoluje provádět operace, které mohou véct k chybám. Tento jazyk umožnuje vývojářům vytvářet mnoho druhů zabezpečených a robusních aplikací, které běži na platformě .NET \footnote{Vývojářská platforma pro vytváření webových, mobilních, desktopových, herních, IoT a dalších aplikací. Je podporovaná v systémech Windows, Linux a macOS.}.\par
 			C\# je zároveň objektově orientovaný programovací jazyk orientovaný na součásti \footnote{Component-oriented programming language}. To znamená, že se zaměřuje na vytváření komponent, které jsou tvořeny často se opakujícími částmi kódu. C\# také poskytuje jazykové kontrukce pro přímou podporu těchto konceptů, což z něj dělá přirozený jazyk pro tvorbu a používání těchto softwarových komponent.\cite{CSharp}
-
+		\podkapitola{Razor}
+		Razor je syntaxe pro ASP.NET používaná pro tvorbu dynamických webových stránek společně s programovacím jazykem C\#. Pomocí Razor syntaxe lze vložit do webové stránky blok kódu, který se provede na straně serveru. Soubory využíající tuto syntaxi mají příponu .cshtml.\par
+		Razor syntaxe se skládá z Razor značek, C\# a HTML. Výchozím Razor jazykem je HTML. Pokud chceme využít C\#, označíme tento kód symbolem @. Tímto dojde k přechodu z formátu HTML do C\#. Razor vyhodnotí výrazy jazyka C\# a vykresluje je ve výstupu HTML. Kód HTML v souborech s příponou .cshtml se vykreslí serverem beze změny.\cite{Razor}
 		\podkapitola{ASP.NET, ASP.NET CORE}
 			\begin{figure}[h!]
 				\includegraphics[width=\textwidth]{aspnetcore_aspnet}
@@ -65,20 +69,37 @@
 			\item Model - Práce s daty
 			\item View - Uživatelské rozhraní
 			\item Controller - Logická část aplikace
-		\end{itemize}\path
+		\end{itemize}\par
 		Pomocí vzoru MVC pro webové aplikace jsou požadavky směrovány na controller, který je zodpovědný za práci s modelem. Model provádí akce a načítá data za databáze. Controller poté zvolí zobrazení (view), které se má zobrazit, a poskytne mu model. View už pouze vykreslí stránku na základě dat získaných z modelu.\cite{MVC}
 				\podpodkapitola{Model}
 				Jedná se o dynamickou datovou strukturu aplikace, nezávislou na uživatelském rozhraní. Jejím úkolem je spravovat data, pravida a logiku aplikace.\par
-				V ASP.NET Core MVC má model podobu třídy, která je provázaná s databází. Pomocí atributů definuje pravidla, která se aplikují na klienta a server.\cite{MVC_Wiki_EN}
+				V ASP.NET Core MVC má model podobu třídy, kde veřejné metody představují položky v databázi, s kterou je třída provázaná. Ukládáme ji do adresáře Models v rámci projektu. Pomocí atributů definuje pravidla, která se aplikují na klienta a server.\cite{MVC_Wiki_EN}
 				\podpodkapitola{View}
-				Převádí data reprezentovaná modelem do podoby vhodné k interaktivní prezentaci uživateli.\cite{MVC_Wiki_CZ} Může se jednat o jakoukoliv reprezentaci dat (graf, diagram, tabulka, atd.).\par
-				V ASP.NET Core se využívá syntaxe Razor. Ta poskytuje jednoduchý, čistý a lehký způsob vykreslení obsahu HTML stránek na základě view. Razor umožňuje vykreslit stránku pomocí C\# a vytvářet webové stránky plně kompatibilní s HTML5.\cite{MVC_Wiki_EN}
+				Převádí data reprezentovaná objekty modelu do podoby vhodné k interaktivní prezentaci uživateli.\cite{MVC_Wiki_CZ} Může se jednat o jakoukoliv reprezentaci dat (graf, diagram, tabulka, atd.).\par
+				V ASP.NET Core se využívá syntaxe Razor. Ta poskytuje jednoduchý, čistý a lehký způsob vykreslení obsahu HTML stránek na základě view. Razor umožňuje vykreslit stránku pomocí C\# a vytvářet webové stránky plně kompatibilní s HTML5.\cite{MVC_Wiki_EN}\par
+				Každý controller může pro jedno view generovat vlastní obraz. Aby tedy nedocházelo ke kolizi 2 controlleru pro jedno view, vyžaduje  MVC uložení view do adresáře Views v rámci projektu, a zde do podadresáře s názvem controlleru, který ho generuje \viz{Views}.
+				\begin{figure}[H]
+					\centering
+					\includegraphics[scale=0.6]{Views}
+					\caption{Ukládání View v rámci projektu}
+					\label{Views}
+				\end{figure}
 				\podpodkapitola{Controller}
 				Controller reaguje na vstup uživatele a provádí interakce s objekty datového modelu. Zjednodušeně to znamená, že řadič přijme vstup, ověří jej a následně ho předá modelu.\cite{MVC_Wiki_EN}\par
-				Třída controlleru obsahuje veřejné metody označené jako Action method. V ASP.NET MVC musí každý název třídy controlleru končit klíčovým slovem "Controller". To znamená, že pro domovské stránky třídu nazýváme HomeController, pro stránky studenta StudentController, apod.
-
-	\podkapitola{Razor}
-
+				Třída controlleru obsahuje veřejné metody označené jako Action method. V ASP.NET MVC musí každý název třídy controlleru končit klíčovým slovem "Controller". To znamená, že pro domovské stránky třídu nazýváme HomeController, pro stránky studenta StudentController, apod. Všechny tyto třídy ukládáme v rámci projektu do složky Controllers.
+	\begin{listing}[H]
+	\begin{minted}{csharp}
+	public class HomeController : Controller
+	{
+		public IActionResult Index()
+		{
+			return View();
+		}
+	}
+	\end{minted}
+	\caption{Controller - Action Method}
+	\label{ActionMethod}
+	\end{listing}
 	\podkapitola{MySQL}
 		MySQL je otevřený systém řízení báze dat uplatňující relační databázový model. Jedná se o multiplatformní databázi. Komunikace s databází probíhá pomocí dotazovacího jazyka SQL.\cite{MySQL_Wiki_CZ}
 	\kapitola{Uživatelské rozhraní}
@@ -92,6 +113,9 @@
 	\seznamTabulek
 	
 	\seznamObrazku
+
+	\renewcommand\listoflistingscaption{Seznam zdrojových kódů}
+	\listoflistings
 	
 
 	\bibliographystyle{czechiso}
