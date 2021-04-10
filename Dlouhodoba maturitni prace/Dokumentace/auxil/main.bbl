@@ -8,9 +8,14 @@
 \providecommand{\selectlanguage}[1]{\relax}
 \providecommand{\eprint}[2][]{\url{#2}}
 
+\bibitem{ASP.NET_Core_Identity}
+ANDERSON, R.: \emph{Úvod do Identity ASP.NET Core}. Microsoft Corporation,
+  2020, [cit. 2021-4-10].
+\newline\urlprefix\url{https://docs.microsoft.com/cs-cz/aspnet/core/security/authentication/identity?view=aspnetcore-5.0&tabs=visual-studio}
+
 \bibitem{Razor}
-ANDERSON, R.; Mullen, T.; Vicarel, D.; aj.: \emph{Razor Referenční informace
-  k syntaxi pro ASP.NET Core}. Microsoft Corporation, 2020, [cit. 2021-4-8].
+ANDERSON, R.; Mullen, T.; Vicarel, D.: \emph{Razor Referenční informace k
+  syntaxi pro ASP.NET Core}. Microsoft Corporation, 2020, [cit. 2021-4-8].
 \newline\urlprefix\url{https://docs.microsoft.com/cs-cz/aspnet/core/mvc/views/razor?view=aspnetcore-5.0}
 
 \bibitem{ASPNETCORE_ASPNET}

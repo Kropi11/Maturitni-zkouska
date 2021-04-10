@@ -6,44 +6,44 @@ The style file: czechiso.bst
 Reallocating 'name_of_file' (item size: 1) to 5 items.
 Database file #1: main.bib
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-You've used 12 entries,
+You've used 13 entries,
             3151 wiz_defined-function locations,
-            715 strings with 7000 characters,
-and the built_in function-call counts, 3665 in all, are:
-= -- 274
+            721 strings with 7206 characters,
+and the built_in function-call counts, 3919 in all, are:
+= -- 292
 > -- 77
 < -- 0
-+ -- 42
++ -- 41
 - -- 20
-* -- 187
-:= -- 376
-add.period$ -- 24
-call.type$ -- 12
-change.case$ -- 52
+* -- 199
+:= -- 404
+add.period$ -- 26
+call.type$ -- 13
+change.case$ -- 56
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 387
-empty$ -- 385
+cite$ -- 13
+duplicate$ -- 419
+empty$ -- 415
 format.name$ -- 23
-if$ -- 800
+if$ -- 853
 int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 90
-newline$ -- 58
-num.names$ -- 10
-pop$ -- 205
+int.to.str$ -- 13
+missing$ -- 97
+newline$ -- 62
+num.names$ -- 12
+pop$ -- 223
 preamble$ -- 1
-purify$ -- 40
+purify$ -- 43
 quote$ -- 0
-skip$ -- 137
+skip$ -- 139
 stack$ -- 0
-substring$ -- 87
-swap$ -- 164
+substring$ -- 94
+swap$ -- 177
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 48
+type$ -- 52
 warning$ -- 0
-while$ -- 10
-width$ -- 14
-write$ -- 118
+while$ -- 12
+width$ -- 15
+write$ -- 128
