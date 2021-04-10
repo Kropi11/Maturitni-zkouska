@@ -9,17 +9,18 @@
 \contentsline {section}{\numberline {2.4}EF6 a EF Core}{8}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Entity Framework 6}{8}{subsection.2.4.1}%
 \contentsline {subsection}{\numberline {2.4.2}Entity Framework Core}{8}{subsection.2.4.2}%
-\contentsline {section}{\numberline {2.5}MVC}{9}{section.2.5}%
+\contentsline {section}{\numberline {2.5}MVC}{8}{section.2.5}%
 \contentsline {subsection}{\numberline {2.5.1}Model}{9}{subsection.2.5.1}%
 \contentsline {subsection}{\numberline {2.5.2}View}{9}{subsection.2.5.2}%
 \contentsline {subsection}{\numberline {2.5.3}Controller}{10}{subsection.2.5.3}%
 \contentsline {section}{\numberline {2.6}MySQL}{11}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Uživatelské rozhraní}{12}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Student}{12}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Učitel}{12}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Administrator}{12}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Přihlašování a registrace}{13}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Databáze}{14}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Závěr}{15}{chapter.6}%
-\contentsline {chapter}{Přílohy}{20}{chapter*.5}%
-\contentsline {chapter}{\numberline {A}Příloha}{21}{appendix.A}%
+\contentsline {chapter}{\numberline {3}Základní struktura ASP.NET Core}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Model}{12}{section.3.1}%
+\contentsline {section}{\numberline {3.2}View}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Controller}{13}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Detail}{13}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Editace}{15}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Smazání}{17}{subsection.3.3.3}%
+\contentsline {chapter}{\numberline {4}Závěr}{19}{chapter.4}%
+\contentsline {chapter}{Přílohy}{24}{chapter*.5}%
+\contentsline {chapter}{\numberline {A}Příloha}{25}{appendix.A}%

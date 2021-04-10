@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  9 APR 2021 02:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  10 APR 2021 03:00
 entering extended mode
 **./main.tex
 (main.tex
@@ -1016,7 +1016,7 @@ doba maturitni prace\Dokumentace\auxil\main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
 
-<images//logo.jpg, id=102, 114.318pt x 131.0715pt>
+<images//logo.jpg, id=106, 114.318pt x 131.0715pt>
 File: images//logo.jpg Graphic file (type jpg)
 <use images//logo.jpg>
 Package pdftex.def Info: images//logo.jpg  used on input line 23.
@@ -1028,7 +1028,7 @@ jpg>]pdfTeX warning (ext4): destination with the same identifier (name{page.1})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.31 	\podekovani
+l.33 	\podekovani
                   T√≠mto bych chtƒõl podƒõkovat Mgr. Milanu Janou≈°kovi za v...
 [1] [2]
 (C:/Users\risak\Documents\Richard\≈†kola\Stredni_skola\Maturitni-zkouska\Dlouho
@@ -1052,15 +1052,42 @@ Kapitola 1.
 ]
 Kapitola 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 39.
+(Font)              <7> on input line 47.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 39.
+(Font)              <5> on input line 47.
+[6
+
+]
+<images//aspnetcore_aspnet.png, id=177, 1270.14525pt x 572.73975pt>
+File: images//aspnetcore_aspnet.png Graphic file (type png)
+<use images//aspnetcore_aspnet.png>
+Package pdftex.def Info: images//aspnetcore_aspnet.png  used on input line 59.
+(pdftex.def)             Requested size: 455.24411pt x 205.27725pt.
+
+Overfull \hbox (6.43306pt too wide) in paragraph at lines 65--68
+\T1/cmr/m/n/12 kace je HTML str·nka. ASP.NET tedy b•∫Ì na ser-veru a re-a-guje 
+na do-tazy u∫i-va-tele/klienta.
+ []
+
+[7pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}
+) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.73 ...atformu pro udr≈æen√≠ bƒõhu aplikac√≠.\par
+                                                   <./images//aspnetcore_aspnet
+.png>] [8]
+<images//Views.png, id=209, 227.04825pt x 483.0045pt>
+File: images//Views.png Graphic file (type png)
+<use images//Views.png>
+Package pdftex.def Info: images//Views.png  used on input line 112.
+(pdftex.def)             Requested size: 158.93268pt x 338.10083pt.
+ [9]
 \openout5 = `main.pyg'.
 
-(../auxil/_minted-main/default-pyg-prefix.pygstyle)
+ (../auxil/_minted-main/default-pyg-prefix.pygstyle)
 (../auxil/_minted-main/friendly.pygstyle)
-(../auxil/_minted-main/95969F378B65046C2FE4A78407F3C2A48416FA4F1CF33BFA19C74531
-C7F189AA.pygtex
+(../auxil/_minted-main/4BF9BDAB09EB6A682057DF2F4393408261C8317F8B3F2203D952A822
+0A6FB263.pygtex
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
 .
  (D:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
@@ -1070,58 +1097,33 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
 )
 Package hyperref Info: bookmark level for unknown listing defaults to 0 on inpu
-t line 48.
- [6
-
-]
-<images//aspnetcore_aspnet.png, id=172, 1270.14525pt x 572.73975pt>
-File: images//aspnetcore_aspnet.png Graphic file (type png)
-<use images//aspnetcore_aspnet.png>
-Package pdftex.def Info: images//aspnetcore_aspnet.png  used on input line 53.
-(pdftex.def)             Requested size: 455.24411pt x 205.27725pt.
-
-Overfull \hbox (6.43306pt too wide) in paragraph at lines 58--59
-\T1/cmr/m/n/12 kace je HTML str·nka. ASP.NET tedy b•∫Ì na ser-veru a re-a-guje 
-na do-tazy u∫i-va-tele/klienta.
- []
-
-[7pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}
-) has been already used, duplicate ignored
+t line 132.
+ [10pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.61 			\podpodkapitola{ASP.NET Core}
-                                      <./images//aspnetcore_aspnet.png>]
-[8]
-<images//Views.png, id=206, 227.04825pt x 483.0045pt>
-File: images//Views.png Graphic file (type png)
-<use images//Views.png>
-Package pdftex.def Info: images//Views.png  used on input line 90.
-(pdftex.def)             Requested size: 136.23pt x 289.80493pt.
- [9]
-\openout5 = `main.pyg'.
-
-
-(../auxil/_minted-main/4BF9BDAB09EB6A682057DF2F4393408261C8317F8B3F2203D952A822
-0A6FB263.pygtex) [10pdfTeX warning (ext4): destination with the same identifier
- (name{figure.2.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.110 	\podkapitola{MySQL}
+l.135 	\podkapitola{MySQL}
                            <./images//Views.png>] [11]
 Kapitola 3.
-[12
+
+(../auxil/_minted-main/8CAE133A72F13BEA6C3A3541FA4C9DB84F7F2583381114C7C6AAE456
+442E486D.pygtex) [12
 
 ]
+(../auxil/_minted-main/9E04427F960441442C91134CFFA128DDA7CB171AAE5A6E5E70E6AD41
+ABD797BF.pygtex) [13] [14]
+Overfull \vbox (68.24591pt too high) has occurred while \output is active []
+
+
+[15]
+(../auxil/_minted-main/B9E4F460AAC5CCE7E183C26B82AE76685133225FF3BF22311ADDC1F9
+F99980F9.pygtex)
+(../auxil/_minted-main/0243AAE28FF57C892C8DC8FAF9EB12C34198B1EBA69B6E00D30EDF7A
+AF606EB6.pygtex)
+(../auxil/_minted-main/8C07192CE967E4B49F7A1E6BA49C1CC700AEE4807A7441B98ABE9B2F
+FC647BAA.pygtex) [16] [17] [18]
 Kapitola 4.
-[13
-
-]
-Kapitola 5.
-[14
-
-]
-Kapitola 6.
-[15
+[19
 
 ]
 (C:/Users\risak\Documents\Richard\≈†kola\Stredni_skola\Maturitni-zkouska\Dlouho
@@ -1129,7 +1131,7 @@ doba maturitni prace\Dokumentace\auxil\main.lot)
 \tf@lot=\write9
 \openout9 = `main.lot'.
 
- [16
+ [20
 
 ]
 (C:/Users\risak\Documents\Richard\≈†kola\Stredni_skola\Maturitni-zkouska\Dlouho
@@ -1137,7 +1139,7 @@ doba maturitni prace\Dokumentace\auxil\main.lof)
 \tf@lof=\write10
 \openout10 = `main.lof'.
 
- [17
+ [21
 
 ]
 (C:/Users\risak\Documents\Richard\≈†kola\Stredni_skola\Maturitni-zkouska\Dlouho
@@ -1147,7 +1149,7 @@ doba maturitni prace\Dokumentace\auxil\main.lol)
 
 
 (C:/Users\risak\Documents\Richard\≈†kola\Stredni_skola\Maturitni-zkouska\Dlouho
-doba maturitni prace\Dokumentace\auxil\main.bbl [18
+doba maturitni prace\Dokumentace\auxil\main.bbl [22
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 12--15
@@ -1173,7 +1175,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--49
 / csharp / asp-[]net-[]core / zaklady /
  []
 
-[19
+[23
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 51--54
@@ -1187,44 +1189,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--64
 m / cs-[]cz / dotnet / csharp /
  []
 
-) [20]
+) [24]
 P\v {r}\'{\i }loha A.
-[21
+[25
 
 ]
 (C:/Users\risak\Documents\Richard\≈†kola\Stredni_skola\Maturitni-zkouska\Dlouho
 doba maturitni prace\Dokumentace\auxil\main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E8E491A4E66A71265EDB34EA08DAB651;2692.
+(rerunfilecheck)             Checksum: 768318E3FBBDE84958EF6A949C62DCCC;2730.
 runsystem(del ..\auxil\\main.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 34186 strings out of 479324
- 733605 string characters out of 2866691
- 1128509 words of memory out of 3000000
- 51004 multiletter control sequences out of 15000+600000
- 415969 words of font info for 50 fonts, out of 8000000 for 9000
+ 34223 strings out of 479324
+ 736186 string characters out of 2866691
+ 1128934 words of memory out of 3000000
+ 51019 multiletter control sequences out of 15000+600000
+ 416284 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,8n,117p,1628b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 116i,8n,117p,1628b,523s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti
 1200.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\tcrm1200.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecbx1440.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ectt1200.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\risak\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\risak\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\risak\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\risak\AppDat
-a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\risak\
-AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\
-risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk>
+0\ecit1200.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ectt1200.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\tcrm1200.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\risak\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\risak\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\risak\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\risak\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\risak\
+AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\
+risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\
+Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk
+>
 Output written on "C:/Users\risak\Documents\Richard\≈†kola\Stredni_skola\Maturi
-tni-zkouska\Dlouhodoba maturitni prace\Dokumentace\out\main.pdf" (22 pages, 469
-700 bytes).
+tni-zkouska\Dlouhodoba maturitni prace\Dokumentace\out\main.pdf" (26 pages, 490
+535 bytes).
 PDF statistics:
- 792 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 220 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 868 PDF objects out of 1000 (max. 8388607)
+ 78 named destinations out of 1000 (max. 500000)
+ 228 words of extra memory for PDF output out of 10000 (max. 10000000)
 

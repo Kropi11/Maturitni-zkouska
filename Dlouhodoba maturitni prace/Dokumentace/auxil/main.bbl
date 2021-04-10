@@ -8,13 +8,17 @@
 \providecommand{\selectlanguage}[1]{\relax}
 \providecommand{\eprint}[2][]{\url{#2}}
 
+\bibitem{Razor}
+ANDERSON, R.; Mullen, T.; Vicarel, D.; aj.: \emph{Razor Referenční informace
+  k syntaxi pro ASP.NET Core}. Microsoft Corporation, 2020, [cit. 2021-4-8].
+\newline\urlprefix\url{https://docs.microsoft.com/cs-cz/aspnet/core/mvc/views/razor?view=aspnetcore-5.0}
+
 \bibitem{ASPNETCORE_ASPNET}
 ASP.NET vs ASP.NET Core. 2017, [cit. 2021-4-4].
 \newline\urlprefix\url{https://thienn.com/images/aspnetcore.png}
 
 \bibitem{MVC}
-Microsoft Corporation: \emph{ASP.NET MVC Pattern}. 2021, [Online; cit.
-  2021-4-5].
+Microsoft Corporation: \emph{ASP.NET MVC Pattern}. 2021, [cit. 2021-4-5].
 \newline\urlprefix\url{https://dotnet.microsoft.com/apps/aspnet/mvc}
 
 \bibitem{ASP.NET}
@@ -22,8 +26,7 @@ Microsoft Corporation: \emph{What is ASP.NET?} 2021, [cit. 2021-4-4].
 \newline\urlprefix\url{https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet}
 
 \bibitem{ASP.NET_Core}
-Microsoft Corporation: \emph{What is ASP.NET Core?} 2021, [Online; cit.
-  2021-4-4].
+Microsoft Corporation: \emph{What is ASP.NET Core?} 2021, [cit. 2021-4-4].
 \newline\urlprefix\url{https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core}
 
 \bibitem{MVC_Wiki_CZ}
@@ -51,12 +54,12 @@ MySQL. 2021, [cit. 2021-04-06].
 
 \bibitem{EF6_EFCore}
 VICKERS, A.; OLPROD: \emph{Porovnání EF Core a EF6}. Microsoft Corporation,
-  2019, [Online; cit. 2021-4-5].
+  2019, [cit. 2021-4-5].
 \newline\urlprefix\url{https://docs.microsoft.com/cs-cz/ef/efcore-and-ef6/}
 
 \bibitem{CSharp}
 WAGNER, B.; OLPROD: \emph{Prohlídka jazyka C\#}. Microsoft Corporation, 2021,
-  [Online; cit. 2021-3-25].
+  [cit. 2021-3-25].
 \newline\urlprefix\url{https://docs.microsoft.com/cs-cz/dotnet/csharp/tour-of-csharp/}
 
 \end{thebibliography}
