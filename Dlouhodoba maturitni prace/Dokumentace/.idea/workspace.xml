@@ -13,38 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a539ca8c-993a-43fc-abac-e6df811116a6" name="Default Changelist" comment="Dokumentace">
-      <change afterPath="$PROJECT_DIR$/src/SourceCode/Controllers/Autorize.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SourceCode/Views/Body.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SourceCode/Views/LoginPartial.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SourceCode/Views/MenuPartial.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SourceCode/Views/Shared/_LoginPartial.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SourceCode/Views/Shared/_MenuPartial.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/Contollers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ListaPrihlaseny.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/Menu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/Models.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ViewsController.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/ViewsDetail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SourceCode/Controllers/ListOfEntit.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.aux" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.bbl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.blg" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.blg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.lof" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.lof" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.lol" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.lol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.lot" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.lot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.out" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.toc" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/main.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SourceCode/ActionMethod.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SourceCode/Controllers/ActionMethod.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SourceCode/Delete.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SourceCode/Controllers/Delete.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SourceCode/Delete_Post.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SourceCode/Controllers/Delete_Post.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SourceCode/Detail.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SourceCode/Controllers/Detail.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SourceCode/Edit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SourceCode/Controllers/Edit_Post.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SourceCode/Edit_Post.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SourceCode/Controllers/Edit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SourceCode/Model.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SourceCode/Models/Model.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.bib" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.bib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,9 +96,9 @@
       </texify-bibtex>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="LaTeX" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
@@ -211,7 +181,8 @@
       <workItem from="1618048671614" duration="1665000" />
       <workItem from="1618050389029" duration="31590000" />
       <workItem from="1618135358364" duration="3709000" />
-      <workItem from="1618143467740" duration="28985000" />
+      <workItem from="1618143467740" duration="29285000" />
+      <workItem from="1618182541389" duration="336000" />
     </task>
     <task id="LOCAL-00001" summary="Dokumentace">
       <created>1617586762359</created>
@@ -276,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618099826887</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Dokumentace">
+      <created>1618182305381</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1618182305382</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -21,11 +21,21 @@
 \contentsline {subsection}{\numberline {3.2.2}\_LoginPartial}{16}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}\_MenuPartial}{17}{subsection.3.2.3}%
 \contentsline {section}{\numberline {3.3}Controller}{19}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Detail}{21}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Editace}{22}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Smazání}{24}{subsection.3.3.3}%
-\contentsline {chapter}{\numberline {4}Databáze}{26}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Role}{27}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Závěr}{28}{chapter.6}%
-\contentsline {chapter}{Přílohy}{33}{chapter*.5}%
-\contentsline {chapter}{\numberline {A}Příloha}{34}{appendix.A}%
+\contentsline {subsection}{\numberline {3.3.1}Seznam entit}{21}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Detail}{22}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Editace}{23}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Smazání}{25}{subsection.3.3.4}%
+\contentsline {chapter}{\numberline {4}Přihlašování a registrace}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Přihlašování}{27}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Registrace}{27}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Role}{28}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Student}{28}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Učitel}{28}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Administrator}{28}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Vedení školy}{28}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Databáze}{29}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Připojení databáze}{29}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Návrh databáze}{29}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Závěr}{30}{chapter.7}%
+\contentsline {chapter}{Přílohy}{35}{chapter*.5}%
+\contentsline {chapter}{\numberline {A}Příloha}{36}{appendix.A}%

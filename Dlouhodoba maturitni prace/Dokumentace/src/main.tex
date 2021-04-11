@@ -212,7 +212,7 @@
 	\end{figure}
 	Jak již bylo zmíněno v teorii (viz kategorie \ref{Controller_teorie}\nameref{Controller_teorie}), controller pracuje s tzv. Action Method. V celé aplikaci mi postačí pouze 4 varianty Action Method, ve kterých se budou pouze měnit data. Ty varianty jsou:
 	\begin{itemize}
-		\item Zobrazit seznam položek
+		\item Zobrazit seznam entit
 		\item Zobrazit detail položky
 		\item Editovat položku
 		\item Smazat položku
@@ -230,6 +230,12 @@
 		\item .OrderBy() - Seřadí prvky v kolekci na základě zadaných polí ve vzestupném pořadí. Např. Na základě příjmení.
 		\item .Where() - Načte pouze data, která splňují nějakou podmínku. Např. Načte pouze práce, kde je ID uživatele rovno přihlášenému uživateli.
 	\end{itemize}
+		\subsection{Seznam entit}
+	\begin{listing}[H]
+		\inputminted{csharp}{SourceCode/Controllers/ListOfEntit.cs}
+		\caption{Controller - Seznam entit}
+		\label{ListOfEntit}
+	\end{listing}
 		\subsection{Detail}
 	\begin{listing}[H]
 		\inputminted{csharp}{SourceCode/Controllers/Detail.cs}
@@ -261,8 +267,19 @@
 	\end{listing}
 	
 	
-	\chapter{Databáze} \label{Databaze}
+	\chapter{Přihlašování a registrace}
+	\section{Přihlašování}
+	\section{Registrace}
+
 	\chapter{Role} \label{Role}
+	\section{Student}
+	\section{Učitel}
+	\section{Administrator}
+	\section{Vedení školy}
+
+	\chapter{Databáze} \label{Databaze}
+	\section{Připojení databáze}
+	\section{Návrh databáze}
 	\chapter{Závěr}
 
 	\seznamTabulek
