@@ -16,12 +16,16 @@
 \contentsline {section}{\numberline {2.6}MySQL}{11}{section.2.6}%
 \contentsline {chapter}{\numberline {3}Základní struktura ASP.NET Core}{12}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Model}{12}{section.3.1}%
-\contentsline {section}{\numberline {3.2}View}{15}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Controller}{15}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Detail}{15}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Editace}{17}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Smazání}{19}{subsection.3.3.3}%
-\contentsline {chapter}{\numberline {4}Databáze}{21}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Závěr}{22}{chapter.5}%
-\contentsline {chapter}{Přílohy}{27}{chapter*.5}%
-\contentsline {chapter}{\numberline {A}Příloha}{28}{appendix.A}%
+\contentsline {section}{\numberline {3.2}View}{14}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}\_Layout}{15}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}\_LoginPartial}{16}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}\_MenuPartial}{17}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Controller}{19}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Detail}{21}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Editace}{22}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Smazání}{24}{subsection.3.3.3}%
+\contentsline {chapter}{\numberline {4}Databáze}{26}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Role}{27}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Závěr}{28}{chapter.6}%
+\contentsline {chapter}{Přílohy}{33}{chapter*.5}%
+\contentsline {chapter}{\numberline {A}Příloha}{34}{appendix.A}%

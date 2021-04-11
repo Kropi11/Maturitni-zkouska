@@ -1,0 +1,18 @@
+﻿@if (SignInManager.IsSignedIn(User)){
+    @if (User.Identity.IsAuthenticated){
+                    <li><a asp-area="" asp-controller="Home"
+                           asp-action="Index">Domovská stránka</a></li>
+    }
+    @if (User.IsInRole("Administrator")){
+        <li><a asp-area="" asp-controller="Administration"
+               asp-action="UsersOverview">Přehled uživatelů</a></li>
+        <li><a asp-area="" asp-controller="Administration"
+               asp-action="TasksOverview">Přehled zadání</a></li>
+        <li><a asp-area="" asp-controller="Administration"
+               asp-action="ClassesOverview">Přehled tříd</a></li>
+        <li><a asp-area="" asp-controller="Administration"
+               asp-action="SubjectsOverview">Přehled předmětů</a></li>
+        <li><a asp-area="" asp-controller="Administration"
+               asp-action="YearsOfStudiesOverview">Přehled ročníků</a></li>
+    }
+}

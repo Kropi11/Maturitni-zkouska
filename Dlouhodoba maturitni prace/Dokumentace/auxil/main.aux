@@ -52,11 +52,13 @@
 \citation{MVC_Wiki_CZ}
 \citation{MVC_Wiki_EN}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.5.1}Model}{9}{subsection.2.5.1}\protected@file@percent }
+\newlabel{Model_teorie}{{2.5.1}{9}{Model}{subsection.2.5.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.5.2}View}{9}{subsection.2.5.2}\protected@file@percent }
 \citation{MVC_Wiki_EN}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Ukládání View v rámci projektu}}{10}{figure.2.2}\protected@file@percent }
-\newlabel{Views}{{2.2}{10}{Ukládání View v rámci projektu}{figure.2.2}{}}
+\newlabel{ViewsController}{{2.2}{10}{Ukládání View v rámci projektu}{figure.2.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.5.3}Controller}{10}{subsection.2.5.3}\protected@file@percent }
+\newlabel{Controller_teorie}{{2.5.3}{10}{Controller}{subsection.2.5.3}{}}
 \citation{MySQL_Wiki_CZ}
 \@writefile{lol}{\contentsline {listing}{\numberline {1}{\ignorespaces Controller - Action Method}}{11}{listing.1}\protected@file@percent }
 \newlabel{ActionMethod}{{1}{11}{Controller}{listing.1}{}}
@@ -70,25 +72,56 @@
 \newlabel{ModelsFolder}{{3.1}{13}{Složka Models}{figure.3.1}{}}
 \@writefile{lol}{\contentsline {listing}{\numberline {2}{\ignorespaces Model - Předmět}}{14}{listing.2}\protected@file@percent }
 \newlabel{SubjectModel}{{2}{14}{Model}{listing.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}View}{15}{section.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Controller}{15}{section.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Detail}{15}{subsection.3.3.1}\protected@file@percent }
-\@writefile{lol}{\contentsline {listing}{\numberline {3}{\ignorespaces Controller - Detail}}{15}{listing.3}\protected@file@percent }
-\newlabel{Detail}{{3}{15}{Detail}{listing.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Editace}{17}{subsection.3.3.2}\protected@file@percent }
-\@writefile{lol}{\contentsline {listing}{\numberline {4}{\ignorespaces Controller - Editace a)}}{17}{listing.4}\protected@file@percent }
-\newlabel{Edit}{{4}{17}{Editace}{listing.4}{}}
-\@writefile{lol}{\contentsline {listing}{\numberline {5}{\ignorespaces Controller - Editace b)}}{18}{listing.5}\protected@file@percent }
-\newlabel{Edit_Post}{{5}{18}{Editace}{listing.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Smazání}{19}{subsection.3.3.3}\protected@file@percent }
-\@writefile{lol}{\contentsline {listing}{\numberline {6}{\ignorespaces Controller - Smazání a)}}{19}{listing.6}\protected@file@percent }
-\newlabel{Delete}{{6}{19}{Smazání}{listing.6}{}}
-\@writefile{lol}{\contentsline {listing}{\numberline {7}{\ignorespaces Controller - Smazání b)}}{20}{listing.7}\protected@file@percent }
-\newlabel{Delete_Post}{{7}{20}{Smazání}{listing.7}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Databáze}{21}{chapter.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}View}{14}{section.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Složka Views}}{15}{figure.3.2}\protected@file@percent }
+\newlabel{ViewsDetail}{{3.2}{15}{Složka Views}{figure.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}\_Layout}{15}{subsection.3.2.1}\protected@file@percent }
+\@writefile{lol}{\contentsline {listing}{\numberline {3}{\ignorespaces View - RenderBody()}}{16}{listing.3}\protected@file@percent }
+\newlabel{renderbody}{{3}{16}{\_Layout}{listing.3}{}}
+\@writefile{lol}{\contentsline {listing}{\numberline {4}{\ignorespaces View - Volání \_LoginPartial.cshtml}}{16}{listing.4}\protected@file@percent }
+\newlabel{loginpartial}{{4}{16}{\_Layout}{listing.4}{}}
+\@writefile{lol}{\contentsline {listing}{\numberline {5}{\ignorespaces View - Volání \_MenuPartial.cshtml}}{16}{listing.5}\protected@file@percent }
+\newlabel{menupartial}{{5}{16}{\_Layout}{listing.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}\_LoginPartial}{16}{subsection.3.2.2}\protected@file@percent }
+\newlabel{LoginPartial}{{3.2.2}{16}{\_LoginPartial}{subsection.3.2.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Lišta s uživatelským jménem a tlačítkem odhlášení.}}{16}{figure.3.3}\protected@file@percent }
+\newlabel{ListaPrihlaseny}{{3.3}{16}{Lišta s uživatelským jménem a tlačítkem odhlášení}{figure.3.3}{}}
+\@writefile{lol}{\contentsline {listing}{\numberline {6}{\ignorespaces View - \_LoginPartial.cshtml}}{17}{listing.6}\protected@file@percent }
+\newlabel{sharedloginpartial}{{6}{17}{\_LoginPartial}{listing.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}\_MenuPartial}{17}{subsection.3.2.3}\protected@file@percent }
+\newlabel{MenuPartial}{{3.2.3}{17}{\_MenuPartial}{subsection.3.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Uživatelské menu se všema stránkama.}}{18}{figure.3.4}\protected@file@percent }
+\newlabel{Menu}{{3.4}{18}{Uživatelské menu se všema stránkama}{figure.3.4}{}}
+\citation{Autorizace}
+\@writefile{lol}{\contentsline {listing}{\numberline {7}{\ignorespaces View - \_MenuPartial.cshtml}}{19}{listing.7}\protected@file@percent }
+\newlabel{sharedmenupartial}{{7}{19}{\_MenuPartial}{listing.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Controller}{19}{section.3.3}\protected@file@percent }
+\@writefile{lol}{\contentsline {listing}{\numberline {8}{\ignorespaces Controller - Autorizace}}{20}{listing.8}\protected@file@percent }
+\newlabel{Autorize}{{8}{20}{Controller}{listing.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Složka Controllers}}{20}{figure.3.5}\protected@file@percent }
+\newlabel{Controllers}{{3.5}{20}{Složka Controllers}{figure.3.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Detail}{21}{subsection.3.3.1}\protected@file@percent }
+\@writefile{lol}{\contentsline {listing}{\numberline {9}{\ignorespaces Controller - Detail}}{21}{listing.9}\protected@file@percent }
+\newlabel{Detail}{{9}{21}{Detail}{listing.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Editace}{22}{subsection.3.3.2}\protected@file@percent }
+\@writefile{lol}{\contentsline {listing}{\numberline {10}{\ignorespaces Controller - Editace a)}}{22}{listing.10}\protected@file@percent }
+\newlabel{Edit}{{10}{22}{Editace}{listing.10}{}}
+\@writefile{lol}{\contentsline {listing}{\numberline {11}{\ignorespaces Controller - Editace b)}}{23}{listing.11}\protected@file@percent }
+\newlabel{Edit_Post}{{11}{23}{Editace}{listing.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}Smazání}{24}{subsection.3.3.3}\protected@file@percent }
+\@writefile{lol}{\contentsline {listing}{\numberline {12}{\ignorespaces Controller - Smazání a)}}{24}{listing.12}\protected@file@percent }
+\newlabel{Delete}{{12}{24}{Smazání}{listing.12}{}}
+\@writefile{lol}{\contentsline {listing}{\numberline {13}{\ignorespaces Controller - Smazání b)}}{25}{listing.13}\protected@file@percent }
+\newlabel{Delete_Post}{{13}{25}{Smazání}{listing.13}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Databáze}{26}{chapter.4}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Závěr}{22}{chapter.5}\protected@file@percent }
+\newlabel{Databaze}{{4}{26}{Databáze}{chapter.4}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Role}{27}{chapter.5}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{Role}{{5}{27}{Role}{chapter.5}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Závěr}{28}{chapter.6}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \citation{ASPNETCORE_ASPNET}
@@ -97,28 +130,35 @@
 \bibcite{ASP.NET_Core_Identity}{1}
 \bibcite{Razor}{2}
 \bibcite{ASPNETCORE_ASPNET}{3}
-\bibcite{MVC}{4}
-\bibcite{ASP.NET}{5}
-\bibcite{ASP.NET_Core}{6}
-\bibcite{MVC_Wiki_CZ}{7}
-\bibcite{MVC_Wiki_EN}{8}
-\bibcite{MySQL_Wiki_CZ}{9}
-\bibcite{ASP.NET_Lekce1}{10}
-\bibcite{ASP.NET_Lekce8}{11}
-\bibcite{EF6_EFCore}{12}
-\bibcite{CSharp}{13}
-\@writefile{toc}{\contentsline {chapter}{Přílohy}{27}{chapter*.5}\protected@file@percent }
+\bibcite{Autorizace}{4}
+\bibcite{MVC}{5}
+\bibcite{ASP.NET}{6}
+\bibcite{ASP.NET_Core}{7}
+\bibcite{MVC_Wiki_CZ}{8}
+\bibcite{MVC_Wiki_EN}{9}
+\bibcite{MySQL_Wiki_CZ}{10}
+\bibcite{ASP.NET_Lekce1}{11}
+\bibcite{ASP.NET_Lekce8}{12}
+\bibcite{EF6_EFCore}{13}
+\bibcite{CSharp}{14}
+\@writefile{toc}{\contentsline {chapter}{Přílohy}{33}{chapter*.5}\protected@file@percent }
 \gdef\minted@oldcachelist{,
   default-pyg-prefix.pygstyle,
   friendly.pygstyle,
-  ACD3362C391681D60EFA88AC36ADD203899BCE0DAAF0A1541F0839E364D633BB.pygtex,
-  0E2EF27882FD933DCC3F5384344E3B3293886B4AC0D1F376977CE4422FF8F41A.pygtex,
-  D2E404C343CBA8587CBDBBB1C86F3A624F7F2583381114C7C6AAE456442E486D.pygtex,
-  2D8E16210CF4F1F1D81DD93F570DABAFA7CB171AAE5A6E5E70E6AD41ABD797BF.pygtex,
-  B9E4F460AAC5CCE7E183C26B82AE76685133225FF3BF22311ADDC1F9F99980F9.pygtex,
-  7417834D8FF419AC8ABB5E2D5E7968744198B1EBA69B6E00D30EDF7AAF606EB6.pygtex,
-  6E49A1A11CE9DD010204CB56E69767EC00AEE4807A7441B98ABE9B2FFC647BAA.pygtex}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Příloha}{28}{appendix.A}\protected@file@percent }
+  ACD3362C391681D60EFA88AC36ADD203F979ECD2DAC0D78B6EF9E601050D2A79.pygtex,
+  0E2EF27882FD933DCC3F5384344E3B32F831E4EA3DFE93E4A52600A92DD6333C.pygtex,
+  0D9AE14C628901583987527AA241FE93EBAF4F9525BE7C79969DC21E5F0B78E6.pygtex,
+  C0BE4902AE5D94D83063240B224C11AA09BE919510C5E428F1C3251820CDDE73.pygtex,
+  FEC8DD078AA18C7A6A35F0B3E8AA70957B91507748FD868B2A32DD94B1492860.pygtex,
+  30431E65FE7E26490F58750F1CEF5A5A3F7DFFF4EE84403A5501BE436913D2F0.pygtex,
+  0DE32E5088BB537A7B1BA0D563823F0DCB83AE1C25E264121822FFC9459F0D6E.pygtex,
+  6508628E488ED884874EAC7F5C7A2284DD802388A126E05E43D92D2CFF9DBE39.pygtex,
+  D2E404C343CBA8587CBDBBB1C86F3A62F6ED6D4C044AE286BE5C5F6E4D649C5B.pygtex,
+  B9E4F460AAC5CCE7E183C26B82AE76686BF3F3CFAFFD2BDAACB33187A6239C89.pygtex,
+  2D8E16210CF4F1F1D81DD93F570DABAF0CA7D0AE651E33EE1DE2DA7775932DAF.pygtex,
+  7417834D8FF419AC8ABB5E2D5E796874BABCE8D9A2B884441DF271F4B600FFC0.pygtex,
+  6E49A1A11CE9DD010204CB56E69767ECD2540975A93E8D549EA66EAB04A53B9B.pygtex}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Příloha}{34}{appendix.A}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\gdef \@abspage@last{29}
+\gdef \@abspage@last{35}

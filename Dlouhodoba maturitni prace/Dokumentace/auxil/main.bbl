@@ -22,6 +22,11 @@ ANDERSON, R.; Mullen, T.; Vicarel, D.: \emph{Razor Referenční informace k
 ASP.NET vs ASP.NET Core. 2017, [cit. 2021-4-4].
 \newline\urlprefix\url{https://thienn.com/aspnet-vs-aspnetcore/}
 
+\bibitem{Autorizace}
+Autorizace. In: Wikipedia: the free encyclopedia [online]. San Francisco (CA):
+  Wikimedia Foundation, 2021, [cit. 2021-04-12].
+\newline\urlprefix\url{https://cs.wikipedia.org/wiki/Autorizace}
+
 \bibitem{MVC}
 Microsoft Corporation: \emph{ASP.NET MVC Pattern}. 2021, [cit. 2021-4-5].
 \newline\urlprefix\url{https://dotnet.microsoft.com/apps/aspnet/mvc}

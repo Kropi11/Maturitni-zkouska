@@ -26,22 +26,23 @@
 	\textbf{Klíčová slova: } C\#; ASP.NET Core; Entity Framework Core; HTML; JavaScript; CSS; Bootstrap; MySQL; WebApp
 
 	\annotation The output of my graduation thesis is a functioning system, the task of which is the administration of compulsory work submitted by pupils for the past school year. Teachers can then browse, download and evaluate the work.\\
-	\textbf{Key words: } C\#; ASP.NET Core; Entity Framework Core; HTML; JavaScript; CSS; Bootstrap; MySQL; WebApp
+	\textbf{Keywords: } C\#; ASP.NET Core; Entity Framework Core; HTML; JavaScript; CSS; Bootstrap; MySQL; WebApp
 
 	\podekovani Tímto bych chtěl poděkovat Mgr. Milanu Janouškovi za vedení mé Maturitní práce, cenné rady a odborný dohled. Děkuji také za pomoc všem, kteří se jakkoliv podíleli na realizaci této práce.
 	
 	\obsah
 
-	\kapitola{Úvod}
+	\chapter{Úvod}
     Pro realizaci této práce jsem se rozhodl využít ASP.NET Core, což jest otevřený framework pro tvorbu webových aplikací vyvynutý společností Microsoft. Pro databázi jsem se rozhodl využít MySQL, což je velice rozšířený otevřený systém řízení báze dat. Webová aplikace je psána pomocí značkovacího jazyku HTML. Pro vizuální část stránky jsem využil Bootstrap 4.
-	\kapitola{Teoretický úvod}
-		\podkapitola{Programovací jazyk C\#}
+	\chapter{Teoretický úvod}
+		\section{Programovací jazyk C\#}
         C\# je moderní, vysokoúrovňový objektově orientovaný programocí jazyk vyvinutý společností Microsoft. Jazyk C\# se řadí mezi typově bezpečné programovací jazyky. To~znamená, že nedovoluje provádět operace, které mohou véct k chybám. Tento jazyk umožnuje vývojářům vytvářet mnoho druhů zabezpečených a robusních aplikací, které běži na~platformě .NET\footnote{Vývojářská platforma pro vytváření webových, mobilních,desktopových, herních, IoT a dalších aplikací. Je podporovaná v systémech Windows, Linux a macOS.}.\par
-        C\# je zároveň objektově orientovaný programovací jazyk orientovaný na součásti\footnote{Component-oriented programming language}. Z~toho vyplývá, že se zaměřuje na vytváření komponent, které jsou tvořeny často se opakujícími částmi kódu. C\# také poskytuje jazykové kontrukce pro přímou podporu těchto konceptů, což z něj dělá přirozený jazyk pro tvorbu a používání těchto softwarových komponent.\cite{CSharp}
-		\podkapitola{Razor}
+        C\# je zároveň objektově orientovaný programovací jazyk orientovaný na součásti\footnote{Component-oriented programming language}. Z~toho vyplývá, že se zaměřuje na vytváření komponent, které jsou tvořeny často se opakujícími částmi kódu. C\# také poskytuje jazykové kontrukce pro přímou podporu těchto konceptů, což z něj dělá přirozený jazyk pro tvorbu a používání těchto softwarových komponent.\cite{CSharp}\par
+		Právě pomocí tohoto jazyka se tvoří backend, tedy celá logika webové aplikace založené na APS.NET Core.
+		\section{Razor}
 		Razor je syntaxe pro ASP.NET používaná pro tvorbu dynamických webových stránek společně s programovacím jazykem C\#. Pomocí Razor syntaxe lze vložit do webové stránky blok kódu, který se provede na straně serveru. Soubory využíající tuto syntaxi mají příponu .cshtml.\par
 		Razor syntaxe se skládá z Razor značek, C\# a HTML. Výchozím Razor jazykem je HTML. Pro označení C\# kódu využijeme symbolem @. Tímto dojde k přechodu z formátu HTML do C\#. Razor vyhodnotí výrazy jazyka C\# a vykresluje je ve výstupu HTML. Kód HTML v souborech s příponou .cshtml se vykreslí serverem beze změny.\cite{Razor}
-		\podkapitola{ASP.NET, ASP.NET CORE}
+		\section{ASP.NET, ASP.NET CORE}
 			\begin{figure}[h!]
 				\includegraphics[width=\textwidth]{aspnetcore_aspnet}
 				\caption{Porovnání ASP.NET Core a ASP.NET \cite{ASPNETCORE_ASPNET}}
@@ -49,20 +50,20 @@
 			\end{figure}
 			ASP.NET je webový framework obsahující sadu knihoven, které obsahují hotová řešení mnoha základních problémů, které ve webových technologiích vyvstávají. Může se jednat např. o bezpečnost, autentifikaci uživatele, práci s databázemi apod.\par
 			Tato technologie je založena na architektuře klient-server. Výstupem ASP.NET aplikace je HTML stránka. ASP.NET tedy běží na serveru a reaguje na dotazy uživatele/klienta. Pro tvorbu ASP.NET aplikace je potřeba znalost především programovacího jazyku C\# a značkovacího jazyku HTML.\cite{ASP.NET_Lekce1}
-			\podpodkapitola{ASP.NET}
+			\subsection{ASP.NET}
             ASP.NET je webový framework s otevřeným zdrojovým kódem, vytvořený společností Microsoft, pro vytváření moderních webových aplikací. ASP.NET rozšiřuje platformu .NET o nástroje a knihovny určené právě pro vytváření webových aplikací.\cite{ASP.NET}
-			\podpodkapitola{ASP.NET Core}
+			\subsection{ASP.NET Core}
             ASP.NET Core je open-source a multiplatformní verze ASP.NET. Tato platforma je navržena tak, aby umožnila rychlé vyvíjení runtime komponent, API, překladačů apod. a~zároveň poskytovala stabilní a podporovanou platformu pro udržení běhu aplikací.\par
 			Aplikace v ASP.NET Core lze, oproti dřívější verzi APS.NET Windows-only version, vyvíjet a spouštět v systémech Windows, Linux, macOS a Docker.\cite{ASP.NET_Core}
 
-		\podkapitola{EF6 a EF Core}
+		\section{EF6 a EF Core}
         Entity Framework je Object–relational mapping (ORM)\footnote{Objektově-relační mapování}. To znamená, že se databázové tabulky přímo mapují na C\# třídy. V projektu následně pracujeme pouze s objekty a~framework za nás na pozadí generuje SQL dotazy. Díky tomu je výsledná aplikace tvořena především pomocí objektů.\cite{ASP.NET_Lekce8}
-			\podpodkapitola{Entity Framework 6}
+			\subsection{Entity Framework 6}
             Entity Framework 6 (EF6) je ORM, primárně navržený pro .NET Framework, ale~zároveň s podporou pro .NET Core. EF6 je stabilní, podporovaný produkt, ale již se aktivně nevyvíjí.\cite{EF6_EFCore}
-			\podpodkapitola{Entity Framework Core}
+			\subsection{Entity Framework Core}
 			Entity Framework Core (EF Core) je moderní ORM pro .NET. Podporuje dotazy LINQ, sledování změn, aktualizace a migrace schématu.\par EF Core pracuje s SQL Server/SQL Azure, SQLite, Azure Cosmos DB, MySQL, PostgreSQL a mnoha dalšími druhy databází.\cite{EF6_EFCore}
 
-		\podkapitola{MVC}
+		\section{MVC}
 		Model-View-Controller (MVC) je návrhový vzor používaný k rozdělení webové aplikace na 3 komponenty.
 		\begin{itemize}
 			\item Model - Práce s daty
@@ -70,37 +71,38 @@
 			\item Controller - Logická část aplikace
 		\end{itemize}\par
 		Pomocí vzoru MVC pro webové aplikace jsou požadavky směrovány na controller, který je zodpovědný za práci s modelem. Model provádí akce a načítá data za databáze. Controller poté zvolí zobrazení (view), které se má zobrazit, a poskytne mu model. View už pouze vykreslí stránku na základě dat získaných z modelu.\cite{MVC}
-				\podpodkapitola{Model}
-				Jedná se o dynamickou datovou strukturu aplikace, nezávislou na uživatelském rozhraní. Jejím úkolem je spravovat data, pravida a logiku aplikace.\par
-				V ASP.NET Core MVC má model podobu třídy, kde veřejné metody představují položky v databázi, s kterou je třída provázaná. Ukládáme ji do adresáře Models v rámci projektu. Pomocí atributů definuje pravidla, která se aplikují na klienta a server.\cite{MVC_Wiki_EN}
-				\podpodkapitola{View}
-				Převádí data reprezentovaná objekty modelu do podoby vhodné k interaktivní prezentaci uživateli.\cite{MVC_Wiki_CZ} Může se jednat o jakoukoliv reprezentaci dat (graf, diagram, tabulka, atd.).\par
-				V ASP.NET Core se využívá syntaxe Razor. Ta poskytuje jednoduchý, čistý a lehký způsob vykreslení obsahu HTML stránek na základě view. Razor umožňuje vykreslit stránku pomocí C\# a vytvářet webové stránky plně kompatibilní s HTML5.\cite{MVC_Wiki_EN}\par
-				Každý controller může pro jedno view generovat vlastní obraz. Aby tedy nedocházelo ke kolizi 2 controlleru pro jedno view, vyžaduje  MVC uložení view do adresáře Views v rámci projektu, a zde do podadresáře s názvem controlleru, který ho generuje (\viz{Views}).
+			\subsection{Model} \label{Model_teorie}
+			Jedná se o dynamickou datovou strukturu aplikace, nezávislou na uživatelském rozhraní. Jejím úkolem je spravovat data, pravida a logiku aplikace. \par
+			V ASP.NET Core MVC má model podobu třídy, kde veřejné metody představují položky v databázi, s kterou je třída provázaná. Ukládáme ji do adresáře Models v rámci projektu. Pomocí atributů definuje pravidla, která se aplikují na klienta a server.\cite{MVC_Wiki_EN}
+			\subsection{View}
+			Převádí data reprezentovaná objekty modelu do podoby vhodné k interaktivní prezentaci uživateli.\cite{MVC_Wiki_CZ} Může se jednat o jakoukoliv reprezentaci dat (graf, diagram, tabulka, atd.).\par
+			V ASP.NET Core se využívá syntaxe Razor. Ta poskytuje jednoduchý, čistý a lehký způsob vykreslení obsahu HTML stránek na základě view. Razor umožňuje vykreslit stránku pomocí C\# a vytvářet webové stránky plně kompatibilní s HTML5.\cite{MVC_Wiki_EN}\par
+			Každý controller může pro jedno view generovat vlastní obraz. Aby tedy nedocházelo ke kolizi 2 controlleru pro jedno view, vyžaduje  MVC uložení view do adresáře Views v rámci projektu, a zde do podadresáře s názvem controlleru, který ho generuje (\viz{ViewsController}).
 				\begin{figure}[H]
 					\centering
-					\includegraphics[scale=0.7]{Views}
+					\includegraphics[scale=0.7]{ViewsController}
 					\caption{Ukládání View v rámci projektu}
-					\label{Views}
+					\label{ViewsController}
 				\end{figure}
-				\podpodkapitola{Controller}
-				Controller reaguje na vstup uživatele a provádí interakce s objekty datového modelu. Zjednodušeně to znamená, že řadič přijme vstup, ověří jej a následně ho předá modelu.\cite{MVC_Wiki_EN}\par
-				Třída controlleru obsahuje veřejné metody označené jako Action method. V ASP.NET MVC musí každý název třídy controlleru končit klíčovým slovem "Controller". To znamená, že pro domovské stránky třídu nazýváme HomeController, pro stránky studenta StudentController, apod. Všechny tyto třídy ukládáme v rámci projektu do složky Controllers.
+			\subsection{Controller} \label{Controller_teorie}
+			Controller reaguje na vstup uživatele a provádí interakce s objekty datového modelu. Zjednodušeně to znamená, že řadič přijme vstup, ověří jej a následně ho předá modelu.\cite{MVC_Wiki_EN}\par
+			Třída controlleru obsahuje veřejné metody označené jako Action method. V ASP.NET MVC musí každý název třídy controlleru končit klíčovým slovem "Controller". To znamená, že pro domovské stránky třídu nazýváme HomeController, pro stránky studenta StudentController, apod. Všechny tyto třídy ukládáme v rámci projektu do složky Controllers.
 	\begin{listing}[H]
-	\inputminted{csharp}{SourceCode/ActionMethod.cs}
+	\inputminted{csharp}{SourceCode/Controllers/ActionMethod.cs}
 	\caption{Controller - Action Method}
 	\label{ActionMethod}
 	\end{listing}
-	\podkapitola{MySQL}
-	MySQL je otevřený systém řízení báze dat uplatňující relační databázový model. Jedná se o multiplatformní databázi. Komunikace s databází probíhá pomocí dotazovacího jazyka SQL.\cite{MySQL_Wiki_CZ}
+	\section{MySQL}
+	MySQL je otevřený systém řízení báze dat uplatňující relační databázový model. Jedná se o multiplatformní databázi. Komunikace s databází probíhá pomocí dotazovacího jazyka SQL.\cite{MySQL_Wiki_CZ}\par
+	Právě díky těmto vlastnostem jsem se rozhodl využít MySQL jako databázi pro tuto webovou aplikaci.
 
-	\kapitola{Základní struktura ASP.NET Core}
+	\chapter{Základní struktura ASP.NET Core}
 	Pro tuto webovou aplikaci jsem použil verzi .NET Core 3.1, ta byla vydaná v prosinci roku 2019. V době, kdy jsem začínal pracovat na tomto projektu to také byla nejnovější verze.\par
 	V tomto projektu jsem dále použil ASP.NET Core Identity\footnote{Rozhraní API, které podporuje funkce přihlášení uživatelského rozhraní (UI). Spravuje uživatele, hesla, data profilu, role, deklarace identity, tokeny, potvrzení e-mailu a další.\cite{ASP.NET_Core_Identity}}, které za mě vygenerovalo základní strukturu, se kterou jsem dále pracoval.\par
 	V poslední řadě bylo zapotřebí stáhnout přes NuGet package manager\footnote{NuGet je správce balíčků, který vývojářům umožňuje sdílet opakovaně použitelný kód.} Entity Framework Core a k němu nástroje potřebné k práci s MySQL databází, kterou v projektu využívám.
-	\podkapitola{Model}
-	Jak již bylo zmíněno v teorii, model se zabývá především prací s daty uloženými v~databázi. Pro to, abych s nimi mohl efektivně pracovat, potřebuji vytvořit z jednotlivých položek databáze objekty. Všechny objekty musí být veřejné, tedy public. \par
-	Pro každou tabulku z databáze jsem si tedy vytvořil objekt (třídu) ve složce Models (\viz{ModelsFolder}). Poté jsem si potřeboval nadefinovat každou její položku jako vlastnost tohoto objetku, kde datový typ reprezentuje způsob zápisu do databáze tzn.
+	\section{Model}
+	Jak již bylo zmíněno v teorii (viz kapitola \ref{Model_teorie}\nameref{Model_teorie}), model se zabývá především prací s daty uloženými v~databázi. Pro to, abych s nimi mohl efektivně pracovat, potřebuji vytvořit z jednotlivých položek databáze objekty. Všechny objekty musí být veřejné, tedy public. \par
+	Pro každou tabulku z databáze jsem si tedy vytvořil objekt (třídu) ve složce \textbf{Models} (\viz{ModelsFolder}). Poté jsem si potřeboval nadefinovat každou její položku jako vlastnost tohoto objetku, kde datový typ reprezentuje způsob zápisu do databáze tzn.
 	\begin{itemize}
 		\item VARCHAR() - Public string NazevObjektu \{ get; set; \}
 		\item INT - Public int NazevObjektu \{ get; set; \}
@@ -120,7 +122,7 @@
 		\item StringLength - Ověří, že hodnota vlastnosti řetězce nepřekračuje zadané omezení délky.
 	\end{itemize}
 	Atributy ověření umožňují vypsání chybové zprávy, která se zobrazí, pokud je zadán neplatný vstup do hodnoty vlastnosti. Tyto atributy je možné ověřit jak na straně klienta, tak na straně serveru.\par
-	K vytvoření modelu byla nutna již navržená databáze, tu popisuji v kapitole Databáze níže. Pro lepší představu přikládám zdrojový kód PPSPSSubject.cs, modelu popisující tabulku předmětů (viz zdrojový kód \ref{SubjectModel}).
+	K vytvoření modelu byla nutna již navržená databáze, tu popisuji v kapitole \ref{Databaze}\nameref{Databaze} níže. Pro lepší představu přikládám zdrojový kód PPSPSSubject.cs, modelu popisující tabulku předmětů (viz zdrojový kód \ref{SubjectModel}).
 	\begin{figure}[H]
 		\centering
 		\includegraphics[scale=0.6]{Models}
@@ -128,43 +130,140 @@
 		\label{ModelsFolder}
 	\end{figure}
 	\begin{listing}[H]
-	\inputminted{csharp}{SourceCode/Model.cs}
-	\caption{Model - Předmět}
-	\label{SubjectModel}
+		\inputminted{csharp}{SourceCode/Models/Model.cs}
+		\caption{Model - Předmět}
+		\label{SubjectModel}
 	\end{listing}
-	\podkapitola{View}
-	\podkapitola{Controller}
-		\podpodkapitola{Detail}
+	\section{View}
+	View lze v ASP.NET Core MVC chápat, jako HTML šablonu, do které pomocí Razor elementů vkládáme data. Pro každý controller je ve složce \textbf{Views} vytvořen vlastní adresář s názvem controlleru \viz{ViewsDetail}. V každém z těchto adresářů je poté uloženo view ve~formátu .cshtml.\par
+	Ve Views adresáři je umístěn mimo jiné podadresář Shared. V něm se ukládají view, které jsou sdílené v rámci všech controllerů. Nachází se v něm většinou Layout, Partial view\footnote{Částečný pohled; Snižuje množství duplicitních kódů správou opakovaně používaných částí pohledů.}, nebo stránky s chybovým hlášením.\par
+	V tomto projektu jsem si vytvořil 2 partial view. První je určený pro menu (viz kapitola \nameref{MenuPartial}) a druhý pro lištu, kde zobrazuje email přihlášeného uživatele a možnost se odhlásit (viz kapitola \nameref{LoginPartial}).\par
+	Pro to, abych mohl k těmto partial přistupovat, musím do \_Layout.cshtml dopsat kód, pomoci kterého je volám, viz \ref{menupartial} pro menu a viz \ref{loginpartial} pro zobrazení emailu na liště, a~to~v~místě, kde je chci zobrazit.
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.7]{ViewsDetail}
+		\caption{Složka Views}
+		\label{ViewsDetail}
+	\end{figure}
+	\subsection{\_Layout}
+	V záhlaví a zápatí html souborů se nachází metadata a odkazy na CSS/Javascript. Pro to, abych nemusel zápatí a záhlaví psát do každého view, můžu je napsat právě do~souboru \_Layout.cshtml. Když se následně generuje stránka pro uživatele, načte se prvně \_Layout.cshtml a k němu se na místě, kde je volána funkce RenderBody() (viz zdrojový kód \ref{renderbody}) doplní view, které uživatel požaduje.\par
+	Podobně se pracuje i s partial. Pro jejich zavolání je potřeba napsat tag <partial /> s~parametrem name, jehož hodnota je název požadovaného partial (viz zdrojové kódy \ref{loginpartial} pro~\_LoginPartial.cshtml a \ref{menupartial} pro \_MenuPartial.cshtml). Opět se volají z místa, ve kterém je chceme zobrazit.
 	\begin{listing}[H]
-	\inputminted{csharp}{SourceCode/Detail.cs}
-	\caption{Controller - Detail}
-	\label{Detail}
+		\inputminted{html}{SourceCode/Views/Body.html}
+		\caption{View - RenderBody()}
+		\label{renderbody}
 	\end{listing}
-		\podpodkapitola{Editace}
 	\begin{listing}[H]
-	\inputminted{csharp}{SourceCode/Edit.cs}
+		\inputminted{html}{SourceCode/Views/LoginPartial.html}
+		\caption{View - Volání \_LoginPartial.cshtml}
+		\label{loginpartial}
+	\end{listing}
+	\begin{listing}[H]
+		\inputminted{html}{SourceCode/Views/MenuPartial.html}
+		\caption{View - Volání \_MenuPartial.cshtml}
+		\label{menupartial}
+	\end{listing}
+
+	\subsection{\_LoginPartial} \label{LoginPartial}
+	Hlavník úkolem tohoto partial je zobrazit jméno uživatele, pokud je přihlášen a nabídnout mu možnost se odhlásit (\viz{ListaPrihlaseny}). Prvním krokem je, pomocí podmínky zjistíme, zda je uživatel přihlášen (SignInManager.IsSignedIn(User)). Pokud není, podmínka není splněna a partial se nezobrazí. Pokud ale je, požádá se o uživatelské jméno přihlášeného uživatele (email) a to se následně zobrazí s tlačítkem pro odhlášení (viz zdrojový kód \ref{sharedloginpartial}).
+	\begin{figure}[h!]
+		\includegraphics[width=\textwidth]{ListaPrihlaseny}
+		\caption{Lišta s uživatelským jménem a tlačítkem odhlášení.}
+		\label{ListaPrihlaseny}
+	\end{figure}
+	\begin{listing}[H]
+		\inputminted{html}{SourceCode/Views/Shared/_LoginPartial.html}
+		\caption{View - \_LoginPartial.cshtml}
+		\label{sharedloginpartial}
+	\end{listing}
+
+	\subsection{\_MenuPartial} \label{MenuPartial}
+	Dalším úkolem bylo zobrazení menu (\viz{Menu}). Jako v předešlém případě ověříme, zda je uživatel přihlášen pomocí podmínky (SignInManager.IsSignedIn(User)). Pokud je uživatel přihlášen, zjišťuje se, jako má roli. Přikládám jako příklad část zdrojového kódu \ref{sharedmenupartial}, kde ověřuji, zda je uživatel ověřený (User.Identity.IsAuthenticated)\footnote{Pokud je uživatel přihlášený pomocí uživatelského jména a hesla, je i ověřený.}, a pokud ano, zda má uživatel roli Administrator (User.IsInRole("Administrator")). V tomto případě můžou nastat 3 situace:
+	\begin{enumerate}
+			\item Pokud je uživatel přihlášen a má roli administrátora, zobrazí se mu menu se všemi položkami.
+			\item Pokud je uživatel přihlášen ale nemá roli administrátora, zobrazí se mu menu pouze s položkou Domovská stránka.
+			\item Pokud není uživatel přihlášen, nezobrazí se mu menu vůbec.
+	\end{enumerate}\par
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[scale=0.7]{Menu}
+		\caption{Uživatelské menu se všema stránkama.}
+		\label{Menu}
+	\end{figure}
+	\begin{listing}[H]
+		\inputminted{html}{SourceCode/Views/Shared/_MenuPartial.html}
+		\caption{View - \_MenuPartial.cshtml}
+		\label{sharedmenupartial}
+	\end{listing}
+
+	\section{Controller}
+	Poslední položkou v MVC vzoru je controller. Každá role (kromě vedení, to má stejná práva jako administrator) bude mít vlastní controller. V projektu mám celkem 4 role, jejich bližší popis je v kategorii \ref{Role}\nameref{Role}, to znamená, že zde budou 3 controllery pro role a~k tomu 1 controller pro home adresář, kde je Domovská stránka (\viz{Controllers}).\par
+	Protože každá role má mít vlastní controller, musel jsem nějaký způsobem ošetřit, aby uživatel např. s rolí studenta nemohl načíst view z controlleru pro administratora. Uživatele je tedy potřeba autorizovat\footnote{Autorizace je proces získávání souhlasu s provedením nějaké operace, povolení přístupu někam, k~někomu nebo něčemu.\cite{Autorizace}} k přístupu do controlleru. Pro tuto akci postačí napsat nad třídu kód viz zdrojový kód \ref{Autorize}.
+	\begin{listing}[H]
+		\inputminted{csharp}{SourceCode/Controllers/Autorize.cs}
+		\caption{Controller - Autorizace}
+		\label{Autorize}
+	\end{listing}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=1]{Contollers}
+		\caption{Složka Controllers}
+		\label{Controllers}
+	\end{figure}
+	Jak již bylo zmíněno v teorii (viz kategorie \ref{Controller_teorie}\nameref{Controller_teorie}), controller pracuje s tzv. Action Method. V celé aplikaci mi postačí pouze 4 varianty Action Method, ve kterých se budou pouze měnit data. Ty varianty jsou:
+	\begin{itemize}
+		\item Zobrazit seznam položek
+		\item Zobrazit detail položky
+		\item Editovat položku
+		\item Smazat položku
+	\end{itemize}\par
+	Před tím, než začnu popisovat jendotlivé varianty Action Method vypíši zde pro lepší přehlednost a srozumitelnost seznam využívaných metod a jejich výstup:
+	\begin{itemize}
+		\item NotFound() - NotFoundResult, který vrátí chybovou hlášku Error 404, stránka nenalezena.
+		\item View() - Vytvoří objekt ViewResult, který vykreslí view na výstup.
+	\end{itemize}
+	A zde metody, které se využívají pro práci s entitami v Entity Framework:
+	\begin{itemize}
+		\item .Include() - Načte i související data. Např. K tabulce uživatelů načte i tabulku tříd.
+		\item .AsNoTracking() - Entity Framework načte entity a již je dále nesleduje ani neukládá.
+		\item .FirstOrDefaultAsync() - Asynchronně vrátí první prvek sekvence nebo výchozí hodnotu, pokud sekvence neobsahuje žádné prvky.
+		\item .OrderBy() - Seřadí prvky v kolekci na základě zadaných polí ve vzestupném pořadí. Např. Na základě příjmení.
+		\item .Where() - Načte pouze data, která splňují nějakou podmínku. Např. Načte pouze práce, kde je ID uživatele rovno přihlášenému uživateli.
+	\end{itemize}
+		\subsection{Detail}
+	\begin{listing}[H]
+		\inputminted{csharp}{SourceCode/Controllers/Detail.cs}
+		\caption{Controller - Detail}
+		\label{Detail}
+	\end{listing}
+		\subsection{Editace}
+	\begin{listing}[H]
+	\inputminted{csharp}{SourceCode/Controllers/Edit.cs}
 	\caption{Controller - Editace a)}
 	\label{Edit}
 	\end{listing}
 
 	\begin{listing}[H]
-	\inputminted{csharp}{SourceCode/Edit_Post.cs}
+	\inputminted{csharp}{SourceCode/Controllers/Edit_Post.cs}
 	\caption{Controller - Editace b)}
 	\label{Edit_Post}
 	\end{listing}
-		\podpodkapitola{Smazání}
+		\subsection{Smazání}
 	\begin{listing}[H]
-	\inputminted{csharp}{SourceCode/Delete.cs}
+	\inputminted{csharp}{SourceCode/Controllers/Delete.cs}
 	\caption{Controller - Smazání a)}
 	\label{Delete}
 	\end{listing}
 	\begin{listing}[H]
-	\inputminted{csharp}{SourceCode/Delete_Post.cs}
+	\inputminted{csharp}{SourceCode/Controllers/Delete_Post.cs}
 	\caption{Controller - Smazání b)}
 	\label{Delete_Post}
 	\end{listing}
-	\kapitola{Databáze}
-	\kapitola{Závěr}
+	
+	
+	\chapter{Databáze} \label{Databaze}
+	\chapter{Role} \label{Role}
+	\chapter{Závěr}
 
 	\seznamTabulek
 	
@@ -178,7 +277,7 @@
 	\bibliography{main}
 
 	\prilohy{
-		\kapitola{Příloha}
+		\chapter{Příloha}
 	}
 
 \end{document}
