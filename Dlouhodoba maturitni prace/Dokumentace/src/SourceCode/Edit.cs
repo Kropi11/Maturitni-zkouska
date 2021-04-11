@@ -18,7 +18,7 @@ public async Task<IActionResult> UserEdit_Post(string? id)
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(UsersOverview));
         }
-        catch (DbUpdateException /* ex */)
+        catch (DbUpdateException ex)
         {
             ModelState.AddModelError("", "Nebylo možné uložit změny. " +
                                          "Zkuste to znovu později a pokud " +

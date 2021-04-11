@@ -16,11 +16,12 @@
 \contentsline {section}{\numberline {2.6}MySQL}{11}{section.2.6}%
 \contentsline {chapter}{\numberline {3}Základní struktura ASP.NET Core}{12}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Model}{12}{section.3.1}%
-\contentsline {section}{\numberline {3.2}View}{13}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Controller}{13}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Detail}{13}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Editace}{15}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Smazání}{17}{subsection.3.3.3}%
-\contentsline {chapter}{\numberline {4}Závěr}{19}{chapter.4}%
-\contentsline {chapter}{Přílohy}{24}{chapter*.5}%
-\contentsline {chapter}{\numberline {A}Příloha}{25}{appendix.A}%
+\contentsline {section}{\numberline {3.2}View}{15}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Controller}{15}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Detail}{15}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Editace}{17}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Smazání}{19}{subsection.3.3.3}%
+\contentsline {chapter}{\numberline {4}Databáze}{21}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Závěr}{22}{chapter.5}%
+\contentsline {chapter}{Přílohy}{27}{chapter*.5}%
+\contentsline {chapter}{\numberline {A}Příloha}{28}{appendix.A}%

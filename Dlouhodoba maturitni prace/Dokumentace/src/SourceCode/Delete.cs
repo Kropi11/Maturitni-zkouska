@@ -5,7 +5,6 @@ bool? saveChangesError = false)
     {
         return NotFound();
     }
-
     var user = await _context.Users
         .AsNoTracking()
         .FirstOrDefaultAsync(m => m.Id == id);
@@ -13,7 +12,6 @@ bool? saveChangesError = false)
     {
         return NotFound();
     }
-
     if (saveChangesError.GetValueOrDefault())
     {
         ViewData["ErrorMessage"] =
@@ -21,6 +19,5 @@ bool? saveChangesError = false)
             + "a pokud problém přetrvává, " +
             "obraťte se na správce systému.";
     }
-
     return View(user);
 }

@@ -28,7 +28,7 @@
 	\annotation The output of my graduation thesis is a functioning system, the task of which is the administration of compulsory work submitted by pupils for the past school year. Teachers can then browse, download and evaluate the work.\\
 	\textbf{Key words: } C\#; ASP.NET Core; Entity Framework Core; HTML; JavaScript; CSS; Bootstrap; MySQL; WebApp
 
-	\podekovani Tímto bych chtěl poděkovat Mgr. Milanu Janouškovi za vedení mé Maturitní práce, cenné rady a odborný dohled. Děkuji také za pomoc všem, kteří se podílěli na gramatické kontrole práce.
+	\podekovani Tímto bych chtěl poděkovat Mgr. Milanu Janouškovi za vedení mé Maturitní práce, cenné rady a odborný dohled. Děkuji také za pomoc všem, kteří se jakkoliv podíleli na realizaci této práce.
 	
 	\obsah
 
@@ -96,9 +96,42 @@
 
 	\kapitola{Základní struktura ASP.NET Core}
 	Pro tuto webovou aplikaci jsem použil verzi .NET Core 3.1, ta byla vydaná v prosinci roku 2019. V době, kdy jsem začínal pracovat na tomto projektu to také byla nejnovější verze.\par
-	V tomto projektu jsem dále použil ASP.NET Core Identity\footnote{Rozhraní API, které podporuje funkce přihlášení uživatelského rozhraní (UI). Spravuje uživatele, hesla, data profilu, role, deklarace identity, tokeny, potvrzení e-mailu a další.\cite{ASP.NET_Core_Identity}}, které za mě vygenerovalo základní strukturu, se kterou jsem dále pracoval. \par
+	V tomto projektu jsem dále použil ASP.NET Core Identity\footnote{Rozhraní API, které podporuje funkce přihlášení uživatelského rozhraní (UI). Spravuje uživatele, hesla, data profilu, role, deklarace identity, tokeny, potvrzení e-mailu a další.\cite{ASP.NET_Core_Identity}}, které za mě vygenerovalo základní strukturu, se kterou jsem dále pracoval.\par
+	V poslední řadě bylo zapotřebí stáhnout přes NuGet package manager\footnote{NuGet je správce balíčků, který vývojářům umožňuje sdílet opakovaně použitelný kód.} Entity Framework Core a k němu nástroje potřebné k práci s MySQL databází, kterou v projektu využívám.
 	\podkapitola{Model}
-	Jak již bylo zmíněno v teorii, model se zabývá především prací s daty uloženými v databázi. Pro to, abych s nimi mohl efektivně pracovat, potřebuji vytvořit z jednotlivých položek databáze objekty.
+	Jak již bylo zmíněno v teorii, model se zabývá především prací s daty uloženými v~databázi. Pro to, abych s nimi mohl efektivně pracovat, potřebuji vytvořit z jednotlivých položek databáze objekty. Všechny objekty musí být veřejné, tedy public. \par
+	Pro každou tabulku z databáze jsem si tedy vytvořil objekt (třídu) ve složce Models (\viz{ModelsFolder}). Poté jsem si potřeboval nadefinovat každou její položku jako vlastnost tohoto objetku, kde datový typ reprezentuje způsob zápisu do databáze tzn.
+	\begin{itemize}
+		\item VARCHAR() - Public string NazevObjektu \{ get; set; \}
+		\item INT - Public int NazevObjektu \{ get; set; \}
+		\item DATETIME - public DateTime NazevObjektu \{ get; set; \}
+	\end{itemize}\par
+	Dalším krokem bylo přiřazení atributů k jednotlivým vlastnostem. V ASP.NET Core se můžeme setkat jak s atributy, které definují vlastnosti (jedná se o primární klíč, název, formát, ...), např.
+	\begin{itemize}
+		\item Key - Označuje vlastnost jako primární klíč.
+		\item Display("Název") - Název vlastnosti, která se zobrazí ve View.
+		\item DisplayFormat(DataFormatString = "{0: yyyy-MM-dd}", ApplyFormatInEditModel = true) - Nastavuje formát zobrazení pro hodnotu vlastnosti.
+	\end{itemize}
+	Tak i s tzv. Atributy ověřování. Tyto atributy nám umožňují zadat pravidla pro vlastnosti objetku. V ASP.NET Core existuje několik předdefinovaných atributů, např.
+	\begin{itemize}
+		\item EmailAddress - Ověřuje, zda má vlastnost formát e-mailu.
+		\item Range - Ověřuje, že hodnota vlastnosti spadá do zadaného rozsahu.
+		\item Required - Ověří, že pole nemá hodnotu null.
+		\item StringLength - Ověří, že hodnota vlastnosti řetězce nepřekračuje zadané omezení délky.
+	\end{itemize}
+	Atributy ověření umožňují vypsání chybové zprávy, která se zobrazí, pokud je zadán neplatný vstup do hodnoty vlastnosti. Tyto atributy je možné ověřit jak na straně klienta, tak na straně serveru.\par
+	K vytvoření modelu byla nutna již navržená databáze, tu popisuji v kapitole Databáze níže. Pro lepší představu přikládám zdrojový kód PPSPSSubject.cs, modelu popisující tabulku předmětů (viz zdrojový kód \ref{SubjectModel}).
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.6]{Models}
+		\caption{Složka Models}
+		\label{ModelsFolder}
+	\end{figure}
+	\begin{listing}[H]
+	\inputminted{csharp}{SourceCode/Model.cs}
+	\caption{Model - Předmět}
+	\label{SubjectModel}
+	\end{listing}
 	\podkapitola{View}
 	\podkapitola{Controller}
 		\podpodkapitola{Detail}
@@ -130,6 +163,7 @@
 	\caption{Controller - Smazání b)}
 	\label{Delete_Post}
 	\end{listing}
+	\kapitola{Databáze}
 	\kapitola{Závěr}
 
 	\seznamTabulek

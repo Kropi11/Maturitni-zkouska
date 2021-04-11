@@ -4,7 +4,6 @@
     {
         return NotFound();
     }
-
     var user = await _context.Users
         .Include(c => c.Class)
         .AsNoTracking()
@@ -13,6 +12,5 @@
     {
         return NotFound();
     }
-
     return View(user);
 }
