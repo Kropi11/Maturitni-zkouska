@@ -13,8 +13,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a539ca8c-993a-43fc-abac-e6df811116a6" name="Default Changelist" comment="Dokumentace">
-      <change afterPath="$PROJECT_DIR$/src/SourceCode/Controllers/ListOfEntit.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/main.aux" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/main.lol" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.lol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/main.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SourceCode/Controllers/ListOfEntit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/SourceCode/Controllers/ListOfEntit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/Menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/Menu.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,11 +101,6 @@
         <aux-dir>$APPLICATION_HOME_DIR$/jbr/bin</aux-dir>
       </texify-bibtex>
       <method v="2" />
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
     </configuration>
     <configuration name="LaTeX" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify>
@@ -182,7 +183,9 @@
       <workItem from="1618050389029" duration="31590000" />
       <workItem from="1618135358364" duration="3709000" />
       <workItem from="1618143467740" duration="29285000" />
-      <workItem from="1618182541389" duration="336000" />
+      <workItem from="1618182541389" duration="505000" />
+      <workItem from="1618263000530" duration="5049000" />
+      <workItem from="1618271188943" duration="646000" />
     </task>
     <task id="LOCAL-00001" summary="Dokumentace">
       <created>1617586762359</created>
@@ -254,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618182305382</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Dokumentace">
+      <created>1618183057640</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1618183057640</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

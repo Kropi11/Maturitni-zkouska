@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  12 APR 2021 01:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  13 APR 2021 01:58
 entering extended mode
 **./main.tex
 (main.tex
@@ -1148,11 +1148,11 @@ Package pdftex.def Info: images//ListaPrihlaseny.png  used on input line 170.
                                                   
 l.179 
        <./images//ListaPrihlaseny.png>] [17]
-<images//Menu.png, id=378, 165.61874pt x 410.13225pt>
+<images//Menu.png, id=378, 163.812pt x 416.15475pt>
 File: images//Menu.png Graphic file (type png)
 <use images//Menu.png>
 Package pdftex.def Info: images//Menu.png  used on input line 189.
-(pdftex.def)             Requested size: 115.93231pt x 287.0906pt.
+(pdftex.def)             Requested size: 114.6676pt x 291.30634pt.
 
 (../auxil/_minted-main/0DE32E5088BB537A7B1BA0D563823F0DCB83AE1C25E264121822FFC9
 459F0D6E.pygtex) [18pdfTeX warning (ext4): destination with the same identifier
@@ -1175,10 +1175,16 @@ Package pdftex.def Info: images//Contollers.png  used on input line 209.
 l.230 		\item .
                OrderBy() - Se≈ôad√≠ prvky v kolekci na z√°kladƒõ zadan√Ωch p...
  <./images//Contollers.png>]
-(../auxil/_minted-main/F385089076559346F5ECA5E10846C8CF3CE8E893B97B0E538CC72E03
-909685DF.pygtex)
+Overfull \hbox (4.21996pt too wide) in paragraph at lines 235--235
+[]\T1/cmr/m/n/12 Takto jsem na-de-fi-no-val pro-m•-nou var users, kte-rou nynÌ 
+sta£Ì pouze ulo-∫it do List<T>[][][],
+ []
+
+
+(../auxil/_minted-main/030887146978C0A5F6D7648F3B73B9433CE8E893B97B0E538CC72E03
+909685DF.pygtex) [21]
 (../auxil/_minted-main/D2E404C343CBA8587CBDBBB1C86F3A62F6ED6D4C044AE286BE5C5F6E
-4D649C5B.pygtex) [21]
+4D649C5B.pygtex)
 (../auxil/_minted-main/B9E4F460AAC5CCE7E183C26B82AE76686BF3F3CFAFFD2BDAACB33187
 A6239C89.pygtex) [22]
 (../auxil/_minted-main/2D8E16210CF4F1F1D81DD93F570DABAF0CA7D0AE651E33EE1DE2DA77
@@ -1287,8 +1293,8 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: E5341F6DC1F05D35BE910FF45C53A672;4493.
  ) 
 Here is how much of TeX's memory you used:
- 34398 strings out of 479324
- 743136 string characters out of 2866691
+ 34400 strings out of 479324
+ 743159 string characters out of 2866691
  1131400 words of memory out of 3000000
  51122 multiletter control sequences out of 15000+600000
  415969 words of font info for 50 fonts, out of 8000000 for 9000
@@ -1308,10 +1314,10 @@ a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\risak\
 AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\
 risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk>
 Output written on "C:/Users\risak\Documents\Richard\≈†kola\Stredni_skola\Maturi
-tni-zkouska\Dlouhodoba maturitni prace\Dokumentace\out\main.pdf" (37 pages, 605
-142 bytes).
+tni-zkouska\Dlouhodoba maturitni prace\Dokumentace\out\main.pdf" (37 pages, 608
+785 bytes).
 PDF statistics:
- 1123 PDF objects out of 1200 (max. 8388607)
- 127 named destinations out of 1000 (max. 500000)
+ 1132 PDF objects out of 1200 (max. 8388607)
+ 129 named destinations out of 1000 (max. 500000)
  373 words of extra memory for PDF output out of 10000 (max. 10000000)
 
