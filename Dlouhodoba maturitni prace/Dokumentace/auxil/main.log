@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  13 APR 2021 01:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  13 APR 2021 22:01
 entering extended mode
 **./main.tex
 (main.tex
@@ -1295,7 +1295,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  34400 strings out of 479324
  743159 string characters out of 2866691
- 1131400 words of memory out of 3000000
+ 1131401 words of memory out of 3000000
  51122 multiletter control sequences out of 15000+600000
  415969 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1314,10 +1314,10 @@ a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\risak\
 AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\
 risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk>
 Output written on "C:/Users\risak\Documents\Richard\Škola\Stredni_skola\Maturi
-tni-zkouska\Dlouhodoba maturitni prace\Dokumentace\out\main.pdf" (37 pages, 608
-785 bytes).
+tni-zkouska\Dlouhodoba maturitni prace\Dokumentace\out\main.pdf" (37 pages, 609
+307 bytes).
 PDF statistics:
- 1132 PDF objects out of 1200 (max. 8388607)
+ 1133 PDF objects out of 1200 (max. 8388607)
  129 named destinations out of 1000 (max. 500000)
  373 words of extra memory for PDF output out of 10000 (max. 10000000)
 
