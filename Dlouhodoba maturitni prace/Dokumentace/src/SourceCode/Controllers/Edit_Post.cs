@@ -8,8 +8,7 @@ public async Task<IActionResult> UserEdit_Post(string? id)
     }
     var userToUpdate = await _context.Users.FirstOrDefaultAsync(s => s.Id == id);
     if (await TryUpdateModelAsync<PPSPSUser>(
-        userToUpdate,
-        "",
+        userToUpdate,"",
         s => s.FirstName, s => s.LastName, s => s.Email,
         s => s.EmailConfirmed, c => c.ClassId))
     {

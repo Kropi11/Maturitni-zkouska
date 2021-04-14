@@ -231,6 +231,7 @@
 		\item .Include() - Načte i související data. Např. K tabulce uživatelů načte i tabulku tříd.
 		\item .AsNoTracking() - Entity Framework načte entity a již je dále nesleduje ani neukládá.
 		\item .FirstOrDefaultAsync() - Asynchronně vrátí první prvek sekvence nebo výchozí hodnotu, pokud sekvence neobsahuje žádné prvky.
+		\item .FindAsync() - Asynchronně nalezne entitu s danými hodnotami primárního klíče, pokud ji nalezne, vrátí ji okamžitě. V opačném případě vrací null\footnote{Označení pro žádnou hodnotu.}.
 		\item .OrderBy() - Seřadí prvky v kolekci na základě zadaných polí ve vzestupném pořadí. Např. Na základě příjmení.
 		\item .Where() - Načte pouze data, která splňují nějakou podmínku. Např. Načte pouze práce, kde je ID uživatele rovno přihlášenému uživateli.
 	\end{itemize}
@@ -243,13 +244,13 @@
 		\caption{Controller - Seznam entit}
 		\label{ListOfEntit}
 	\end{listing}
-	\subsection{Detail}
-	Pokud chceme zobrazit detail některé entity, např. uživatele (viz zdrojový kód \ref{Detail}), potřebejeme nějakým jednoznačným způsobem definovat, o jakou entitu se jedná. Jedním z takových způsobů může být třeba primární klíč\footnote{Jednoznačná identifikace entity v rámci databáze.}. A nyní, jakým způsobem ji předat do controlleru, aby s ní mohl pracovat? Přesně k tomu se využívají parametry v URL\footnote{Uniform Resource Locator, neboli webová adresa.} adrese. Jak je vidět ve zdrojovék kódu\ref{Detail}, metoda UserOverview přebírá nějaký parametr, který nazýváme id a má datový typ string. Výsledná URL může tedy vypadat například takto: \\
+	\subsection{Detail} \label{Deail}
+	Pokud chceme zobrazit detail některé entity, např. uživatele (viz zdrojový kód \ref{Detail}), potřebejeme nějakým jednoznačným způsobem definovat, o jakou entitu se jedná. Jedním z takových způsobů může být třeba primární klíč\footnote{Jednoznačná identifikace entity v rámci databáze.}. A nyní, jakým způsobem ji předat do controlleru, aby s ní mohl pracovat? Přesně k tomu se využívají parametry v url\footnote{Uniform Resource Locator, neboli webová adresa.} adrese. Jak je vidět ve zdrojovék kódu\ref{Detail}, metoda UserOverview přebírá nějaký parametr, který nazýváme id a má datový typ string. Výsledná url může tedy vypadat například takto: \\
 	https://localhost:5001/Administration/UserOverview/f0a5d163-b81c-41d1-a488-89\\753377fd1c\\
-	Jako první se zde nachází protokol (https), po něm následuje doména (localhost:5001\footnote{Aplikace momentálně funguje na mém počítači, proto je doména localhost.}), a za doménou se vypíše jméno controlleru, ve kterém se nachází naše požadovaná stránka UserOverview. URL zakončuje řetězec náhodných znaků, a to je právě id uživatele, tedy náš parametr.\par
+	Jako první se zde nachází protokol (https), po něm následuje doména (localhost:5001\footnote{Aplikace momentálně funguje na mém počítači, proto je doména localhost.}), a za doménou se vypíše jméno controlleru, ve kterém se nachází naše požadovaná stránka UserOverview. url zakončuje řetězec náhodných znaků, a to je právě id uživatele, tedy náš parametr.\par
 	Tímto způsobem jsem tedy vyřešil identifikaci entity, které detail požadujeme zobrazit. A nyní zpět ke controlleru. Pokud controller dostane požadavek na detail entity, ověří nejprve, zda obdržel parametr id. Pokud ne, vyvolá metodu NotFound() a vrátí ji na výstup. V opačném případě se zahájí proces, která jsem podrobněji popisoval již v~předchozí kapitole (viz kapitola \ref{Seznam_entit}\nameref{Seznam_entit}).\par
 	V detailu chci zobrazit základní údaje o uživateli a třídu, ve které se uživatel nachází. Controller prvně načte všechny uživatele z databáze, ale jak jsem zmínil, požaduji načtení i třídy. Protože u uživatele ukládám pouze ID třídy, ve které se nachází, musím přidružit i tabulku tříd. Toho docílím zavoláním metody .Include(c => c.Class). S daty nehodlám po načtení dále pracovat, proto mohu zakázat trasování.\par
-	Úkolem metody FirstOrDefaultAsync(u => u.Id == id) je procházet entity, dokud nenajde první, jejíž Id je shodné s parametrem id. Pokud takovou entitu najde, vrací ji~na~výstup. Pokud takovou entitu nenajde, vrací výchozí hodnotu, kterou je null\footnote{Označení pro žádnou hodnotu.}.\par
+	Úkolem metody FirstOrDefaultAsync(u => u.Id == id) je procházet entity, dokud nenajde první, jejíž Id je shodné s parametrem id. Pokud takovou entitu najde, vrací ji~na~výstup. Pokud takovou entitu nenajde, vrací výchozí hodnotu, kterou je null.\par
 	Poslední podmínka ošetřuje situaci, kdy je zadán parametr, ale žádná entita tomuto parametru neodpovída. Pokud tedy nenajdeme žádného uživatele, který by měl shodné Id s parametrem id, zavolá se metoda NotFound(), která se vrátí na výstup.
 	\begin{listing}[H]
 		\inputminted{csharp}{SourceCode/Controllers/Detail.cs}
@@ -257,19 +258,24 @@
 		\label{Detail}
 	\end{listing}
 
-		\subsection{Editace}
+	\subsection{Editace}
+	Třetí typ stránky je určená k editaci. Pro to, abychom mohli entity upravovat, potřebujeme využít dvě metody. První metoda (viz zdrojový kód \ref{Edit}) má za úkol načíst data o entitě z databáze, druhá následně upravená data odeslat zpět do databáze.\par
+	Při načítání dat je princip stejný, jak u načítání detailu (viz kapitola \ref{Detail}\nameref{Detail}), opět přebíráme parametr z url. Pokud se tam nachází, hledáme pomocí metody FindAsync(id) idetitu, jejiž primární klíč je shodný s naším parametrem. Pokud se parametr nenalezne, vyvolá se metoda NotFound(), která vrátí na výstup chybovou hlášku. Následně ověříme, zda se nějaká entita nalezla, pokud ne, controller vrací chybovou hlášku.\par
+	Protože se jedná o editaci, potřebuji načíst seznam všech tříd tak, abych mohl případně změnit uživateli třídu. Z toho důvodu jsem si vytvořil metodu s názvem PopulateClassesWithIdDropDownList() (viz zdrojový kód \ref{DropDownList}), která ma za úkol načíst všechny entity z tabulky tříd, a jejich Id a název vložit do drop-down menu.
 	\begin{listing}[H]
 	\inputminted{csharp}{SourceCode/Controllers/Edit.cs}
-	\caption{Controller - Editace a)}
+	\caption{Controller - Editace, načtení entit)}
 	\label{Edit}
 	\end{listing}
-
+	Máme načtenou stránku s entitami, provedeme změny a chceme je odeslat zpět do databáze. V tuto chvíli využijeme druhou metodu (viz zdrojový kód \ref{Edit_Post}), která má provést změny v databázi. Protože se dvě metody nemohou nazývat stejným jménem, musím této metodě přidělit pomocí atributu tzv. ActionName, které následně volám z view. V atributech mimo jiné nastavím i dotazovací metodu (tedy HttpPost) a ValidateAntiForgeryToken. ValidateAntiForgeryToken je ochrana proti padělání požadavků mezi weby. MVC zapíše jedinečnou hodnotu do cookies a tatéž hodnota se zapíše i do formuláře. Před odesláním formuláře se tyto hodnoty porovnají a pokud jsou různé, formulář se neodešle.\par
+	Controller zkontroluje parametr a pokud nenalezl chybu, načte první entitu, jejiž Id je shodné s parametrem, předaným v url. Následuje metoda TryUpdateModel, ta aktualizuje zadanou instanci modelu pomocí hodnot v paramteru (FirstName, LastName, atd.). Metodu zahrneme do podmínky. Pokud je podmínka splněna (nenastane chyba), asynchronně uloží všechny změny provedené v tomto kontextu a uloží je do databáze. Poté se přesměruje na stránku UsersOverview. Pokud nastane chyba (podmínka není splněna), vyvolá se větev catch, která vrátí chybovou hlášku.
 	\begin{listing}[H]
 	\inputminted{csharp}{SourceCode/Controllers/Edit_Post.cs}
-	\caption{Controller - Editace b)}
+	\caption{Controller - Editace, odeslání změn)}
 	\label{Edit_Post}
 	\end{listing}
-		\subsection{Smazání}
+	\subsection{Smazání}
+	Posledním typem, který v práci využívám je smazání.
 	\begin{listing}[H]
 	\inputminted{csharp}{SourceCode/Controllers/Delete.cs}
 	\caption{Controller - Smazání a)}
@@ -310,6 +316,10 @@
 
 	\prilohy{
 		\chapter{Příloha}
+		\begin{listing}[H] \inputminted{csharp}{SourceCode/PopulateDropDownList.cs}
+		\caption{Drop-down list ze seznamu tříd}
+		\label{DropDownList}
+		\end{listing}
 	}
 
 \end{document}

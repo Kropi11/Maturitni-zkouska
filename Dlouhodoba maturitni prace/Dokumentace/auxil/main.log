@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  14 APR 2021 02:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  14 APR 2021 12:27
 entering extended mode
 **./main.tex
 (main.tex
@@ -1173,9 +1173,9 @@ Package pdftex.def Info: images//Contollers.png  used on input line 213.
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
 l.234 		\item .
-               OrderBy() - Se≈ôad√≠ prvky v kolekci na z√°kladƒõ zadan√Ωch p...
+               FindAsync() - Asynchronnƒõ nalezne entitu s dan√Ωmi hodnotami...
  <./images//Contollers.png>]
-Overfull \hbox (4.21996pt too wide) in paragraph at lines 239--239
+Overfull \hbox (4.21996pt too wide) in paragraph at lines 240--240
 []\T1/cmr/m/n/12 Takto jsem na-de-fi-no-val pro-m•-nou var users, kte-rou nynÌ 
 sta£Ì pouze ulo-∫it do List<T>[][][],
  []
@@ -1184,33 +1184,33 @@ sta£Ì pouze ulo-∫it do List<T>[][][],
 (../auxil/_minted-main/030887146978C0A5F6D7648F3B73B9433CE8E893B97B0E538CC72E03
 909685DF.pygtex) [21] [22]
 (../auxil/_minted-main/D2E404C343CBA8587CBDBBB1C86F3A62F6ED6D4C044AE286BE5C5F6E
-4D649C5B.pygtex)
+4D649C5B.pygtex) [23]
 (../auxil/_minted-main/B9E4F460AAC5CCE7E183C26B82AE76686BF3F3CFAFFD2BDAACB33187
-A6239C89.pygtex) [23]
-(../auxil/_minted-main/2D8E16210CF4F1F1D81DD93F570DABAF0CA7D0AE651E33EE1DE2DA77
-75932DAF.pygtex) [24]
-Overfull \vbox (22.4978pt too high) has occurred while \output is active []
+A6239C89.pygtex) [24]
+(../auxil/_minted-main/C2A1F70CE4C1D98199741EF7C31924290CA7D0AE651E33EE1DE2DA77
+75932DAF.pygtex) [25]
+Overfull \vbox (0.7478pt too high) has occurred while \output is active []
 
 
-[25]
+[26]
 (../auxil/_minted-main/7417834D8FF419AC8ABB5E2D5E796874BABCE8D9A2B884441DF271F4
 B600FFC0.pygtex)
 (../auxil/_minted-main/6E49A1A11CE9DD010204CB56E69767ECD2540975A93E8D549EA66EAB
-04A53B9B.pygtex) [26] [27]
+04A53B9B.pygtex) [27] [28]
 Kapitola 4.
-[28
-
-]
-Kapitola 5.
 [29
 
 ]
-Kapitola 6.
+Kapitola 5.
 [30
 
 ]
-Kapitola 7.
+Kapitola 6.
 [31
+
+]
+Kapitola 7.
+[32
 
 ]
 (C:/Users\risak\Documents\Richard\≈†kola\Stredni_skola\Maturitni-zkouska\Dlouho
@@ -1218,7 +1218,7 @@ doba maturitni prace\Dokumentace\auxil\main.lot)
 \tf@lot=\write9
 \openout9 = `main.lot'.
 
- [32
+ [33
 
 ]
 (C:/Users\risak\Documents\Richard\≈†kola\Stredni_skola\Maturitni-zkouska\Dlouho
@@ -1226,7 +1226,7 @@ doba maturitni prace\Dokumentace\auxil\main.lof)
 \tf@lof=\write10
 \openout10 = `main.lof'.
 
- [33
+ [34
 
 ]
 (C:/Users\risak\Documents\Richard\≈†kola\Stredni_skola\Maturitni-zkouska\Dlouho
@@ -1236,7 +1236,7 @@ doba maturitni prace\Dokumentace\auxil\main.lol)
 
 
 (C:/Users\risak\Documents\Richard\≈†kola\Stredni_skola\Maturitni-zkouska\Dlouho
-doba maturitni prace\Dokumentace\auxil\main.bbl [34
+doba maturitni prace\Dokumentace\auxil\main.bbl [35
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 12--15
@@ -1262,7 +1262,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--51
 / wiki / Model % E2 % 80 % 93view % E2 % 80 %
  []
 
-[35
+[36
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 57--59
@@ -1282,9 +1282,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 71--74
 m / cs-[]cz / dotnet / csharp /
  []
 
-) [36]
+) [37]
 P\v {r}\'{\i }loha A.
-[37
+
+(../auxil/_minted-main/90F094296890E3C2F0357F205482D9E2FB31F0B1B15E717BBEAA28AC
+BA321DFD.pygtex) [38
 
 ]
 (C:/Users\risak\Documents\Richard\≈†kola\Stredni_skola\Maturitni-zkouska\Dlouho
@@ -1293,10 +1295,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: E5341F6DC1F05D35BE910FF45C53A672;4493.
  ) 
 Here is how much of TeX's memory you used:
- 34406 strings out of 479324
- 743228 string characters out of 2866691
- 1131447 words of memory out of 3000000
- 51123 multiletter control sequences out of 15000+600000
+ 34416 strings out of 479324
+ 743886 string characters out of 2866691
+ 1131597 words of memory out of 3000000
+ 51128 multiletter control sequences out of 15000+600000
  415969 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  116i,10n,117p,1628b,523s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1314,10 +1316,10 @@ a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\risak\
 AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\
 risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk>
 Output written on "C:/Users\risak\Documents\Richard\≈†kola\Stredni_skola\Maturi
-tni-zkouska\Dlouhodoba maturitni prace\Dokumentace\out\main.pdf" (38 pages, 618
-367 bytes).
+tni-zkouska\Dlouhodoba maturitni prace\Dokumentace\out\main.pdf" (39 pages, 623
+036 bytes).
 PDF statistics:
- 1157 PDF objects out of 1200 (max. 8388607)
- 134 named destinations out of 1000 (max. 500000)
+ 1169 PDF objects out of 1200 (max. 8388607)
+ 136 named destinations out of 1000 (max. 500000)
  373 words of extra memory for PDF output out of 10000 (max. 10000000)
 
