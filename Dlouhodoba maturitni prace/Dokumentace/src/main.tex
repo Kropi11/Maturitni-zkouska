@@ -22,10 +22,10 @@
 
 	\titulniStrana
 	
-	\anotace Webová aplikace, která má na starosti správu povinných prací odevzdaných žáky. Vyučující má možnost vytvořit zadání a případně ho upravit, nebo odstranit. Žáci mají možnost procházet jak aktuální práce, tak práce, které již odevzdali například v minulých ročnících. \\
+	\anotace Maturitní práce se zaměřuje na návrh a realizaci webové aplikace, která má na starosti správu povinných prací odevzdaných žáky. Vyučující má možnost vytvořit zadání a případně ho upravit, nebo odstranit. Žáci mají možnost procházet jak aktuální práce, tak práce, které již odevzdali například v minulých ročnících. \\
 	\textbf{Klíčová slova: } C\#; ASP.NET Core; Entity Framework Core; HTML; JavaScript; CSS; Bootstrap; MySQL; WebApp
 
-	\annotation The output of my graduation thesis is a functioning system, the task of which is the administration of compulsory work submitted by pupils for the past school year. Teachers can then browse, download and evaluate the work.\\
+	\annotation The graduation thesis focuses on the design and implementation of a web application, which is in charge of managing the compulsory work submitted by students. The teacher has the opportunity to create an assignment and possibly modify or delete it. Pupils have the opportunity to go through both current work and work that they have already submitted, for example, in previous years.\\
 	\textbf{Keywords: } C\#; ASP.NET Core; Entity Framework Core; HTML; JavaScript; CSS; Bootstrap; MySQL; WebApp
 
 	\podekovani Tímto bych chtěl poděkovat Mgr. Milanu Janouškovi za vedení mé Maturitní práce, cenné rady a odborný dohled. Děkuji také za pomoc všem, kteří se jakkoliv podíleli na realizaci této práce.
@@ -33,7 +33,11 @@
 	\obsah
 
 	\chapter{Úvod}
-    Pro realizaci této práce jsem se rozhodl využít ASP.NET Core, což jest otevřený framework pro tvorbu webových aplikací vyvynutý společností Microsoft. Pro databázi jsem se rozhodl využít MySQL, což je velice rozšířený otevřený systém řízení báze dat. Webová aplikace je psána pomocí značkovacího jazyku HTML. Pro vizuální část stránky jsem využil Bootstrap 4.
+    Výstupem této práce by měla být plně funkční webová aplikace, která by umožňovala efektivní správu povinných prací, které studenti odevzdávají za všechny roky studia.\par
+	Pro realizaci jsem se rozhodl využít otevřený framework pro tvorbu webových aplikací APS.NET Core vyvinutý společností Microsoft Corporation. Pro tento framework jsem se rozhodl hlavně díky jeho jednoduché implementaci, možnosti ho vyvíjet a spouštět na~platformách Windows, Linux i macOS a vysokému výkonu.\par
+	Pro návrh stránky využiji architektonický vzor MVC, ten mi pomůže oddělit logiku webové aplikace (Backend) od výstupu (Frontend). Pro to, aby tento vzor byl účinný, musím si rozvrhnout oprávnění, tedy role, které se ve webové aplikaci budou vyskytovat.\par
+	Mimo jiné musím vyřešit způsob registrování a následného přihlašování uživatelů, tak~aby se eliminovala možnost neoprávněného přihlášení. To vše ale nebude správně fungovat, pokud nebudu mít připravenou databázi. Tu mám v plánu vytvořit v MySQL, což je velice rozšířený otevřený systém řízení báze dat.\par
+	A toto všechno je potřeba vložit do uživatelsky přívětivého rozhraní, které bude jednoduché na správu a zároveň přehledné a profesionální. S tímto mi pomůže Bootstrap 4, což je front-endový open-source určený pro návrh responzivních webů.
 	\chapter{Teoretický úvod}
 		\section{Programovací jazyk C\#}
         C\# je moderní, vysokoúrovňový objektově orientovaný programocí jazyk vyvinutý společností Microsoft. Jazyk C\# se řadí mezi typově bezpečné programovací jazyky. To~znamená, že nedovoluje provádět operace, které mohou véct k chybám. Tento jazyk umožnuje vývojářům vytvářet mnoho druhů zabezpečených a robusních aplikací, které běži na~platformě .NET\footnote{Vývojářská platforma pro vytváření webových, mobilních,desktopových, herních, IoT a dalších aplikací. Je podporovaná v systémech Windows, Linux a macOS.}.\par
@@ -230,7 +234,7 @@
 		\item .OrderBy() - Seřadí prvky v kolekci na základě zadaných polí ve vzestupném pořadí. Např. Na základě příjmení.
 		\item .Where() - Načte pouze data, která splňují nějakou podmínku. Např. Načte pouze práce, kde je ID uživatele rovno přihlášenému uživateli.
 	\end{itemize}
-	\subsection{Seznam entit}
+	\subsection{Seznam entit} \label{Seznam_entit}
 	Jednou ze základních funkcí, kterou by měla tato webová aplikace disponovat je výpis seznamu entit (viz zdrojový kód \ref{ListOfEntit}). Pro to, abychom mohli entity vypsat, je potřeba je nejprve uložit do implicitně typované lokální proměnné var\footnote{Typ instance je odvozen z prvku zadaného v inicializátoru. To znamená, že kompilátor určí a přiřadí nejvhodnější typ proměnné.}. Do této vytvořené proměnné přiřadíme \_Contex.Users, což je metoda v AuthDBContext.cs. Právě tato třída je zodopovědná za interakci s databází. Poté pomocí .OrderBy(u => u.LastName) určím, že chci řadit vzestupně podle proměné LastName, tedy příjmení. Protože s entitami již dále nepotřebuji pracovat, zakáži trasování pomocí .AsNoTracking().\par
 	Takto jsem nadefinoval proměnou var users, kterou nyní stačí pouze uložit do List<T>\footnote{List (česky seznam) se řadí do kolekci, které umožňují prvky za běhu programu přidávat a mazat.}, a protože Task<IActionResul> požaduje asynchronní výstup, přidám k .ToList() klíčové slovíčko Async.\par
 	Ná výstup se nám tedy vráti seznam uživatelů seřazený vzestupně podle příjmení, s kterým dále pracuji ve view pomocí foreach().
@@ -239,12 +243,20 @@
 		\caption{Controller - Seznam entit}
 		\label{ListOfEntit}
 	\end{listing}
-		\subsection{Detail}
+	\subsection{Detail}
+	Pokud chceme zobrazit detail některé entity, např. uživatele (viz zdrojový kód \ref{Detail}), potřebejeme nějakým jednoznačným způsobem definovat, o jakou entitu se jedná. Jedním z takových způsobů může být třeba primární klíč\footnote{Jednoznačná identifikace entity v rámci databáze.}. A nyní, jakým způsobem ji předat do controlleru, aby s ní mohl pracovat? Přesně k tomu se využívají parametry v URL\footnote{Uniform Resource Locator, neboli webová adresa.} adrese. Jak je vidět ve zdrojovék kódu\ref{Detail}, metoda UserOverview přebírá nějaký parametr, který nazýváme id a má datový typ string. Výsledná URL může tedy vypadat například takto: \\
+	https://localhost:5001/Administration/UserOverview/f0a5d163-b81c-41d1-a488-89\\753377fd1c\\
+	Jako první se zde nachází protokol (https), po něm následuje doména (localhost:5001\footnote{Aplikace momentálně funguje na mém počítači, proto je doména localhost.}), a za doménou se vypíše jméno controlleru, ve kterém se nachází naše požadovaná stránka UserOverview. URL zakončuje řetězec náhodných znaků, a to je právě id uživatele, tedy náš parametr.\par
+	Tímto způsobem jsem tedy vyřešil identifikaci entity, které detail požadujeme zobrazit. A nyní zpět ke controlleru. Pokud controller dostane požadavek na detail entity, ověří nejprve, zda obdržel parametr id. Pokud ne, vyvolá metodu NotFound() a vrátí ji na výstup. V opačném případě se zahájí proces, která jsem podrobněji popisoval již v~předchozí kapitole (viz kapitola \ref{Seznam_entit}\nameref{Seznam_entit}).\par
+	V detailu chci zobrazit základní údaje o uživateli a třídu, ve které se uživatel nachází. Controller prvně načte všechny uživatele z databáze, ale jak jsem zmínil, požaduji načtení i třídy. Protože u uživatele ukládám pouze ID třídy, ve které se nachází, musím přidružit i tabulku tříd. Toho docílím zavoláním metody .Include(c => c.Class). S daty nehodlám po načtení dále pracovat, proto mohu zakázat trasování.\par
+	Úkolem metody FirstOrDefaultAsync(u => u.Id == id) je procházet entity, dokud nenajde první, jejíž Id je shodné s parametrem id. Pokud takovou entitu najde, vrací ji~na~výstup. Pokud takovou entitu nenajde, vrací výchozí hodnotu, kterou je null\footnote{Označení pro žádnou hodnotu.}.\par
+	Poslední podmínka ošetřuje situaci, kdy je zadán parametr, ale žádná entita tomuto parametru neodpovída. Pokud tedy nenajdeme žádného uživatele, který by měl shodné Id s parametrem id, zavolá se metoda NotFound(), která se vrátí na výstup.
 	\begin{listing}[H]
 		\inputminted{csharp}{SourceCode/Controllers/Detail.cs}
 		\caption{Controller - Detail}
 		\label{Detail}
 	\end{listing}
+
 		\subsection{Editace}
 	\begin{listing}[H]
 	\inputminted{csharp}{SourceCode/Controllers/Edit.cs}
