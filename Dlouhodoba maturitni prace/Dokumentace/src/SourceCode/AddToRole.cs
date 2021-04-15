@@ -1,0 +1,1 @@
+﻿await _userManager.AddToRoleAsync(user,"Student");

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  15 APR 2021 04:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  15 APR 2021 21:07
 entering extended mode
 **./main.tex
 (main.tex
@@ -786,6 +786,30 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (D:\Program Files\MiKTeX\tex/latex/latex-tools\indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
+(D:\Program Files\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+
+(D:\Program Files\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(D:\Program Files\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen285
+\captionmargin@=\dimen286
+\captionwidth=\dimen287
+\caption@tempdima=\dimen288
+\caption@indent=\dimen289
+\caption@parindent=\dimen290
+\caption@hangindent=\dimen291
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count351
+\c@continuedfloat=\count352
+Package caption Info: hyperref package is loaded.
+)
+\c@subfigure=\count353
+\c@subtable=\count354
+)
 (D:\Program Files\MiKTeX\tex/latex/minted\minted.sty
 Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
 
@@ -794,11 +818,11 @@ Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
 
 (D:\Program Files\MiKTeX\tex/latex/fancyvrb\fancyvrb.sty
 Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count351
+\FV@CodeLineNo=\count355
 \FV@InFile=\read5
 \FV@TabBox=\box81
-\c@FancyVerbLine=\count352
-\FV@StepNumber=\count353
+\c@FancyVerbLine=\count356
+\FV@StepNumber=\count357
 \FV@OutFile=\write5
 )
 (D:\Program Files\MiKTeX\tex/latex/upquote\upquote.sty
@@ -810,56 +834,56 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ))
 (D:\Program Files\MiKTeX\tex/latex/lineno\lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count354
+\linenopenalty=\count358
 \output=\toks52
-\linenoprevgraf=\count355
-\linenumbersep=\dimen285
-\linenumberwidth=\dimen286
-\c@linenumber=\count356
-\c@pagewiselinenumber=\count357
-\c@LN@truepage=\count358
-\c@internallinenumber=\count359
-\c@internallinenumbers=\count360
-\quotelinenumbersep=\dimen287
-\bframerule=\dimen288
-\bframesep=\dimen289
+\linenoprevgraf=\count359
+\linenumbersep=\dimen292
+\linenumberwidth=\dimen293
+\c@linenumber=\count360
+\c@pagewiselinenumber=\count361
+\c@LN@truepage=\count362
+\c@internallinenumber=\count363
+\c@internallinenumbers=\count364
+\quotelinenumbersep=\dimen294
+\bframerule=\dimen295
+\bframesep=\dimen296
 \bframebox=\box82
 LaTeX Info: Redefining \\ on input line 3056.
 )
-\c@FV@TrueTabGroupLevel=\count361
-\c@FV@TrueTabCounter=\count362
+\c@FV@TrueTabGroupLevel=\count365
+\c@FV@TrueTabCounter=\count366
 \FV@TabBox@Group=\box83
 \FV@TmpLength=\skip52
-\c@FV@HighlightLinesStart=\count363
-\c@FV@HighlightLinesStop=\count364
-\FV@LoopCount=\count365
+\c@FV@HighlightLinesStart=\count367
+\c@FV@HighlightLinesStop=\count368
+\FV@LoopCount=\count369
 \FV@NCharsBox=\box84
-\FV@BreakIndent=\dimen290
-\FV@BreakIndentNChars=\count366
-\FV@BreakSymbolSepLeft=\dimen291
-\FV@BreakSymbolSepLeftNChars=\count367
-\FV@BreakSymbolSepRight=\dimen292
-\FV@BreakSymbolSepRightNChars=\count368
-\FV@BreakSymbolIndentLeft=\dimen293
-\FV@BreakSymbolIndentLeftNChars=\count369
-\FV@BreakSymbolIndentRight=\dimen294
-\FV@BreakSymbolIndentRightNChars=\count370
-\c@FancyVerbLineBreakLast=\count371
+\FV@BreakIndent=\dimen297
+\FV@BreakIndentNChars=\count370
+\FV@BreakSymbolSepLeft=\dimen298
+\FV@BreakSymbolSepLeftNChars=\count371
+\FV@BreakSymbolSepRight=\dimen299
+\FV@BreakSymbolSepRightNChars=\count372
+\FV@BreakSymbolIndentLeft=\dimen300
+\FV@BreakSymbolIndentLeftNChars=\count373
+\FV@BreakSymbolIndentRight=\dimen301
+\FV@BreakSymbolIndentRightNChars=\count374
+\c@FancyVerbLineBreakLast=\count375
 \FV@LineBox=\box85
 \FV@LineIndentBox=\box86
-\FV@LineWidth=\dimen295
+\FV@LineWidth=\dimen302
 )
 (D:\Program Files\MiKTeX\tex/latex/latex-tools\calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count372
-\calc@Bcount=\count373
-\calc@Adimen=\dimen296
-\calc@Bdimen=\dimen297
+\calc@Acount=\count376
+\calc@Bcount=\count377
+\calc@Adimen=\dimen303
+\calc@Bdimen=\dimen304
 \calc@Askip=\skip53
 \calc@Bskip=\skip54
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count374
+\calc@Ccount=\count378
 \calc@Cskip=\skip55
 )
 (D:\Program Files\MiKTeX\tex/latex/latex-tools\shellesc.sty
@@ -877,22 +901,22 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 ))
 (D:\Program Files\MiKTeX\tex/latex/xstring\xstring.sty
 (D:\Program Files\MiKTeX\tex/generic/xstring\xstring.tex
-\integerpart=\count375
-\decimalpart=\count376
+\integerpart=\count379
+\decimalpart=\count380
 )
 Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 )
 (D:\Program Files\MiKTeX\tex/latex/framed\framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip56
-\fb@frw=\dimen298
-\fb@frh=\dimen299
-\FrameRule=\dimen300
-\FrameSep=\dimen301
+\fb@frw=\dimen305
+\fb@frh=\dimen306
+\FrameRule=\dimen307
+\FrameSep=\dimen308
 )
 (D:\Program Files\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count377
+\c@float@type=\count381
 \float@exts=\toks53
 \float@box=\box87
 \@float@everytoks=\toks54
@@ -901,10 +925,10 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \minted@appexistsfile=\read6
 \minted@bgbox=\box89
 \minted@code=\write6
-\c@minted@FancyVerbLineTemp=\count378
-\c@minted@pygmentizecounter=\count379
+\c@minted@FancyVerbLineTemp=\count382
+\c@minted@pygmentizecounter=\count383
 \@float@every@listing=\toks55
-\c@listing=\count380
+\c@listing=\count384
 )
 runsystem(if not exist ..\auxil\_minted-main mkdir ..\auxil\_minted-main)...exe
 cuted.
@@ -919,37 +943,37 @@ runsystem(del main.aex)...executed.
 doba maturitni prace\Dokumentace\auxil\main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 
 (D:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count381
-\scratchdimen=\dimen302
+\scratchcounter=\count385
+\scratchdimen=\dimen309
 \scratchbox=\box90
-\nofMPsegments=\count382
-\nofMParguments=\count383
+\nofMPsegments=\count386
+\nofMParguments=\count387
 \everyMPshowfont=\toks56
-\MPscratchCnt=\count384
-\MPscratchDim=\dimen303
-\MPnumerator=\count385
-\makeMPintoPDFobject=\count386
+\MPscratchCnt=\count388
+\MPscratchDim=\dimen310
+\MPnumerator=\count389
+\makeMPintoPDFobject=\count390
 \everyMPtoPDFconversion=\toks57
 ) (D:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -993,7 +1017,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 21.
+Package hyperref Info: Link coloring OFF on input line 22.
 (D:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1003,11 +1027,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (D:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count387
+\c@section@level=\count391
 )
-LaTeX Info: Redefining \ref on input line 21.
-LaTeX Info: Redefining \pageref on input line 21.
-LaTeX Info: Redefining \nameref on input line 21.
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
 
 (C:/Users\risak\Documents\Richard\Å kola\Stredni_skola\Maturitni-zkouska\Dlouho
 doba maturitni prace\Dokumentace\auxil\main.out)
@@ -1016,21 +1040,33 @@ doba maturitni prace\Dokumentace\auxil\main.out)
 \@outlinefile=\write7
 \openout7 = `main.out'.
 
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
 <images//logo.jpg, id=166, 114.318pt x 131.0715pt>
 File: images//logo.jpg Graphic file (type jpg)
 <use images//logo.jpg>
-Package pdftex.def Info: images//logo.jpg  used on input line 23.
+Package pdftex.def Info: images//logo.jpg  used on input line 24.
 (pdftex.def)             Requested size: 85.35826pt x 97.87137pt.
  [1
 
 {C:/Users/risak/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./images//logo.
-jpg>]pdfTeX warning (ext4): destination with the same identifier (name{page.1})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.31 	\podekovani
-                  TÃ­mto bych chtÄ›l podÄ›kovat Mgr. Milanu JanouÅ¡kovi za v...
-[1] [2]
+jpg>] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+
+ []
+
+[3] [4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 32--32
+
+ []
+
+[6] [7]
 (C:/Users\risak\Documents\Richard\Å kola\Stredni_skola\Maturitni-zkouska\Dlouho
 doba maturitni prace\Dokumentace\auxil\main.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -1039,49 +1075,44 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 4.
- [3
+ [8
 
 ])
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
- [4]
+ [9]
 Kapitola 1.
-[5
+[10
 
 ]
 Kapitola 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 43.
+(Font)              <7> on input line 48.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 43.
-[6
+(Font)              <5> on input line 48.
+[11
 
 ]
-<images//aspnetcore_aspnet.png, id=252, 1270.14525pt x 572.73975pt>
+<images//aspnetcore_aspnet.png, id=271, 1270.14525pt x 572.73975pt>
 File: images//aspnetcore_aspnet.png Graphic file (type png)
 <use images//aspnetcore_aspnet.png>
-Package pdftex.def Info: images//aspnetcore_aspnet.png  used on input line 51.
+Package pdftex.def Info: images//aspnetcore_aspnet.png  used on input line 57.
 (pdftex.def)             Requested size: 455.24411pt x 205.27725pt.
 
-Overfull \hbox (6.43306pt too wide) in paragraph at lines 56--57
+Overfull \hbox (6.43306pt too wide) in paragraph at lines 62--63
 \T1/cmr/m/n/12 kace je HTML stránka. ASP.NET tedy b¥ºí na ser-veru a re-a-guje 
 na do-tazy uºi-va-tele/klienta.
  []
 
-[7pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}
-) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.60 ...atformu pro udrÅ¾enÃ­ bÄ›hu aplikacÃ­.\par
-                                                   <./images//aspnetcore_aspnet
-.png>] [8]
-<images//ViewsController.png, id=284, 227.04825pt x 483.0045pt>
+[12 <./images//aspnetcore_aspnet.png>] [13]
+<images//ViewsController.png, id=305, 227.04825pt x 483.0045pt>
 File: images//ViewsController.png Graphic file (type png)
 <use images//ViewsController.png>
-Package pdftex.def Info: images//ViewsController.png  used on input line 87.
+Package pdftex.def Info: images//ViewsController.png  used on input line 99.
 (pdftex.def)             Requested size: 158.93268pt x 338.10083pt.
- [9] (../auxil/_minted-main/default-pyg-prefix.pygstyle)
+ [14]
+(../auxil/_minted-main/default-pyg-prefix.pygstyle)
 (../auxil/_minted-main/friendly.pygstyle)
 (../auxil/_minted-main/ACD3362C391681D60EFA88AC36ADD203F979ECD2DAC0D78B6EF9E601
 050D2A79.pygtex
@@ -1094,175 +1125,153 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
 )
 Package hyperref Info: bookmark level for unknown listing defaults to 0 on inpu
-t line 96.
- [10pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
-2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.99 	\section{MySQL}
-                      <./images//ViewsController.png>] [11]
+t line 109.
+ [15 <./images//ViewsController.png>] [16]
 Kapitola 3.
-[12
+[17
 
 ]
-<images//Models.png, id=327, 187.902pt x 211.992pt>
+<images//Models.png, id=347, 187.902pt x 211.992pt>
 File: images//Models.png Graphic file (type png)
 <use images//Models.png>
-Package pdftex.def Info: images//Models.png  used on input line 132.
+Package pdftex.def Info: images//Models.png  used on input line 147.
 (pdftex.def)             Requested size: 112.74207pt x 127.19617pt.
 
 (../auxil/_minted-main/0E2EF27882FD933DCC3F5384344E3B32F831E4EA3DFE93E4A52600A9
-2DD6333C.pygtex) [13pdfTeX warning (ext4): destination with the same identifier
- (name{figure.3.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.141 	\section{View}
-                      <./images//Models.png>] [14]
-<images//ViewsDetail.png, id=345, 187.902pt x 277.035pt>
+2DD6333C.pygtex) [18 <./images//Models.png>] [19]
+<images//ViewsDetail.png, id=365, 187.902pt x 277.035pt>
 File: images//ViewsDetail.png Graphic file (type png)
 <use images//ViewsDetail.png>
-Package pdftex.def Info: images//ViewsDetail.png  used on input line 148.
+Package pdftex.def Info: images//ViewsDetail.png  used on input line 164.
 (pdftex.def)             Requested size: 131.53049pt x 193.92317pt.
 
 (../auxil/_minted-main/0D9AE14C628901583987527AA241FE93EBAF4F9525BE7C79969DC21E
-5F0B78E6.pygtex) [15pdfTeX warning (ext4): destination with the same identifier
- (name{figure.3.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.159 	\end{listing}
-                     <./images//ViewsDetail.png>]
+5F0B78E6.pygtex) [20 <./images//ViewsDetail.png>]
 (../auxil/_minted-main/C0BE4902AE5D94D83063240B224C11AA09BE919510C5E428F1C32518
 20CDDE73.pygtex)
 (../auxil/_minted-main/FEC8DD078AA18C7A6A35F0B3E8AA70957B91507748FD868B2A32DD94
 B1492860.pygtex)
-<images//ListaPrihlaseny.png, id=360, 1079.232pt x 39.7485pt>
+<images//ListaPrihlaseny.png, id=381, 1079.232pt x 39.7485pt>
 File: images//ListaPrihlaseny.png Graphic file (type png)
 <use images//ListaPrihlaseny.png>
-Package pdftex.def Info: images//ListaPrihlaseny.png  used on input line 174.
+Package pdftex.def Info: images//ListaPrihlaseny.png  used on input line 191.
 (pdftex.def)             Requested size: 455.24411pt x 16.76642pt.
 
 (../auxil/_minted-main/30431E65FE7E26490F58750F1CEF5A5A3F7DFFF4EE84403A5501BE43
-6913D2F0.pygtex) [16pdfTeX warning (ext4): destination with the same identifier
- (name{figure.3.3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.183 
-       <./images//ListaPrihlaseny.png>] [17]
-<images//Menu.png, id=378, 163.812pt x 416.15475pt>
+6913D2F0.pygtex) [21 <./images//ListaPrihlaseny.png>] [22]
+<images//Menu.png, id=399, 163.812pt x 416.15475pt>
 File: images//Menu.png Graphic file (type png)
 <use images//Menu.png>
-Package pdftex.def Info: images//Menu.png  used on input line 193.
+Package pdftex.def Info: images//Menu.png  used on input line 210.
 (pdftex.def)             Requested size: 114.6676pt x 291.30634pt.
 
 (../auxil/_minted-main/0DE32E5088BB537A7B1BA0D563823F0DCB83AE1C25E264121822FFC9
-459F0D6E.pygtex) [18pdfTeX warning (ext4): destination with the same identifier
- (name{figure.3.4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.202 
-       <./images//Menu.png>]
+459F0D6E.pygtex) [23 <./images//Menu.png>]
 (../auxil/_minted-main/6508628E488ED884874EAC7F5C7A2284DD802388A126E05E43D92D2C
-FF9DBE39.pygtex) [19]
-<images//Contollers.png, id=401, 184.89075pt x 105.996pt>
+FF9DBE39.pygtex) [24]
+<images//Contollers.png, id=420, 184.89075pt x 105.996pt>
 File: images//Contollers.png Graphic file (type png)
 <use images//Contollers.png>
-Package pdftex.def Info: images//Contollers.png  used on input line 213.
+Package pdftex.def Info: images//Contollers.png  used on input line 230.
 (pdftex.def)             Requested size: 184.89027pt x 105.99573pt.
- [20pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.234 		\item .
-               FindAsync() - AsynchronnÄ› nalezne entitu s danÃ½mi hodnotami...
- <./images//Contollers.png>]
-Overfull \hbox (4.21996pt too wide) in paragraph at lines 240--240
+ [25 <./images//Contollers.png>]
+Overfull \hbox (4.21996pt too wide) in paragraph at lines 258--258
 []\T1/cmr/m/n/12 Takto jsem na-de-fi-no-val pro-m¥-nou var users, kte-rou nyní 
 sta£í pouze ulo-ºit do List<T>[][][],
  []
 
 
 (../auxil/_minted-main/030887146978C0A5F6D7648F3B73B9433CE8E893B97B0E538CC72E03
-909685DF.pygtex) [21] [22]
+909685DF.pygtex) [26] [27]
 (../auxil/_minted-main/D2E404C343CBA8587CBDBBB1C86F3A62F6ED6D4C044AE286BE5C5F6E
-4D649C5B.pygtex) [23]
+4D649C5B.pygtex) [28]
 (../auxil/_minted-main/B9E4F460AAC5CCE7E183C26B82AE76686BF3F3CFAFFD2BDAACB33187
-A6239C89.pygtex) [24]
+A6239C89.pygtex) [29]
 (../auxil/_minted-main/C2A1F70CE4C1D98199741EF7C31924290CA7D0AE651E33EE1DE2DA77
-75932DAF.pygtex) [25]
-Overfull \vbox (0.7478pt too high) has occurred while \output is active []
+75932DAF.pygtex) [30]
+Overfull \vbox (10.50072pt too high) has occurred while \output is active []
 
 
-[26]
-<images//DeleteUser_lista.png, id=466, 589.0005pt x 24.69225pt>
+[31]
+<images//DeleteUser_lista.png, id=488, 589.0005pt x 24.69225pt>
 File: images//DeleteUser_lista.png Graphic file (type png)
 <use images//DeleteUser_lista.png>
-Package pdftex.def Info: images//DeleteUser_lista.png  used on input line 284.
+Package pdftex.def Info: images//DeleteUser_lista.png  used on input line 304.
 (pdftex.def)             Requested size: 455.24411pt x 19.08578pt.
 
 (../auxil/_minted-main/7417834D8FF419AC8ABB5E2D5E796874BABCE8D9A2B884441DF271F4
 B600FFC0.pygtex)
-<images//DeleteUser.png, id=467, 589.0005pt x 252.945pt>
+<images//DeleteUser.png, id=489, 589.0005pt x 252.945pt>
 File: images//DeleteUser.png Graphic file (type png)
 <use images//DeleteUser.png>
-Package pdftex.def Info: images//DeleteUser.png  used on input line 295.
+Package pdftex.def Info: images//DeleteUser.png  used on input line 315.
 (pdftex.def)             Requested size: 294.49953pt x 126.47218pt.
- [27pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-6}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.298 	\end{figure}
-                    <./images//DeleteUser_lista.png>]
+ [32 <./images//DeleteUser_lista.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 (../auxil/_minted-main/6E49A1A11CE9DD010204CB56E69767ECD2540975A93E8D549EA66EAB
-04A53B9B.pygtex) [28] [29pdfTeX warning (ext4): destination with the same ident
-ifier (name{figure.3.7}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.306 	\chapter
-               {PÅ™ihlaÅ¡ovÃ¡nÃ­ a registrace} <./images//DeleteUser.png>]
+04A53B9B.pygtex) [33] [34 <./images//DeleteUser.png>]
 Kapitola 4.
-[30
+
+LaTeX Warning: Reference `RegistracniFormular' on page 35 undefined on input li
+ne 339.
+
+[35
 
 ]
+Overfull \hbox (29.36092pt too wide) in paragraph at lines 340--341
+[]\T1/cmr/m/n/12 Ve t°íd¥ Iden-ti-ty-Hos-tingStartup.cs lze na-sta-vit v ser-vi
+-ces.AddDefaultIdentity<PPSPSUser>
+ []
+
+<images//PrihlasovaciFormular.png, id=518, 413.74574pt x 407.72325pt>
+File: images//PrihlasovaciFormular.png Graphic file (type png)
+<use images//PrihlasovaciFormular.png>
+Package pdftex.def Info: images//PrihlasovaciFormular.png  used on input line 3
+46.
+(pdftex.def)             Requested size: 204.85846pt x 201.87651pt.
+<images//RegistracniFormular.png, id=519, 421.575pt x 394.47375pt>
+File: images//RegistracniFormular.png Graphic file (type png)
+<use images//RegistracniFormular.png>
+Package pdftex.def Info: images//RegistracniFormular.png  used on input line 35
+3.
+(pdftex.def)             Requested size: 204.85846pt x 191.69272pt.
+
+(../auxil/_minted-main/21BFD45A258256B816ADC396DA0FFD72CED5FEF1AAA263B4213DEBC6
+48921815.pygtex) [36 <./images//PrihlasovaciFormular.png> <./images//Registracn
+iFormular.png>]
 Kapitola 5.
-[31
 
-]
+(../auxil/_minted-main/89D5FCA5A5474105D1B134829ABBB4E3D4B3C95FF8A60525FF6C7499
+546DF306.pygtex) [37
+
+] [38]
 Kapitola 6.
-[32
+[39
 
 ]
 Kapitola 7.
-[33
-
-]
-(C:/Users\risak\Documents\Richard\Å kola\Stredni_skola\Maturitni-zkouska\Dlouho
-doba maturitni prace\Dokumentace\auxil\main.lot)
-\tf@lot=\write9
-\openout9 = `main.lot'.
-
- [34
+[40
 
 ]
 (C:/Users\risak\Documents\Richard\Å kola\Stredni_skola\Maturitni-zkouska\Dlouho
 doba maturitni prace\Dokumentace\auxil\main.lof)
-\tf@lof=\write10
-\openout10 = `main.lof'.
+\tf@lof=\write9
+\openout9 = `main.lof'.
 
- [35
+ [41
 
 ]
 (C:/Users\risak\Documents\Richard\Å kola\Stredni_skola\Maturitni-zkouska\Dlouho
 doba maturitni prace\Dokumentace\auxil\main.lol)
-\tf@lol=\write11
-\openout11 = `main.lol'.
+\tf@lol=\write10
+\openout10 = `main.lol'.
 
 
 (C:/Users\risak\Documents\Richard\Å kola\Stredni_skola\Maturitni-zkouska\Dlouho
-doba maturitni prace\Dokumentace\auxil\main.bbl [36
+doba maturitni prace\Dokumentace\auxil\main.bbl [42
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 12--15
@@ -1273,79 +1282,90 @@ m / cs-[]cz / aspnet / core / security /
 
 Underfull \hbox (badness 10000) in paragraph at lines 17--20
 \T1/cmr/m/n/12 Dostupné z: []$\T1/cmtt/m/n/12 https : / / docs . microsoft . co
+m / cs-[]cz / aspnet / core / security /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
+\T1/cmr/m/n/12 Dostupné z: []$\T1/cmtt/m/n/12 https : / / docs . microsoft . co
 m / cs-[]cz / aspnet / core / mvc / views /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--41
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
 \T1/cmr/m/n/12 Dostupné z: []$\T1/cmtt/m/n/12 https : / / dotnet . microsoft . 
 com / learn / aspnet /
  []
 
+[43
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--51
+]
+Underfull \hbox (badness 10000) in paragraph at lines 58--61
 \T1/cmr/m/n/12 Dostupné z: []$\T1/cmtt/m/n/12 https : / / en . wikipedia . org 
 / wiki / Model % E2 % 80 % 93view % E2 % 80 %
  []
 
-[37
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 57--59
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
 \T1/cmr/m/n/12 Dostupné z: []$\T1/cmtt/m/n/12 https : / / www . itnetwork . cz 
 / csharp / asp-[]net-[]core / zaklady /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--64
+Underfull \hbox (badness 10000) in paragraph at lines 71--74
 \T1/cmr/m/n/12 Dostupné z: []$\T1/cmtt/m/n/12 https : / / www . itnetwork . cz 
 / csharp / asp-[]net-[]mvc / zaklady /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
+Underfull \hbox (badness 10000) in paragraph at lines 81--84
 \T1/cmr/m/n/12 Dostupné z: []$\T1/cmtt/m/n/12 https : / / docs . microsoft . co
 m / cs-[]cz / dotnet / csharp /
  []
 
-) [38]
+) [44]
 P\v {r}\'{\i }loha A.
 
 (../auxil/_minted-main/90F094296890E3C2F0357F205482D9E2FB31F0B1B15E717BBEAA28AC
-BA321DFD.pygtex) [39
+BA321DFD.pygtex) [45
 
 ]
 (C:/Users\risak\Documents\Richard\Å kola\Stredni_skola\Maturitni-zkouska\Dlouho
 doba maturitni prace\Dokumentace\auxil\main.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E5341F6DC1F05D35BE910FF45C53A672;4493.
+(rerunfilecheck)             Checksum: 303CC0BCF48AF252E3AB93244E26B933;4514.
  ) 
 Here is how much of TeX's memory you used:
- 34435 strings out of 479324
- 744310 string characters out of 2866691
- 1131737 words of memory out of 3000000
- 51144 multiletter control sequences out of 15000+600000
- 415969 words of font info for 50 fonts, out of 8000000 for 9000
+ 35757 strings out of 479324
+ 770856 string characters out of 2866691
+ 1156552 words of memory out of 3000000
+ 52440 multiletter control sequences out of 15000+600000
+ 416738 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 116i,10n,117p,1628b,523s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 116i,10n,131p,1628b,574s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti
 1200.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ectt1200.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\tcrm1200.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecbx1440.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\risak\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\risak\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\risak\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\risak\AppDat
-a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\risak\
-AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\Users\
-risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk>
+0\ecrm1095.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ectt1200.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\tcrm1200.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\risak\AppData\Local\MiKTeX\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\risak\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\risak\AppData\Local\MiKT
+eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\risak\AppData\Loca
+l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\risak\AppDat
+a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\risak\
+AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk> <C:\Users\
+risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\
+Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk
+>
 Output written on "C:/Users\risak\Documents\Richard\Å kola\Stredni_skola\Maturi
-tni-zkouska\Dlouhodoba maturitni prace\Dokumentace\out\main.pdf" (40 pages, 659
-520 bytes).
+tni-zkouska\Dlouhodoba maturitni prace\Dokumentace\out\main.pdf" (45 pages, 728
+875 bytes).
 PDF statistics:
- 1186 PDF objects out of 1200 (max. 8388607)
- 139 named destinations out of 1000 (max. 500000)
- 383 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1283 PDF objects out of 1440 (max. 8388607)
+ 152 named destinations out of 1000 (max. 500000)
+ 393 words of extra memory for PDF output out of 10000 (max. 10000000)
 

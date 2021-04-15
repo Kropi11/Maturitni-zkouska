@@ -1,17 +1,18 @@
 \babel@toc {czech}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Porovnání ASP.NET Core a ASP.NET \cite {ASPNETCORE_ASPNET}}}{7}{figure.2.1}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Ukládání View v rámci projektu}}{10}{figure.2.2}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Porovnání ASP.NET Core a ASP.NET \cite {ASPNETCORE_ASPNET}\relax }}{12}{figure.caption.2}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Ukládání View v rámci projektu\relax }}{15}{figure.caption.3}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Složka Models}}{13}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Složka Views}}{15}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Lišta s uživatelským jménem a tlačítkem odhlášení.}}{16}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Uživatelské menu se všema stránkama.}}{18}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Složka Controllers}}{20}{figure.3.5}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Url při chybě aktualizace databáze.}}{27}{figure.3.6}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Chybová zpráva při chybě aktualizace databáze.}}{29}{figure.3.7}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Složka Models\relax }}{18}{figure.caption.4}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Složka Views\relax }}{20}{figure.caption.5}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Lišta s uživatelským jménem a tlačítkem odhlášení.\relax }}{21}{figure.caption.6}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Uživatelské menu se všema stránkama.\relax }}{23}{figure.caption.7}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Složka Controllers\relax }}{25}{figure.caption.8}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Url při chybě aktualizace databáze.\relax }}{32}{figure.caption.9}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Chybová zpráva při chybě aktualizace databáze.\relax }}{34}{figure.caption.10}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Formuláře pro přihlašování a registraci\relax }}{36}{figure.caption.11}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

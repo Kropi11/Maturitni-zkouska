@@ -8,6 +8,11 @@
 \providecommand{\selectlanguage}[1]{\relax}
 \providecommand{\eprint}[2][]{\url{#2}}
 
+\bibitem{ASP.NET_Core_Autorizace}
+ANDERSON, R.: \emph{Úvod k autorizaci v ASP.NET Core}. Microsoft Corporation,
+  2016, [cit. 2021-4-15].
+\newline\urlprefix\url{https://docs.microsoft.com/cs-cz/aspnet/core/security/authorization/introduction?view=aspnetcore-5.0}
+
 \bibitem{ASP.NET_Core_Identity}
 ANDERSON, R.: \emph{Úvod do Identity ASP.NET Core}. Microsoft Corporation,
   2020, [cit. 2021-4-10].
@@ -26,6 +31,11 @@ ASP.NET vs ASP.NET Core. 2017, [cit. 2021-4-4].
 Autorizace. In: Wikipedia: the free encyclopedia [online]. San Francisco (CA):
   Wikimedia Foundation, 2021, [cit. 2021-04-12].
 \newline\urlprefix\url{https://cs.wikipedia.org/wiki/Autorizace}
+
+\bibitem{Hash}
+Hašovací funkce. In: Wikipedia: the free encyclopedia [online]. San Francisco
+  (CA): Wikimedia Foundation, 2021, [cit. 2021-04-15].
+\newline\urlprefix\url{https://cs.wikipedia.org/wiki/Ha%C5%A1ovac%C3%AD_funkce}
 
 \bibitem{MVC}
 Microsoft Corporation: \emph{ASP.NET MVC Pattern}. 2021, [cit. 2021-4-5].
