@@ -33,7 +33,7 @@
 	\obsah
 
 	\chapter{Úvod}
-    Výstupem této práce by měla být plně funkční webová aplikace, která by umožňovala efektivní správu povinných prací, které studenti odevzdávají za všechny roky studia.\par
+    Výsledkem této maturitní práce by měla být plně funkční webová aplikace, která by umožňovala efektivní správu povinných prací, které studenti odevzdávají za všechny roky studia.\par
 	Pro realizaci jsem se rozhodl využít otevřený framework pro tvorbu webových aplikací APS.NET Core vyvinutý společností Microsoft Corporation. Pro tento framework jsem se rozhodl hlavně díky jeho jednoduché implementaci, možnosti ho vyvíjet a spouštět na~platformách Windows, Linux i macOS a vysokému výkonu.\par
 	Pro návrh stránky využiji architektonický vzor MVC, ten mi pomůže oddělit logiku webové aplikace (Backend) od výstupu (Frontend). Pro to, aby tento vzor byl účinný, musím si rozvrhnout oprávnění, tedy role, které se ve webové aplikaci budou vyskytovat.\par
 	Mimo jiné musím vyřešit způsob registrování a následného přihlašování uživatelů, tak~aby se eliminovala možnost neoprávněného přihlášení. To vše ale nebude správně fungovat, pokud nebudu mít připravenou databázi. Tu mám v plánu vytvořit v MySQL, což je velice rozšířený otevřený systém řízení báze dat.\par
@@ -275,15 +275,30 @@
 	\label{Edit_Post}
 	\end{listing}
 	\subsection{Smazání}
-	Posledním typem, který v práci využívám je smazání.
+	Posledním typem, který v práci využívám je smazání. Entity, které mají relaci se některou jinou netitou nelze smazat.\par
+	Podobně, jak tomu bylo u editace a vytvoření, i zde využívám 2 metody. První, která načítá stránku s možností potvrdit smazání nebo ho zrušit. Druhá, která provede samotné smazání entity.\par
+	Pokud uživatel v seznamu entity vybere možnost smazat entitu, aplikace vyšle požadavek GET a načte view UserDelete (viz zdorojový kód \ref{Delete}). Na této stránce má uživatel možnost potvrdit smazání entity, nebo ho zrušit. Pokud se rozhodne pro smazání, vytvoří se požadavek POST, který zavolá metodu HttpPost UserDelete (viz zdorojový kód \ref{Delete_Post}), která smazání entity provede. V HttpPost UserDelete se nachází blok try-catch, který bude kontrolovat, zda nedošlo při aktualizaci databáze k chybě. Pokud k chybě dojde, metoda HttpPost UserDelete zavolá metodu HttpGet UserDelete a předá ji parametr, který indukuje, že při aktualizaci databáze došlo k chybě (\viz{DeleteUser_URL}).\par
+	Metoda HttpGet UserDelete poté opět zobrazí potvrzovací stránku, společně s chybovou zprávou. Uživatel poté může požadavek opakovat, nebo ho zrušit.\par
+	Parametr saveChangesError je při prvním volání metody HttpGet UserDelete false, to znamená, že tato metoda není volaná z důvodu chyby a nevypisuje tedy chybovou zprávu. Pokud ale tuto HttpGet UserDelete metodu volá metoda HttpPost UserDelete v návaznosti na chybu při aktualizaci databáze, nastaví se saveChangesError na true a proto se chybová zpráva vykreslí na stránce (\viz{DeleteUser_ErrorMessage}).
+	\begin{figure}[h!]
+		\includegraphics[width=\textwidth]{DeleteUser_lista}
+		\caption{Url při chybě aktualizace databáze.}
+		\label{DeleteUser_URL}
+	\end{figure}
 	\begin{listing}[H]
 	\inputminted{csharp}{SourceCode/Controllers/Delete.cs}
-	\caption{Controller - Smazání a)}
+	\caption{Controller - HttpGet UserDelete}
 	\label{Delete}
 	\end{listing}
+	\begin{figure}[h!]
+		\centering
+		\includegraphics[scale=0.5]{DeleteUser}
+		\caption{Chybová zpráva při chybě aktualizace databáze.}
+		\label{DeleteUser_ErrorMessage}
+	\end{figure}
 	\begin{listing}[H]
 	\inputminted{csharp}{SourceCode/Controllers/Delete_Post.cs}
-	\caption{Controller - Smazání b)}
+	\caption{Controller - HttpPost UserDelete}
 	\label{Delete_Post}
 	\end{listing}
 	
