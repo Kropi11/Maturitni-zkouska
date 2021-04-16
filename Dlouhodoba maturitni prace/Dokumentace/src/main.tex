@@ -22,8 +22,18 @@
 \begin{document}
 
 	\titulniStrana
-	
-	\anotace Maturitní práce se zaměřuje na návrh a realizaci webové aplikace, která má na starosti správu povinných prací odevzdaných žáky. Vyučující má možnost vytvořit zadání a případně ho upravit, nebo odstranit. Žáci mají možnost procházet jak aktuální práce, tak práce, které již odevzdali například v minulých ročnících. \\
+
+	\newpage\thispagestyle{empty}
+	Originální zadání
+	\newpage
+	\newpage\null\thispagestyle{empty}
+	Originální zadání
+	\newpage
+	\newpage\null\thispagestyle{empty}
+	Originální zadání
+	\newpage
+
+	\anotace Maturitní práce se zaměřuje na návrh a realizaci webové aplikace, která má na starosti správu povinných prací odevzdaných žáky. Vyučující má možnost vytvořit zadání a~případně ho upravit, nebo odstranit. Žáci mají možnost procházet jak aktuální práce, tak práce, které již odevzdali například v minulých ročnících. \\
 	\textbf{Klíčová slova: } C\#; ASP.NET Core; Entity Framework Core; HTML; JavaScript; CSS; Bootstrap; MySQL; WebApp
 
 	\annotation The graduation thesis focuses on the design and implementation of a web application, which is in charge of managing the compulsory work submitted by students. The teacher has the opportunity to create an assignment and possibly modify or delete it. Pupils have the opportunity to go through both current work and work that they have already submitted, for example, in previous years.\\
@@ -31,12 +41,12 @@
 
 	\licencniSmlouva{18. 04. 2021}
 
-	\podekovani Tímto bych chtěl poděkovat Mgr. Milanu Janouškovi za vedení mé Maturitní práce, cenné rady a odborný dohled. Děkuji také za pomoc všem, kteří se jakkoliv podíleli na realizaci této práce.
+	\podekovani Tímto bych chtěl poděkovat Mgr. Milanu Janouškovi za vedení mé maturitní práce, cenné rady a odborný dohled. Děkuji také za pomoc všem, kteří se jakkoliv podíleli na realizaci této práce.
 	
 	\obsah
 
 	\chapter{Úvod}
-    Výsledkem této maturitní práce by měla být plně funkční webová aplikace, která by umožňovala efektivní správu povinných prací, které studenti odevzdávají za všechny roky studia.\par
+    Výsledkem této maturitní práce je plně funkční webová aplikace, která by umožňovala efektivní správu povinných prací, které studenti odevzdávají za všechny roky studia.\par
 	Pro realizaci jsem se rozhodl využít otevřený framework pro tvorbu webových aplikací APS.NET Core vyvinutý společností Microsoft Corporation. Pro tento framework jsem se rozhodl hlavně díky jeho jednoduché implementaci, možnosti ho vyvíjet a spouštět na~platformách Windows, Linux i macOS a vysokému výkonu.\par
 	Pro návrh stránky využiji architektonický vzor MVC, ten mi pomůže oddělit logiku webové aplikace (Backend) od výstupu (Frontend). Pro to, aby tento vzor byl účinný, musím si rozvrhnout oprávnění, tedy role, které se ve webové aplikaci budou vyskytovat.\par
 	Mimo jiné musím vyřešit způsob registrování a následného přihlašování uživatelů, tak~aby se eliminovala možnost neoprávněného přihlášení. To vše ale nebude správně fungovat, pokud nebudu mít připravenou databázi. Tu mám v plánu vytvořit v MySQL, což je velice rozšířený otevřený systém řízení báze dat.\par
@@ -167,7 +177,7 @@
 	\end{figure}
 
 	\subsection{\_Layout}
-	V záhlaví a zápatí html souborů se nachází metadata a odkazy na CSS/Javascript. Pro to, abych nemusel zápatí a záhlaví psát do každého view, můžu je napsat právě do~souboru \_Layout.cshtml. Když se následně generuje stránka pro uživatele, načte se prvně \_Layout.cshtml a k němu se na místě, kde je volána funkce RenderBody() (viz zdrojový kód \ref{renderbody}) doplní view, které uživatel požaduje.\par
+	V záhlaví a zápatí html souborů se nachází metadata a odkazy na CSS/Javascript. Pro to, abych nemusel zápatí a záhlaví psát do každého view, můžu je napsat právě do~souboru \_Layout.cshtml. Když se následně generuje stránka pro uživatele, načte se prvně \_Layout.cshtml a k němu se na místě, kde je volána funkce RenderBody() (viz~zdrojový kód \ref{renderbody}) doplní view, které uživatel požaduje.\par
 	Podobně se pracuje i s partial. Pro jejich zavolání je potřeba napsat tag <partial /> s~parametrem name, jehož hodnota je název požadovaného partial (viz zdrojové kódy \ref{loginpartial} pro~\_LoginPartial.cshtml a \ref{menupartial} pro \_MenuPartial.cshtml). Opět se volají z místa, ve kterém je chceme zobrazit.
 	\begin{listing}[H]
 		\inputminted{html}{SourceCode/Views/Body.html}
@@ -219,7 +229,7 @@
 
 	\section{Controller}
 	Poslední položkou v MVC vzoru je controller. Každá role (kromě vedení, to má stejná práva jako administrator) bude mít vlastní controller. V projektu mám celkem 4 role, jejich bližší popis je v kategorii \ref{Autorizace}\nameref{Autorizace}, to znamená, že zde budou 3 controllery pro~role a~k tomu 1 controller pro home adresář, kde je Domovská stránka (\viz{Controllers}).\par
-	Protože každá role má mít vlastní controller, musel jsem nějaký způsobem ošetřit, aby uživatel např. s rolí studenta nemohl načíst view z controlleru pro administratora. Uživatele je tedy potřeba autorizovat\footnote{Autorizace je proces získávání souhlasu s provedením nějaké operace, povolení přístupu někam, k~někomu nebo něčemu.\cite{Autorizace}} k přístupu do controlleru. Pro tuto akci postačí napsat nad třídu kód viz zdrojový kód \ref{Autorize}.
+	Protože každá role má mít vlastní controller, musel jsem nějaký způsobem ošetřit, aby uživatel např. s rolí studenta nemohl načíst view z controlleru pro administratora. Uživatele je tedy potřeba autorizovat\footnote{Autorizace je proces získávání oprávnění k provedení nějaké operace, nebo přístupu někam.\cite{Autorizace}} k přístupu do controlleru. Pro tuto akci postačí napsat nad třídu kód viz zdrojový kód \ref{Autorize}.
 	\begin{listing}[H]
 		\inputminted{csharp}{SourceCode/Controllers/Autorize.cs}
 		\caption{Controller - Autorizace}
@@ -290,7 +300,7 @@
 	Controller zkontroluje parametr a pokud nenalezl chybu, načte první entitu, jejiž Id je shodné s parametrem, předaným v url. Následuje metoda TryUpdateModel, ta aktualizuje zadanou instanci modelu pomocí hodnot v paramteru (FirstName, LastName, atd.). Metodu zahrneme do podmínky. Pokud je podmínka splněna (nenastane chyba), asynchronně uloží všechny změny provedené v tomto kontextu a uloží je do databáze. Poté se přesměruje na stránku UsersOverview. Pokud nastane chyba (podmínka není splněna), vyvolá se větev catch, která vrátí chybovou hlášku.
 	\begin{listing}[H]
 		\inputminted{csharp}{SourceCode/Controllers/Edit_Post.cs}
-		\caption{Controller - Editace, odeslání změn)}
+		\caption{Controller - Editace, odeslání změn}
 		\label{Edit_Post}
 	\end{listing}
 
@@ -407,7 +417,7 @@
 	Tabulky, které začínají předponou aspnet... byly vygenerovány pomocí ASP.NET Core.
 	\begin{figure}[h!]
 		\includegraphics[width=\textwidth]{Databaze}
-		\caption{Návrh databáze.}
+		\caption{Návrh databáze}
 		\label{NavrhDatabaze}
 	\end{figure}
 
@@ -442,7 +452,7 @@
 
 	\renewcommand\listoflistingscaption{Seznam zdrojových kódů}
 	\listoflistings
-	
+
 
 	\bibliographystyle{czechiso}
 	\bibliography{main}
