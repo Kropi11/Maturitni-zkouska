@@ -12,6 +12,8 @@
 \contentsline {listing}{\numberline {12}{\ignorespaces Controller - Editace, odeslání změn)\relax }}{31}{listing.12}%
 \contentsline {listing}{\numberline {13}{\ignorespaces Controller - HttpGet UserDelete\relax }}{33}{listing.13}%
 \contentsline {listing}{\numberline {14}{\ignorespaces Controller - HttpPost UserDelete\relax }}{34}{listing.14}%
-\contentsline {listing}{\numberline {15}{\ignorespaces Registrace - services.AddDefaultIdentity<PPSPSUser>)\relax }}{36}{listing.15}%
-\contentsline {listing}{\numberline {16}{\ignorespaces Student - Přířazení uživatele do role.)\relax }}{37}{listing.16}%
-\contentsline {listing}{\numberline {17}{\ignorespaces Drop-down list ze seznamu tříd\relax }}{45}{listing.17}%
+\contentsline {listing}{\numberline {15}{\ignorespaces Registrace - services.AddDefaultIdentity<PPSPSUser>)\relax }}{37}{listing.15}%
+\contentsline {listing}{\numberline {16}{\ignorespaces Student - Přířazení uživatele do role.\relax }}{38}{listing.16}%
+\contentsline {listing}{\numberline {17}{\ignorespaces Databáze - Services Configure\relax }}{40}{listing.17}%
+\contentsline {listing}{\numberline {18}{\ignorespaces Databáze - ConnectionString\relax }}{40}{listing.18}%
+\contentsline {listing}{\numberline {19}{\ignorespaces Drop-down list ze seznamu tříd\relax }}{48}{listing.19}%

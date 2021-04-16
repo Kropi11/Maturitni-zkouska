@@ -218,7 +218,7 @@
 	\end{listing}
 
 	\section{Controller}
-	Poslední položkou v MVC vzoru je controller. Každá role (kromě vedení, to má stejná práva jako administrator) bude mít vlastní controller. V projektu mám celkem 4 role, jejich bližší popis je v kategorii \ref{Autorizace}\nameref{Autorizace}, to znamená, že zde budou 3 controllery pro role a~k tomu 1 controller pro home adresář, kde je Domovská stránka (\viz{Controllers}).\par
+	Poslední položkou v MVC vzoru je controller. Každá role (kromě vedení, to má stejná práva jako administrator) bude mít vlastní controller. V projektu mám celkem 4 role, jejich bližší popis je v kategorii \ref{Autorizace}\nameref{Autorizace}, to znamená, že zde budou 3 controllery pro~role a~k tomu 1 controller pro home adresář, kde je Domovská stránka (\viz{Controllers}).\par
 	Protože každá role má mít vlastní controller, musel jsem nějaký způsobem ošetřit, aby uživatel např. s rolí studenta nemohl načíst view z controlleru pro administratora. Uživatele je tedy potřeba autorizovat\footnote{Autorizace je proces získávání souhlasu s provedením nějaké operace, povolení přístupu někam, k~někomu nebo něčemu.\cite{Autorizace}} k přístupu do controlleru. Pro tuto akci postačí napsat nad třídu kód viz zdrojový kód \ref{Autorize}.
 	\begin{listing}[H]
 		\inputminted{csharp}{SourceCode/Controllers/Autorize.cs}
@@ -254,9 +254,9 @@
 	\end{itemize}
 
 	\subsection{Seznam entit} \label{Seznam_entit}
-	Jednou ze základních funkcí, kterou by měla tato webová aplikace disponovat je výpis seznamu entit (viz zdrojový kód \ref{ListOfEntit}). Pro to, abychom mohli entity vypsat, je potřeba je nejprve uložit do implicitně typované lokální proměnné var\footnote{Typ instance je odvozen z prvku zadaného v inicializátoru. To znamená, že kompilátor určí a přiřadí nejvhodnější typ proměnné.}. Do této vytvořené proměnné přiřadíme \_Contex.Users, což je metoda v AuthDBContext.cs. Právě tato třída je zodopovědná za interakci s databází. Poté pomocí .OrderBy(u => u.LastName) určím, že chci řadit vzestupně podle proměné LastName, tedy příjmení. Protože s entitami již dále nepotřebuji pracovat, zakáži trasování pomocí .AsNoTracking().\par
+	Jednou ze základních funkcí, kterou by měla tato webová aplikace disponovat je výpis seznamu entit (viz zdrojový kód \ref{ListOfEntit}). Pro to, abychom mohli entity vypsat, je potřeba je nejprve uložit do implicitně typované lokální proměnné var\footnote{Typ instance je odvozen z prvku zadaného v inicializátoru. To znamená, že kompilátor určí a přiřadí nejvhodnější typ proměnné.}. Do této vytvořené proměnné přiřadíme \_Contex.Users, což je metoda v AuthDBContext.cs. Právě tato třída je zodopovědná za interakci s databází. Poté pomocí .OrderBy(u => u.LastName) určím, že~chci řadit vzestupně podle proměné LastName, tedy příjmení. Protože s entitami již dále nepotřebuji pracovat, zakáži trasování pomocí .AsNoTracking().\par
 	Takto jsem nadefinoval proměnou var users, kterou nyní stačí pouze uložit do List<T>\footnote{List (česky seznam) se řadí do kolekci, které umožňují prvky za běhu programu přidávat a mazat.}, a protože Task<IActionResul> požaduje asynchronní výstup, přidám k .ToList() klíčové slovíčko Async.\par
-	Ná výstup se nám tedy vráti seznam uživatelů seřazený vzestupně podle příjmení, s kterým dále pracuji ve view pomocí foreach().
+	Ná výstup se nám tedy vráti seznam uživatelů seřazený vzestupně podle příjmení, s~kterým dále pracuji ve view pomocí foreach().
 	\begin{listing}[H]
 		\inputminted{csharp}{SourceCode/Controllers/ListOfEntit.cs}
 		\caption{Controller - Seznam entit}
@@ -264,7 +264,7 @@
 	\end{listing}
 
 	\subsection{Detail} \label{Deail}
-	Pokud chceme zobrazit detail některé entity, např. uživatele (viz zdrojový kód \ref{Detail}), potřebejeme nějakým jednoznačným způsobem definovat, o jakou entitu se jedná. Jedním z takových způsobů může být třeba primární klíč\footnote{Jednoznačná identifikace entity v rámci databáze.}. A nyní, jakým způsobem ji předat do controlleru, aby s ní mohl pracovat? Přesně k tomu se využívají parametry v url\footnote{Uniform Resource Locator, neboli webová adresa.} adrese. Jak je vidět ve zdrojovék kódu\ref{Detail}, metoda UserOverview přebírá nějaký parametr, který nazýváme id a má datový typ string. Výsledná url může tedy vypadat například takto: \\
+	Pokud chceme zobrazit detail některé entity, např. uživatele (viz zdrojový kód \ref{Detail}), potřebejeme nějakým jednoznačným způsobem definovat, o jakou entitu se jedná. Jedním z takových způsobů může být třeba primární klíč\footnote{Jednoznačná identifikace entity v rámci databáze.}. A nyní, jakým způsobem ji předat do~controlleru, aby s ní mohl pracovat? Přesně k tomu se využívají parametry v url\footnote{Uniform Resource Locator, neboli webová adresa.} adrese. Jak je vidět ve zdrojovék kódu\ref{Detail}, metoda UserOverview přebírá nějaký parametr, který nazýváme id a má datový typ string. Výsledná url může tedy vypadat například takto: \\
 	https://localhost:5001/Administration/UserOverview/f0a5d163-b81c-41d1-a488-89\\753377fd1c\\
 	Jako první se zde nachází protokol (https), po něm následuje doména (localhost:5001\footnote{Aplikace momentálně funguje na mém počítači, proto je doména localhost.}), a za doménou se vypíše jméno controlleru, ve kterém se nachází naše požadovaná stránka UserOverview. url zakončuje řetězec náhodných znaků, a to je právě id uživatele, tedy náš parametr.\par
 	Tímto způsobem jsem tedy vyřešil identifikaci entity, které detail požadujeme zobrazit. A nyní zpět ke controlleru. Pokud controller dostane požadavek na detail entity, ověří nejprve, zda obdržel parametr id. Pokud ne, vyvolá metodu NotFound() a vrátí ji na výstup. V opačném případě se zahájí proces, která jsem podrobněji popisoval již v~předchozí kapitole (viz kapitola \ref{Seznam_entit}\nameref{Seznam_entit}).\par
@@ -278,15 +278,15 @@
 	\end{listing}
 
 	\subsection{Editace}
-	Třetí typ stránky je určená k editaci. Pro to, abychom mohli entity upravovat, potřebujeme využít dvě metody. První metoda (viz zdrojový kód \ref{Edit}) má za úkol načíst data o entitě z databáze, druhá následně upravená data odeslat zpět do databáze.\par
+	Třetí typ stránky je určená k editaci. Pro to, abychom mohli entity upravovat, potřebujeme využít dvě metody. První metoda (viz zdrojový kód \ref{Edit}) má za úkol načíst data o~entitě z databáze, druhá následně upravená data odeslat zpět do~databáze.\par
 	Při načítání dat je princip stejný, jak u načítání detailu (viz kapitola \ref{Detail}\nameref{Detail}), opět přebíráme parametr z url. Pokud se tam nachází, hledáme pomocí metody FindAsync(id) idetitu, jejiž primární klíč je shodný s naším parametrem. Pokud se parametr nenalezne, vyvolá se metoda NotFound(), která vrátí na výstup chybovou hlášku. Následně ověříme, zda se nějaká entita nalezla, pokud ne, controller vrací chybovou hlášku.\par
-	Protože se jedná o editaci, potřebuji načíst seznam všech tříd tak, abych mohl případně změnit uživateli třídu. Z toho důvodu jsem si vytvořil metodu s názvem PopulateClassesWithIdDropDownList() (viz zdrojový kód \ref{DropDownList}), která ma za úkol načíst všechny entity z tabulky tříd, a jejich Id a název vložit do drop-down menu.
+	Protože se jedná o editaci, potřebuji načíst seznam všech tříd tak, abych mohl případně změnit uživateli třídu. Z toho důvodu jsem si vytvořil metodu s názvem PopulateClassesWithIdDropDownList() (viz zdrojový kód \ref{DropDownList}), která ma za úkol načíst všechny entity z~tabulky tříd, a jejich Id a název vložit do drop-down menu.
 	\begin{listing}[H]
 	\inputminted{csharp}{SourceCode/Controllers/Edit.cs}
 	\caption{Controller - Editace, načtení entit)}
 	\label{Edit}
 	\end{listing}
-	Máme načtenou stránku s entitami, provedeme změny a chceme je odeslat zpět do databáze. V tuto chvíli využijeme druhou metodu (viz zdrojový kód \ref{Edit_Post}), která má provést změny v databázi. Protože se dvě metody nemohou nazývat stejným jménem, musím této metodě přidělit pomocí atributu tzv. ActionName, které následně volám z view. V atributech mimo jiné nastavím i dotazovací metodu (tedy HttpPost) a ValidateAntiForgeryToken. ValidateAntiForgeryToken je ochrana proti padělání požadavků mezi weby. MVC zapíše jedinečnou hodnotu do cookies a tatéž hodnota se zapíše i do formuláře. Před odesláním formuláře se tyto hodnoty porovnají a pokud jsou různé, formulář se neodešle.\par
+	Máme načtenou stránku s entitami, provedeme změny a chceme je odeslat zpět do databáze. V tuto chvíli využijeme druhou metodu (viz zdrojový kód \ref{Edit_Post}), která má provést změny v databázi. Protože se dvě metody nemohou nazývat stejným jménem, musím této metodě přidělit pomocí atributu tzv. ActionName, které následně volám z view. V~atributech mimo jiné nastavím i dotazovací metodu (tedy HttpPost) a ValidateAntiForgeryToken. ValidateAntiForgeryToken je ochrana proti padělání požadavků mezi weby. MVC zapíše jedinečnou hodnotu do cookies a tatéž hodnota se zapíše i do formuláře. Před odesláním formuláře se tyto hodnoty porovnají a pokud jsou různé, formulář se~neodešle.\par
 	Controller zkontroluje parametr a pokud nenalezl chybu, načte první entitu, jejiž Id je shodné s parametrem, předaným v url. Následuje metoda TryUpdateModel, ta aktualizuje zadanou instanci modelu pomocí hodnot v paramteru (FirstName, LastName, atd.). Metodu zahrneme do podmínky. Pokud je podmínka splněna (nenastane chyba), asynchronně uloží všechny změny provedené v tomto kontextu a uloží je do databáze. Poté se přesměruje na stránku UsersOverview. Pokud nastane chyba (podmínka není splněna), vyvolá se větev catch, která vrátí chybovou hlášku.
 	\begin{listing}[H]
 		\inputminted{csharp}{SourceCode/Controllers/Edit_Post.cs}
@@ -299,7 +299,7 @@
 	Podobně, jak tomu bylo u editace a vytvoření, i zde využívám 2 metody. První, která načítá stránku s možností potvrdit smazání nebo ho zrušit. Druhá, která provede samotné smazání entity.\par
 	Pokud uživatel v seznamu entity vybere možnost smazat entitu, aplikace vyšle požadavek GET a načte view UserDelete (viz zdorojový kód \ref{Delete}). Na této stránce má uživatel možnost potvrdit smazání entity, nebo ho zrušit. Pokud se rozhodne pro smazání, vytvoří se požadavek POST, který zavolá metodu HttpPost UserDelete (viz zdorojový kód \ref{Delete_Post}), která smazání entity provede. V HttpPost UserDelete se nachází blok try-catch, který bude kontrolovat, zda nedošlo při aktualizaci databáze k chybě. Pokud k chybě dojde, metoda HttpPost UserDelete zavolá metodu HttpGet UserDelete a předá ji parametr, který indukuje, že při aktualizaci databáze došlo k chybě (\viz{DeleteUser_URL}).\par
 	Metoda HttpGet UserDelete poté opět zobrazí potvrzovací stránku, společně s chybovou zprávou. Uživatel poté může požadavek opakovat, nebo ho zrušit.\par
-	Parametr saveChangesError je při prvním volání metody HttpGet UserDelete false, to znamená, že tato metoda není volaná z důvodu chyby a nevypisuje tedy chybovou zprávu. Pokud ale tuto HttpGet UserDelete metodu volá metoda HttpPost UserDelete v návaznosti na chybu při aktualizaci databáze, nastaví se saveChangesError na true a~proto se chybová zpráva vykreslí na stránce (\viz{DeleteUser_ErrorMessage}).
+	Parametr saveChangesError je při prvním volání metody HttpGet UserDelete false, to znamená, že tato metoda není volaná z důvodu chyby a nevypisuje tedy chybovou zprávu. Pokud ale tuto HttpGet UserDelete metodu volá metoda HttpPost UserDelete~v návaznosti na chybu při aktualizaci databáze, nastaví se saveChangesError na true a~proto se chybová zpráva vykreslí na stránce (\viz{DeleteUser_ErrorMessage}).
 	\begin{figure}[h!]
 		\includegraphics[width=\textwidth]{DeleteUser_lista}
 		\caption{Url při chybě aktualizace databáze.}
@@ -332,11 +332,11 @@
 		\item Uživatel vybere možnost přihlásti se.
 		\item Uživatel se pokusí zobrazit stránku, ke které nemá opravnění, nebo když ho aplikace nebyla schopna ověřit.
 	\end{itemize}
-	Při odeslání přihlašovacího formuláře se zavolá metoda OnPostAsync. V této metodě se volá objekt \_signInManager, který provede operaci PasswordSignInAsync. Dojde k ověření uživatelského jména/e-mailu a hesla. Mimo jiné se zkontroluje, zda není zaškrtnuta možnost RememberMe, tedy pamatovat si přihlášení. Pokud je uživatel úspěšně ověřen, provede se autentizace uživatele, v opačném případě se vrátí chybová zpráva.\par
-	Jestliže je zaškrtnuta možnost RememberMe, uloží se informace o identitě uživatele do cookie. Pokud se uživatel odhlásí, zavolá se metoda LogoutModel.OnPost a v ní se provede operace SignOutAsync, která vymaže deklarace identity uživatele uložené v cookie.
+	Při odeslání přihlašovacího formuláře se zavolá metoda OnPostAsync. V této metodě se volá objekt \_signInManager, který provede operaci PasswordSignInAsync. Dojde k~ověření uživatelského jména/e-mailu a hesla. Mimo jiné se zkontroluje, zda není zaškrtnuta možnost RememberMe, tedy pamatovat si přihlášení. Pokud je uživatel úspěšně ověřen, provede se autentizace uživatele, v opačném případě se vrátí chybová zpráva.\par
+	Jestliže je zaškrtnuta možnost RememberMe, uloží se informace o identitě uživatele do~cookie. Pokud se uživatel odhlásí, zavolá se metoda LogoutModel.OnPost a v ní se provede operace SignOutAsync, která vymaže deklarace identity uživatele uložené v cookie.
 
 	\section{Registrace}
-	Když se chce uživatel registrovat, vyplní formulář na stránce Register (\viz{RegistracniFormular}) a odešle ho. Odeslání formuláře vyvolá metodu RegisterModel.OnPostAsync. Uživatel je následně vytvořen pomocí objektu \_userManager, ve kterém se provede operace CreateAsync. CreateAsync vytvoří uživatele s parametry user a password (převede se na hash\footnote{Hašovací funkce je matematická funkce pro převod vstupních dat do malého čísla.\cite{Hash}} a následně uloží).\par
+	Když se chce uživatel registrovat, vyplní formulář na stránce Register (\viz{RegistracniFormular}) a odešle ho. Odeslání formuláře vyvolá metodu RegisterModel.OnPostAsync. Uživatel je~následně vytvořen pomocí objektu \_userManager, ve kterém se provede operace CreateAsync. CreateAsync vytvoří uživatele s parametry user a password (převede se na hash\footnote{Hašovací funkce je matematická funkce pro převod vstupních dat do malého čísla.\cite{Hash}} a následně uloží).\par
 	Ve třídě IdentityHostingStartup.cs lze nastavit v services.AddDefaultIdentity<PPSPSUser> (viz zdrojový kód \ref{AddDefaultIdentity}), jaké požadavky musí splňovat heslo, aby bylo validní. Může se jednat například o povinnosti využít velká písmena, nealfanumerické znaky, atd. Lze nastavit i povinnost mít ověřený účet, jinak se uživatel nemůže přihlásit, dokud tak neučinní.
 
 	\begin{figure}[H]
@@ -352,7 +352,7 @@
          \centering
          \includegraphics[width=\textwidth]{RegistracniFormular}
          \caption{Registrace - Registrační formulář}
-         \label{fig:three sin x}
+         \label{RegistracniFormular}
      \end{subfigure}
         \caption{Formuláře pro přihlašování a registraci}
         \label{PrihlasovaniRegistrace}
@@ -364,31 +364,80 @@
 	\end{listing}
 
 	\chapter{Autorizace} \label{Autorizace}
-	Autorizace se týká procesu, který určuje, co může uživatel dělat. Pro nastavení rolí využívám ASP.NET Core Authorization, ten poskytuje jednoduchou, deklarativní roli a bohatý model založený na zásadách \cite{ASP.NET_Core_Autorizace}.
+	Autorizace se týká procesu, který určuje, co může uživatel dělat. Pro nastavení rolí využívám ASP.NET Core Authorization, ten poskytuje jednoduchou, deklarativní roli a~bohatý model založený na zásadách \cite{ASP.NET_Core_Autorizace}.
 
 	\section{Student}
 	První rolí je Student. Uživatelé s touto rolí mají možnost číst seznam aktuálních prací a k pracím se zapsat. Do zapsaných prací může student odevzdávat své řešení.\par
-	Při registraci se uživatel automaticky přiřadí do této role. Děje se tak při registraci, kde vyvolám objekt \_userManager s operaci AddToRoleAsync (viz zdrojový kód \ref{AddToRole}) a ta přidá uživatele do role z parametru.
+	Při registraci se uživatel automaticky přiřadí do této role. Děje se tak při procesu registrace, kde vyvolám objekt \_userManager s operaci AddToRoleAsync (viz zdrojový kód \ref{AddToRole}) a ta přidá uživatele do role z parametru.
 
 	\begin{listing}[H]
-	\inputminted{csharp}{SourceCode/AddToRole.cs}
-	\caption{Student - Přířazení uživatele do role.)}
-	\label{AddToRole}
+		\inputminted{csharp}{SourceCode/AddToRole.cs}
+		\caption{Student - Přířazení uživatele do role.}
+		\label{AddToRole}
 	\end{listing}
 
 	\section{Učitel}
 	Tato role má oprávnění vytvářet, editovat a mazat zadání a kontrolovat řešení, která odevzdají žáci. Zároveň má možnost zobrazit profil všech uživatelů a upravit ho. Uživatel musí být do této role přidán administratorem.
 	\section{Administrator}
-	Role administratora má všechny oprávnění pro správu webové aplikace. Je konstruována tak, aby pokud možno nemusel nikdo zasahovat přímo do databáze. To znamená, že všechny akce s databází je možné provádět z uživatelského rozhraní.\par
+	Role administratora má všechny oprávnění pro správu webové aplikace. Je konstruována tak, aby pokud možno nemusel nikdo zasahovat přímo do databáze. To znamená, že~všechny akce s databází je možné provádět z uživatelského rozhraní.\par
 	Administrator může vytvářet, upravovat nebo mazat předměty, třídy, ročníky, skupiny a samotná zadání.
 	\section{Vedení školy}
 	Poslední rolí je Vedení školy. Vzhledem k tomu, že uživatelé s touto rolí mají mít přehled o všech zadáních, třídách, uživatelích, atd. mají stejná opravnění jako administrator. Jediná věc, která tuto roli odlišuje od role Administrator je název. Důvodem je, aby bylo jasné, zda je uživatel administratorem webové aplikace, nebo členem vedení školy.
 
 	\chapter{Databáze} \label{Databaze}
-	\section{Připojení databáze}
+	\section{Propojení aplikace a databáze}
+	Aby bylo možné propojit databázi s webovou aplikací, musím stáhnout package, který mi to dovolí. V této webové aplikaci využívám MySQL databázi, proto jsem si stáhl balíček MySql.Data.EntityFrameworkCore. To provedu přes NuGet Package Manager.\par
+	V IdentityHostingStartup.cs je potřeba do metody Configure definovat DbContext, databázi, kterou využívám a connection string (v mém případě jen proměnou AuthDBContextConnection, ve které je connection string uložen) (viz zdrojový kód \ref{Databaze_Configure}).\par
+	V appsettings.json následně vytvořím ConnectionString (viz zdrojový kód \ref{ConnectionString}). Protože databáze momentálně fungu na localhostu, má IP adresu 127.0.0.1. Poté určím, jaké schéma chci načíst a pod jakou identitou se chci přihlásit.
+
+	\begin{listing}[H]
+		\inputminted{csharp}{SourceCode/Databaze/Databaze.cs}
+		\caption{Databáze - Services Configure}
+		\label{Databaze_Configure}
+	\end{listing}
+
+	\begin{listing}[H]
+		\inputminted{json}{SourceCode/Databaze/ConnectionString.json}
+		\caption{Databáze - ConnectionString}
+		\label{ConnectionString}
+	\end{listing}
+
 	\section{Návrh databáze}
+	Celou databázi, kterou v aplikaci používám je vidět na obrázku \ref{NavrhDatabaze}. V následujících podkapitolách nastíním, co je úkolem jaké tabulky.\par
+	Tabulky, které začínají předponou aspnet... byly vygenerovány pomocí ASP.NET Core.
+	\begin{figure}[h!]
+		\includegraphics[width=\textwidth]{Databaze}
+		\caption{Návrh databáze.}
+		\label{NavrhDatabaze}
+	\end{figure}
+
+	\subsection{Aspnet tabulky}
+	\begin{itemize}
+		\item \textbf{Aspnetusers} - Obsahuje v sobě záznamy, které webová apolikace potřebuje pro~ověření Identity. Do tabulky jsem přidával pouze křestní jméno, příjmení, třídu a~skupinu. Jejím úkolem je identifikovat uživatele.
+		\item \textbf{Aspnetroles} - Tabulka rolí.
+		\item \textbf{Aspnetuserroles} - Tabulka propojující uživatele s rolemi.
+	\end{itemize}
+
+	\subsection{Vlastní tabulky}
+	\begin{itemize}
+		\item \textbf{Task} - Tabulka obsahující zadání prací. Pokud učitel vytvoří zadání, uloží ho právě do této tabulky.
+		\item \textbf{Assignments} - Tabulka propojující uživatele, zadání, a soubor.
+		\item \textbf{Classes} - Tabulka tříd.
+		\item \textbf{Groups} - Tabulka skupin.
+		\item \textbf{Subject} - Tabulka předmětů.
+		\item \textbf{YearsOfStudies} - Tabulka ročníků. Ukládá ročník studia (např. 2020/2021).
+		\item \textbf{Files} - Tabulka souborů.
+	\end{itemize}
+
 	\chapter{Závěr}
-	
+	Cílem této maturitní práce bylo vytvořit takovou webovou aplikaci, která umožní efektivní správu povinných prací, které žák zpracoval za celou dobu studia. V práci se nachází 3 základní role (student, učitel, administrátor), a 1 pro vedení školy.\par
+	Student má možnost si procházet práce určené pro jeho třídu a popřípadě i skupinu. K~práci se následně může zapsat, čím dá najevo, že hodlá práci zpracovat a přidá se mu tedy i~do seznamu jeho prací. Dokud nebude práce hodnocena, má student možnost aktualizovat odevzdanou práci, datum se ale vždy aktualizuje na den poslední úpravy.\par
+	Učitel má možnost vytvářet zadání, aktivní v určitém časovém intervalu. Zadání může specifikovat na třídu a nebo i na skupinu ve tříde.	Nabízí se mu i možnost procházet všechna svá zadání a v přehledné tabulce si zobrazit všechny studenty, kteří na vybrané práci pracovali. Do aplikace je přidána i možnost hodnocení.\par
+	Administrátor má možnost z přívětivého uživatelského rozhraní spravovat běh webové aplikace. Má možnost přidávat jak předměty, skupiny a ročníky studia, tak i třídy a~studenty do nich. Podobně jako Vedení školy má možnost nahlížet do jednotlivých prací a~mít tak přehled o plnění a četnosti povinných prací.\par
+	Tato webová aplikace je celá navržena a vytvořena na moderním frameworku ASP.NET Core, který ji dovoluje implementovat na platformách Windows, Linux i macOS. Zároveň dosahuje vysokých výkonů a disponuje kvalitním zabezpečením.\par
+	Práci jsem prozatím nepropojoval se školním LDAP serverem, místo toho webová aplikace využívá ASP.NET Core Identity. Ta poskytuje bezpečné přihlašování a uchovávání osobních údajů. Volil jsem takto z důvodu testování, abych v této fázi nemusela být webová aplikace připojena do ostré databáze.\par
+	Díky architektonickému vzoru MVC lze tuto aplikaci i nadále rozvíjet a doplňovat o~další funkce. Věřím, že tato webová aplikace nalezne svoje využití a bude prospěšná.
+
 	\seznamObrazku
 
 	\renewcommand\listoflistingscaption{Seznam zdrojových kódů}

@@ -27,15 +27,17 @@
 \contentsline {subsection}{\numberline {3.3.4}Smazání}{32}{subsection.3.3.4}%
 \contentsline {chapter}{\numberline {4}Přihlašování a registrace}{35}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Přihlášení}{35}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Registrace}{35}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Autorizace}{37}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Student}{37}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Učitel}{37}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Administrator}{37}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Vedení školy}{38}{section.5.4}%
-\contentsline {chapter}{\numberline {6}Databáze}{39}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Připojení databáze}{39}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Návrh databáze}{39}{section.6.2}%
-\contentsline {chapter}{\numberline {7}Závěr}{40}{chapter.7}%
-\contentsline {chapter}{Přílohy}{44}{chapter*.14}%
-\contentsline {chapter}{\numberline {A}Příloha}{45}{appendix.A}%
+\contentsline {section}{\numberline {4.2}Registrace}{36}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Autorizace}{38}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Student}{38}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Učitel}{38}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Administrator}{38}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Vedení školy}{39}{section.5.4}%
+\contentsline {chapter}{\numberline {6}Databáze}{40}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Propojení aplikace a databáze}{40}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Návrh databáze}{41}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Aspnet tabulky}{41}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Vlastní tabulky}{41}{subsection.6.2.2}%
+\contentsline {chapter}{\numberline {7}Závěr}{43}{chapter.7}%
+\contentsline {chapter}{Přílohy}{47}{chapter*.15}%
+\contentsline {chapter}{\numberline {A}Příloha}{48}{appendix.A}%

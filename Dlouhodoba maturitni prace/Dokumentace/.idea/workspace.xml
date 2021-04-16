@@ -13,12 +13,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a539ca8c-993a-43fc-abac-e6df811116a6" name="Default Changelist" comment="Dokumentace">
-      <change afterPath="$PROJECT_DIR$/src/SourceCode/AddDefaultIdentity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SourceCode/AddToRole.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SourceCode/Databaze/ConnectionString.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SourceCode/Databaze/Databaze.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/Databaze.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/DeleteUser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/DeleteUser_lista.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/PrihlasovaciFormular.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/RegistracniFormular.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/main.aux" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.bbl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.blg" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.blg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/main.lof" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.lof" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/main.lol" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.lol" afterDir="false" />
@@ -26,9 +29,7 @@
       <change beforePath="$PROJECT_DIR$/auxil/main.toc" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/main.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.bib" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.bib" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monapack.sty" beforeDir="false" afterPath="$PROJECT_DIR$/src/monapack.sty" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +205,7 @@
       <workItem from="1618425584911" duration="56000" />
       <workItem from="1618438836497" duration="7910000" />
       <workItem from="1618487732898" duration="1092000" />
-      <workItem from="1618488927736" duration="18201000" />
+      <workItem from="1618488927736" duration="35094000" />
     </task>
     <task id="LOCAL-00001" summary="Dokumentace">
       <created>1617586762359</created>
@@ -318,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618452535356</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Dokumentace">
+      <created>1618513689083</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1618513689083</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
