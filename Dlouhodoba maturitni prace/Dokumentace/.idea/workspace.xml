@@ -14,15 +14,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a539ca8c-993a-43fc-abac-e6df811116a6" name="Default Changelist" comment="Dokumentace">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.aux" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.lof" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.lof" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.lol" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.lol" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/main.toc" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/main.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/Databaze.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/Databaze.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/PrihlasovaciFormular.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/PrihlasovaciFormular.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/monapack.sty" beforeDir="false" afterPath="$PROJECT_DIR$/src/monapack.sty" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +192,11 @@
       <workItem from="1618487732898" duration="1092000" />
       <workItem from="1618488927736" duration="35578000" />
       <workItem from="1618572454532" duration="877000" />
-      <workItem from="1618573393730" duration="4948000" />
+      <workItem from="1618573393730" duration="5098000" />
+      <workItem from="1618745382639" duration="25000" />
+      <workItem from="1618745517532" duration="417000" />
+      <workItem from="1618759622662" duration="29000" />
+      <workItem from="1618759750720" duration="4141000" />
     </task>
     <task id="LOCAL-00001" summary="Dokumentace">
       <created>1617586762359</created>
@@ -323,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618536092275</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Dokumentace">
+      <created>1618578519475</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1618578519476</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

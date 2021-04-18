@@ -33,11 +33,11 @@
 	Originální zadání
 	\newpage
 
-	\anotace Maturitní práce se zaměřuje na návrh a realizaci webové aplikace, která má na starosti správu povinných prací odevzdaných žáky. Vyučující má možnost vytvořit zadání a~případně ho upravit, nebo odstranit. Žáci mají možnost procházet jak aktuální práce, tak práce, které již odevzdali například v minulých ročnících. \\
-	\textbf{Klíčová slova: } C\#; ASP.NET Core; Entity Framework Core; HTML; JavaScript; CSS; Bootstrap; MySQL; WebApp
+	\anotace Tématem mé maturitní práce je návrh a realizace webové aplikace, zaměřené na správu povinných prací odevzdaných studenty. Aplikace dává všem uživatelům možnost dokonalého přehledu o zadaných úkolech, tématech a hodnoceních. Vyučujícímu navíc umožňuje vytvářet, upravovat, přidělovat a  odstraňovat zadání. Aplikace umožňuje vyučujícímu přidělovat zadání v rámci ročníků, tříd a skupin ve třídách. Studentům naopak dává možnost procházet jak aktuální práce, tak práce, které již v minulosti do této aplikace uložili.\\
+	\textbf{Klíčová slova: } C\#; ASP.NET Core; Razor; Entity Framework Core; ASP.NET Core Identity; HTML; JavaScript; CSS; Bootstrap; MySQL; WebApp
 
-	\annotation The graduation thesis focuses on the design and implementation of a web application, which is in charge of managing the compulsory work submitted by students. The teacher has the opportunity to create an assignment and possibly modify or delete it. Pupils have the opportunity to go through both current work and work that they have already submitted, for example, in previous years.\\
-	\textbf{Keywords: } C\#; ASP.NET Core; Entity Framework Core; HTML; JavaScript; CSS; Bootstrap; MySQL; WebApp
+	\annotation The topic of my graduation thesis is the design and implementation of a web application, focused on the management of compulsory work submitted by students. The application provides all users with the possibility of a perfect overview of assigned tasks, topics and ratings. In addition, it allows the teacher to edit, assign and delete assignments. The application allows teachers to assign assignments within grades, classes and groups in classes. On the contrary, it gives students the opportunity to browse both current work and work that they have already saved in this application in the past.\\
+	\textbf{Keywords: } C\#; ASP.NET Core; Razor; Entity Framework Core; ASP.NET Core Identity; HTML; JavaScript; CSS; Bootstrap; MySQL; WebApp
 
 	\licencniSmlouva{18. 04. 2021}
 
@@ -440,9 +440,9 @@
 	\end{itemize}
 
 	\chapter{Závěr}
-	Cílem této maturitní práce bylo vytvořit takovou webovou aplikaci, která umožní efektivní správu povinných prací, které žák zpracoval za celou dobu studia. V práci se nachází 3 základní role (student, učitel, administrátor), a 1 pro vedení školy.\par
-	Student má možnost si procházet práce určené pro jeho třídu a popřípadě i skupinu. K~práci se následně může zapsat, čím dá najevo, že hodlá práci zpracovat a přidá se mu tedy i~do seznamu jeho prací. Dokud nebude práce hodnocena, má student možnost aktualizovat odevzdanou práci, datum se ale vždy aktualizuje na den poslední úpravy.\par
-	Učitel má možnost vytvářet zadání, aktivní v určitém časovém intervalu. Zadání může specifikovat na třídu a nebo i na skupinu ve tříde.	Nabízí se mu i možnost procházet všechna svá zadání a v přehledné tabulce si zobrazit všechny studenty, kteří na vybrané práci pracovali. Do aplikace je přidána i možnost hodnocení.\par
+	Cílem této maturitní práce bylo vytvořit takovou webovou aplikaci, která umožní efektivní správu povinných prací, které student zpracoval za celou dobu studia. Aplikace se účastní 3 základní role (student, učitel, administrátor), a 1 pro vedení školy.\par
+	Student má možnost si procházet práce určené pro jeho třídu a popřípadě i skupinu. K~práci se následně může zapsat, čím dá najevo, že hodlá práci zpracovat a přidá se mu tedy i~do seznamu jeho prací. Až student práci zpracuje, může jí závazně odevzdat (pokud bude chtít nový pokus na odevzdání, musí mu ho povolit vyučující).\par
+	Učitel má možnost vytvářet zadání, aktivní v určitém časovém intervalu. Zadání může specifikovat na třídu a nebo i na skupinu ve tříde.	Nabízí se mu i možnost procházet všechna svá zadání a v přehledné tabulce si zobrazit všechny studenty, kteří na vybrané práci pracují. Do aplikace je přidána i možnost hodnocení.\par
 	Administrátor má možnost z přívětivého uživatelského rozhraní spravovat běh webové aplikace. Má možnost přidávat jak předměty, skupiny a ročníky studia, tak i třídy a~studenty do nich. Podobně jako Vedení školy má možnost nahlížet do jednotlivých prací a~mít tak přehled o plnění a četnosti povinných prací.\par
 	Tato webová aplikace je celá navržena a vytvořena na moderním frameworku ASP.NET Core, který ji dovoluje implementovat na platformách Windows, Linux i macOS. Zároveň dosahuje vysokých výkonů a disponuje kvalitním zabezpečením.\par
 	Práci jsem prozatím nepropojoval se školním LDAP serverem, místo toho webová aplikace využívá ASP.NET Core Identity. Ta poskytuje bezpečné přihlašování a uchovávání osobních údajů. Volil jsem takto z důvodu testování, abych v této fázi nemusela být webová aplikace připojena do ostré databáze.\par

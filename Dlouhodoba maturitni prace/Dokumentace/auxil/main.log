@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  16 APR 2021 15:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.3.25)  18 APR 2021 19:48
 entering extended mode
 **./main.tex
 (main.tex
@@ -1222,12 +1222,12 @@ Overfull \hbox (29.36092pt too wide) in paragraph at lines 350--351
 -ces.AddDefaultIdentity<PPSPSUser>
  []
 
-<images//PrihlasovaciFormular.png, id=542, 413.74574pt x 407.72325pt>
+<images//PrihlasovaciFormular.png, id=542, 411.33675pt x 376.40625pt>
 File: images//PrihlasovaciFormular.png Graphic file (type png)
 <use images//PrihlasovaciFormular.png>
 Package pdftex.def Info: images//PrihlasovaciFormular.png  used on input line 3
 56.
-(pdftex.def)             Requested size: 204.85846pt x 201.87651pt.
+(pdftex.def)             Requested size: 204.85846pt x 187.46175pt.
 <images//RegistracniFormular.png, id=543, 421.575pt x 394.47375pt>
 File: images//RegistracniFormular.png Graphic file (type png)
 <use images//RegistracniFormular.png>
@@ -1252,11 +1252,11 @@ EB319D99.pygtex)
 B5C713C4.pygtex) [43
 
 ]
-<images//Databaze.png, id=580, 935.29425pt x 440.847pt>
+<images//Databaze.png, id=580, 942.52126pt x 424.58624pt>
 File: images//Databaze.png Graphic file (type png)
 <use images//Databaze.png>
 Package pdftex.def Info: images//Databaze.png  used on input line 419.
-(pdftex.def)             Requested size: 455.24411pt x 214.57738pt.
+(pdftex.def)             Requested size: 455.24411pt x 205.08185pt.
  [44 <./images//Databaze.png>] [45]
 Kapitola 7.
 [46
@@ -1365,10 +1365,10 @@ risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2488.pk> <C:\
 Users\risak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk
 >
 Output written on "C:/Users\risak\Documents\Richard\Škola\Stredni_skola\Maturi
-tni-zkouska\Dlouhodoba maturitni prace\Dokumentace\out\main.pdf" (51 pages, 790
-876 bytes).
+tni-zkouska\Dlouhodoba maturitni prace\Dokumentace\out\main.pdf" (51 pages, 788
+692 bytes).
 PDF statistics:
- 1339 PDF objects out of 1440 (max. 8388607)
+ 1338 PDF objects out of 1440 (max. 8388607)
  163 named destinations out of 1000 (max. 500000)
  414 words of extra memory for PDF output out of 10000 (max. 10000000)
 
