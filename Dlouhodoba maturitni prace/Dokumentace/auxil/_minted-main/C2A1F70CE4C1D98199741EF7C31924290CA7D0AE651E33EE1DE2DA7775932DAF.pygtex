@@ -1,0 +1,32 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+na}{[HttpPost, ActionName(\PYGZdq{}UserEdit\PYGZdq{})]}
+\PYG{n+na}{[ValidateAntiForgeryToken]}
+\PYG{k}{public} \PYG{k}{async} \PYG{n}{Task}\PYG{p}{\PYGZlt{}}\PYG{n}{IActionResult}\PYG{p}{\PYGZgt{}} \PYG{n}{UserEdit\PYGZus{}Post}\PYG{p}{(}\PYG{k+kt}{string?} \PYG{n}{id}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{id} \PYG{p}{==} \PYG{k}{null}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+        \PYG{k}{return} \PYG{n+nf}{NotFound}\PYG{p}{();}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k+kt}{var} \PYG{n}{userToUpdate} \PYG{p}{=} \PYG{k}{await} \PYG{n}{\PYGZus{}context}\PYG{p}{.}\PYG{n}{Users}\PYG{p}{.}\PYG{n}{FirstOrDefaultAsync}\PYG{p}{(}\PYG{n}{s} \PYG{p}{=\PYGZgt{}} \PYG{n}{s}\PYG{p}{.}\PYG{n}{Id} \PYG{p}{==} \PYG{n}{id}\PYG{p}{);}
+    \PYG{k}{if} \PYG{p}{(}\PYG{k}{await} \PYG{n}{TryUpdateModelAsync}\PYG{p}{\PYGZlt{}}\PYG{n}{PPSPSUser}\PYG{p}{\PYGZgt{}(}
+        \PYG{n}{userToUpdate}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,}
+        \PYG{n}{s} \PYG{p}{=\PYGZgt{}} \PYG{n}{s}\PYG{p}{.}\PYG{n}{FirstName}\PYG{p}{,} \PYG{n}{s} \PYG{p}{=\PYGZgt{}} \PYG{n}{s}\PYG{p}{.}\PYG{n}{LastName}\PYG{p}{,} \PYG{n}{s} \PYG{p}{=\PYGZgt{}} \PYG{n}{s}\PYG{p}{.}\PYG{n}{Email}\PYG{p}{,}
+        \PYG{n}{s} \PYG{p}{=\PYGZgt{}} \PYG{n}{s}\PYG{p}{.}\PYG{n}{EmailConfirmed}\PYG{p}{,} \PYG{n}{c} \PYG{p}{=\PYGZgt{}} \PYG{n}{c}\PYG{p}{.}\PYG{n}{ClassId}\PYG{p}{))}
+    \PYG{p}{\PYGZob{}}
+        \PYG{k}{try}
+        \PYG{p}{\PYGZob{}}
+            \PYG{k}{await} \PYG{n}{\PYGZus{}context}\PYG{p}{.}\PYG{n}{SaveChangesAsync}\PYG{p}{();}
+            \PYG{k}{return} \PYG{n+nf}{RedirectToAction}\PYG{p}{(}\PYG{n}{nameof}\PYG{p}{(}\PYG{n}{UsersOverview}\PYG{p}{));}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{k}{catch} \PYG{p}{(}\PYG{n}{DbUpdateException} \PYG{n}{ex}\PYG{p}{)}
+        \PYG{p}{\PYGZob{}}
+            \PYG{n}{ModelState}\PYG{p}{.}\PYG{n}{AddModelError}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,} \PYG{l+s}{\PYGZdq{}Nebylo možné uložit změny. \PYGZdq{}} \PYG{p}{+}
+                                         \PYG{l+s}{\PYGZdq{}Zkuste to znovu později a pokud \PYGZdq{}} \PYG{p}{+}
+                                         \PYG{l+s}{\PYGZdq{}problém přetrvává, \PYGZdq{}} \PYG{p}{+}
+                                         \PYG{l+s}{\PYGZdq{}obraťte se na správce systému.\PYGZdq{}}\PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{n}{PopulateClassesWithIdDropDownList}\PYG{p}{(}\PYG{n}{userToUpdate}\PYG{p}{.}\PYG{n}{ClassId}\PYG{p}{);}
+    \PYG{k}{return} \PYG{n+nf}{View}\PYG{p}{(}\PYG{n}{userToUpdate}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

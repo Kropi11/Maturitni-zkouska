@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{\PYGZdq{}ConnectionStrings\PYGZdq{}}\PYG{p}{:} \PYG{p}{\PYGZob{}}
+    \PYG{n+nt}{\PYGZdq{}AuthDBContextConnection\PYGZdq{}}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}Data Source=127.0.0.1; Initial Catalog=ppsps;}
+\PYG{l+s+s2}{      User ID=root;Password=administrator;\PYGZdq{}}
+  \PYG{p}{\PYGZcb{}}
+\end{Verbatim}

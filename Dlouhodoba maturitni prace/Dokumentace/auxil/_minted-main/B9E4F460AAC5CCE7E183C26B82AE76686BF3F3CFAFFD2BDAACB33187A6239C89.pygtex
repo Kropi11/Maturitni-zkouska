@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{public} \PYG{k}{async} \PYG{n}{Task}\PYG{p}{\PYGZlt{}}\PYG{n}{IActionResult}\PYG{p}{\PYGZgt{}} \PYG{n}{UserEdit}\PYG{p}{(}\PYG{k+kt}{string?} \PYG{n}{id}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{id} \PYG{p}{==} \PYG{k}{null}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+        \PYG{k}{return} \PYG{n+nf}{NotFound}\PYG{p}{();}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k+kt}{var} \PYG{n}{user} \PYG{p}{=} \PYG{k}{await} \PYG{n}{\PYGZus{}context}\PYG{p}{.}\PYG{n}{Users}\PYG{p}{.}\PYG{n}{FindAsync}\PYG{p}{(}\PYG{n}{id}\PYG{p}{);}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{user} \PYG{p}{==} \PYG{k}{null}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+        \PYG{k}{return} \PYG{n+nf}{NotFound}\PYG{p}{();}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{n}{PopulateClassesWithIdDropDownList}\PYG{p}{(}\PYG{n}{user}\PYG{p}{.}\PYG{n}{ClassId}\PYG{p}{);}
+    \PYG{k}{return} \PYG{n+nf}{View}\PYG{p}{(}\PYG{n}{user}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{main} \PYG{n+na}{role}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}main\PYGZdq{}} \PYG{n+na}{class}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}pb\PYGZhy{}3\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+    @RenderBody()
+\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{main}\PYG{p}{\PYGZgt{}}
+\end{Verbatim}

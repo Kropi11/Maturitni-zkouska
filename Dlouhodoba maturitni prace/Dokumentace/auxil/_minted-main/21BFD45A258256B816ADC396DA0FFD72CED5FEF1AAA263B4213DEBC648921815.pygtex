@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{services}\PYG{p}{.}\PYG{n}{AddDefaultIdentity}\PYG{p}{\PYGZlt{}}\PYG{n}{PPSPSUser}\PYG{p}{\PYGZgt{}(}\PYG{n}{options} \PYG{p}{=\PYGZgt{}}
+    \PYG{p}{\PYGZob{}}
+        \PYG{n}{options}\PYG{p}{.}\PYG{n}{SignIn}\PYG{p}{.}\PYG{n}{RequireConfirmedAccount} \PYG{p}{=} \PYG{k}{true}\PYG{p}{;}
+        \PYG{n}{options}\PYG{p}{.}\PYG{n}{Password}\PYG{p}{.}\PYG{n}{RequireLowercase} \PYG{p}{=} \PYG{k}{false}\PYG{p}{;}
+        \PYG{n}{options}\PYG{p}{.}\PYG{n}{Password}\PYG{p}{.}\PYG{n}{RequireUppercase} \PYG{p}{=} \PYG{k}{false}\PYG{p}{;}
+        \PYG{n}{options}\PYG{p}{.}\PYG{n}{Password}\PYG{p}{.}\PYG{n}{RequireNonAlphanumeric} \PYG{p}{=} \PYG{k}{false}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{})}
+\end{Verbatim}

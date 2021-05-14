@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+@if (SignInManager.IsSignedIn(User))\PYGZob{}
+    @if (User.Identity.IsAuthenticated)\PYGZob{}
+                    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{li}\PYG{p}{\PYGZgt{}\PYGZlt{}}\PYG{n+nt}{a} \PYG{n+na}{asp\PYGZhy{}area}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}\PYGZdq{}} \PYG{n+na}{asp\PYGZhy{}controller}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}Home\PYGZdq{}}
+                           \PYG{n+na}{asp\PYGZhy{}action}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}Index\PYGZdq{}}\PYG{p}{\PYGZgt{}}Domovská stránka\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{a}\PYG{p}{\PYGZgt{}\PYGZlt{}/}\PYG{n+nt}{li}\PYG{p}{\PYGZgt{}}
+    \PYGZcb{}
+    @if (User.IsInRole(\PYGZdq{}Administrator\PYGZdq{}))\PYGZob{}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{li}\PYG{p}{\PYGZgt{}\PYGZlt{}}\PYG{n+nt}{a} \PYG{n+na}{asp\PYGZhy{}area}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}\PYGZdq{}} \PYG{n+na}{asp\PYGZhy{}controller}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}Administration\PYGZdq{}}
+               \PYG{n+na}{asp\PYGZhy{}action}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}UsersOverview\PYGZdq{}}\PYG{p}{\PYGZgt{}}Přehled uživatelů\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{a}\PYG{p}{\PYGZgt{}\PYGZlt{}/}\PYG{n+nt}{li}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{li}\PYG{p}{\PYGZgt{}\PYGZlt{}}\PYG{n+nt}{a} \PYG{n+na}{asp\PYGZhy{}area}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}\PYGZdq{}} \PYG{n+na}{asp\PYGZhy{}controller}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}Administration\PYGZdq{}}
+               \PYG{n+na}{asp\PYGZhy{}action}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}TasksOverview\PYGZdq{}}\PYG{p}{\PYGZgt{}}Přehled zadání\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{a}\PYG{p}{\PYGZgt{}\PYGZlt{}/}\PYG{n+nt}{li}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{li}\PYG{p}{\PYGZgt{}\PYGZlt{}}\PYG{n+nt}{a} \PYG{n+na}{asp\PYGZhy{}area}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}\PYGZdq{}} \PYG{n+na}{asp\PYGZhy{}controller}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}Administration\PYGZdq{}}
+               \PYG{n+na}{asp\PYGZhy{}action}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}ClassesOverview\PYGZdq{}}\PYG{p}{\PYGZgt{}}Přehled tříd\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{a}\PYG{p}{\PYGZgt{}\PYGZlt{}/}\PYG{n+nt}{li}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{li}\PYG{p}{\PYGZgt{}\PYGZlt{}}\PYG{n+nt}{a} \PYG{n+na}{asp\PYGZhy{}area}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}\PYGZdq{}} \PYG{n+na}{asp\PYGZhy{}controller}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}Administration\PYGZdq{}}
+               \PYG{n+na}{asp\PYGZhy{}action}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}SubjectsOverview\PYGZdq{}}\PYG{p}{\PYGZgt{}}Přehled předmětů\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{a}\PYG{p}{\PYGZgt{}\PYGZlt{}/}\PYG{n+nt}{li}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{li}\PYG{p}{\PYGZgt{}\PYGZlt{}}\PYG{n+nt}{a} \PYG{n+na}{asp\PYGZhy{}area}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}\PYGZdq{}} \PYG{n+na}{asp\PYGZhy{}controller}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}Administration\PYGZdq{}}
+               \PYG{n+na}{asp\PYGZhy{}action}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}YearsOfStudiesOverview\PYGZdq{}}\PYG{p}{\PYGZgt{}}Přehled ročníků\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{a}\PYG{p}{\PYGZgt{}\PYGZlt{}/}\PYG{n+nt}{li}\PYG{p}{\PYGZgt{}}
+    \PYGZcb{}
+\PYGZcb{}
+\end{Verbatim}

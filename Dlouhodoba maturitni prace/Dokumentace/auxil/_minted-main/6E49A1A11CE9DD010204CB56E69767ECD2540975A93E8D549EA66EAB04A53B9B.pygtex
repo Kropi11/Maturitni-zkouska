@@ -1,0 +1,23 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+na}{[HttpPost, ActionName(\PYGZdq{}UserDelete\PYGZdq{})]}
+\PYG{n+na}{[ValidateAntiForgeryToken]}
+\PYG{k}{public} \PYG{k}{async} \PYG{n}{Task}\PYG{p}{\PYGZlt{}}\PYG{n}{IActionResult}\PYG{p}{\PYGZgt{}} \PYG{n}{UserDelete\PYGZus{}Post}\PYG{p}{(}\PYG{k+kt}{string?} \PYG{n}{id}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{var} \PYG{n}{user} \PYG{p}{=} \PYG{k}{await} \PYG{n}{\PYGZus{}context}\PYG{p}{.}\PYG{n}{Users}\PYG{p}{.}\PYG{n}{FindAsync}\PYG{p}{(}\PYG{n}{id}\PYG{p}{);}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{user} \PYG{p}{==} \PYG{k}{null}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+        \PYG{k}{return} \PYG{n+nf}{RedirectToAction}\PYG{p}{(}\PYG{n}{nameof}\PYG{p}{(}\PYG{n}{UsersOverview}\PYG{p}{));}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{try}
+    \PYG{p}{\PYGZob{}}
+        \PYG{n}{\PYGZus{}context}\PYG{p}{.}\PYG{n}{Users}\PYG{p}{.}\PYG{n}{Remove}\PYG{p}{(}\PYG{n}{user}\PYG{p}{);}
+        \PYG{k}{await} \PYG{n}{\PYGZus{}context}\PYG{p}{.}\PYG{n}{SaveChangesAsync}\PYG{p}{();}
+        \PYG{k}{return} \PYG{n+nf}{RedirectToAction}\PYG{p}{(}\PYG{n}{nameof}\PYG{p}{(}\PYG{n}{UsersOverview}\PYG{p}{));}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{catch} \PYG{p}{(}\PYG{n}{DbUpdateException} \PYG{n}{ex}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+        \PYG{k}{return} \PYG{n+nf}{RedirectToAction}\PYG{p}{(}\PYG{n}{nameof}\PYG{p}{(}\PYG{n}{UserDelete}\PYG{p}{),} \PYG{k}{new} \PYG{p}{\PYGZob{}} \PYG{n}{id} \PYG{p}{=} \PYG{n}{id}\PYG{p}{,}
+        \PYG{n}{saveChangesError} \PYG{p}{=} \PYG{k}{true} \PYG{p}{\PYGZcb{});}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

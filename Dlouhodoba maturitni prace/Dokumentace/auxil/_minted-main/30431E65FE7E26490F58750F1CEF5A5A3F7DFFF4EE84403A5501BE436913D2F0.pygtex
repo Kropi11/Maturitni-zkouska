@@ -1,0 +1,23 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{p}{\PYGZlt{}}\PYG{n+nt}{ul} \PYG{n+na}{class}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}navbar\PYGZhy{}nav\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+@if (SignInManager.IsSignedIn(User))
+\PYGZob{}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{li} \PYG{n+na}{class}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}nav\PYGZhy{}item\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{a} \PYG{n+na}{id}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}manage\PYGZdq{}} \PYG{n+na}{class}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}nav\PYGZhy{}link text\PYGZhy{}dark\PYGZdq{}} \PYG{n+na}{asp\PYGZhy{}area}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}Identity\PYGZdq{}}
+           \PYG{n+na}{asp\PYGZhy{}page}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}/Account/Manage/Index\PYGZdq{}} \PYG{n+na}{title}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}Manage\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+            @UserManager.GetUserName(User)
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{a}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{li}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}}\PYG{n+nt}{li} \PYG{n+na}{class}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}nav\PYGZhy{}item\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}}\PYG{n+nt}{form} \PYG{n+na}{id}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}logoutForm\PYGZdq{}} \PYG{n+na}{class}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}form\PYGZhy{}inline\PYGZdq{}} \PYG{n+na}{asp\PYGZhy{}area}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}Identity\PYGZdq{}}
+              \PYG{n+na}{asp\PYGZhy{}page}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}/Account/Logout\PYGZdq{}} \PYG{n+na}{asp\PYGZhy{}route\PYGZhy{}returnUrl}\PYG{o}{=}
+                      \PYG{l+s}{\PYGZdq{}@Url.Action(\PYGZdq{}}\PYG{n+na}{Index}\PYG{err}{\PYGZdq{},} \PYG{err}{\PYGZdq{}}\PYG{n+na}{Home}\PYG{err}{\PYGZdq{},} \PYG{n+na}{new} \PYG{err}{\PYGZob{}} \PYG{n+na}{area }\PYG{o}{=} \PYG{l+s}{\PYGZdq{}\PYGZdq{}} \PYG{err}{\PYGZcb{})\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+            \PYG{p}{\PYGZlt{}}\PYG{n+nt}{button} \PYG{n+na}{id}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}logout\PYGZdq{}} \PYG{n+na}{type}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}submit\PYGZdq{}} \PYG{n+na}{class}\PYG{o}{=}\PYG{l+s}{\PYGZdq{}nav\PYGZhy{}link btn btn\PYGZhy{}link}
+\PYG{l+s}{                text\PYGZhy{}dark\PYGZdq{}}\PYG{p}{\PYGZgt{}}
+                Odhlásit se
+            \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{button}\PYG{p}{\PYGZgt{}}
+        \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{form}\PYG{p}{\PYGZgt{}}
+    \PYG{p}{\PYGZlt{}/}\PYG{n+nt}{li}\PYG{p}{\PYGZgt{}}
+\PYGZcb{}
+\PYG{p}{\PYGZlt{}/}\PYG{n+nt}{ul}\PYG{p}{\PYGZgt{}}
+\end{Verbatim}

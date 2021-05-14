@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{public} \PYG{k}{class} \PYG{n+nc}{HomeController} \PYG{p}{:} \PYG{n}{Controller}
+\PYG{p}{\PYGZob{}}
+	\PYG{k}{public} \PYG{n}{IActionResult} \PYG{n+nf}{Index}\PYG{p}{()}
+	\PYG{p}{\PYGZob{}}
+		\PYG{k}{return} \PYG{n+nf}{View}\PYG{p}{();}
+	\PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

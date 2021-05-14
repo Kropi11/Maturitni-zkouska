@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{builder}\PYG{p}{.}\PYG{n}{ConfigureServices}\PYG{p}{((}\PYG{n}{context}\PYG{p}{,} \PYG{n}{services}\PYG{p}{)} \PYG{p}{=\PYGZgt{}} \PYG{p}{\PYGZob{}}
+    \PYG{n}{services}\PYG{p}{.}\PYG{n}{AddDbContext}\PYG{p}{\PYGZlt{}}\PYG{n}{AuthDBContext}\PYG{p}{\PYGZgt{}(}\PYG{n}{options} \PYG{p}{=\PYGZgt{}}
+        \PYG{n}{options}\PYG{p}{.}\PYG{n}{UseMySQL}\PYG{p}{(}
+            \PYG{n}{context}\PYG{p}{.}\PYG{n}{Configuration}\PYG{p}{.}\PYG{n}{GetConnectionString}
+                \PYG{p}{(}\PYG{l+s}{\PYGZdq{}AuthDBContextConnection\PYGZdq{}}\PYG{p}{)));}
+\end{Verbatim}

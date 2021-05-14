@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{public} \PYG{k}{async} \PYG{n}{Task}\PYG{p}{\PYGZlt{}}\PYG{n}{IActionResult}\PYG{p}{\PYGZgt{}} \PYG{n}{UsersOverview}\PYG{p}{()}
+\PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{var} \PYG{n}{users} \PYG{p}{=} \PYG{n}{\PYGZus{}context}\PYG{p}{.}\PYG{n}{Users}
+        \PYG{p}{.}\PYG{n}{OrderBy}\PYG{p}{(}\PYG{n}{u} \PYG{p}{=\PYGZgt{}} \PYG{n}{u}\PYG{p}{.}\PYG{n}{LastName}\PYG{p}{)}
+        \PYG{p}{.}\PYG{n}{AsNoTracking}\PYG{p}{();}
+
+    \PYG{k}{return} \PYG{n+nf}{View}\PYG{p}{(}\PYG{k}{await} \PYG{n}{users}\PYG{p}{.}\PYG{n}{ToListAsync}\PYG{p}{());}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

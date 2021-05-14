@@ -1,0 +1,25 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{public} \PYG{k}{async} \PYG{n}{Task}\PYG{p}{\PYGZlt{}}\PYG{n}{IActionResult}\PYG{p}{\PYGZgt{}} \PYG{n}{UserDelete}\PYG{p}{(}\PYG{k+kt}{string?} \PYG{n}{id}\PYG{p}{,}
+\PYG{k+kt}{bool?} \PYG{n}{saveChangesError} \PYG{p}{=} \PYG{k}{false}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{id} \PYG{p}{==} \PYG{k}{null}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+        \PYG{k}{return} \PYG{n+nf}{NotFound}\PYG{p}{();}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k+kt}{var} \PYG{n}{user} \PYG{p}{=} \PYG{k}{await} \PYG{n}{\PYGZus{}context}\PYG{p}{.}\PYG{n}{Users}
+        \PYG{p}{.}\PYG{n}{AsNoTracking}\PYG{p}{()}
+        \PYG{p}{.}\PYG{n}{FirstOrDefaultAsync}\PYG{p}{(}\PYG{n}{m} \PYG{p}{=\PYGZgt{}} \PYG{n}{m}\PYG{p}{.}\PYG{n}{Id} \PYG{p}{==} \PYG{n}{id}\PYG{p}{);}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{user} \PYG{p}{==} \PYG{k}{null}\PYG{p}{)}
+    \PYG{p}{\PYGZob{}}
+        \PYG{k}{return} \PYG{n+nf}{NotFound}\PYG{p}{();}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{if} \PYG{p}{(}\PYG{n}{saveChangesError}\PYG{p}{.}\PYG{n}{GetValueOrDefault}\PYG{p}{())}
+    \PYG{p}{\PYGZob{}}
+        \PYG{n}{ViewData}\PYG{p}{[}\PYG{l+s}{\PYGZdq{}ErrorMessage\PYGZdq{}}\PYG{p}{]} \PYG{p}{=}
+            \PYG{l+s}{\PYGZdq{}Smazání se nezdařilo. Zkuste to znovu později \PYGZdq{}}
+            \PYG{p}{+} \PYG{l+s}{\PYGZdq{}a pokud problém přetrvává, \PYGZdq{}} \PYG{p}{+}
+            \PYG{l+s}{\PYGZdq{}obraťte se na správce systému.\PYGZdq{}}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n+nf}{View}\PYG{p}{(}\PYG{n}{user}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{private} \PYG{k}{void} \PYG{n+nf}{PopulateClassesWithIdDropDownList}\PYG{p}{(}\PYG{k+kt}{object} \PYG{n}{selectedClass} \PYG{p}{=} \PYG{k}{null}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{var} \PYG{n}{classesQuery} \PYG{p}{=} \PYG{k}{from} \PYG{n}{c} \PYG{k}{in} \PYG{n}{\PYGZus{}context}\PYG{p}{.}\PYG{n}{Classes}
+        \PYG{k}{orderby} \PYG{n}{c}\PYG{p}{.}\PYG{n}{ClassName}
+        \PYG{k}{select} \PYG{n}{c}\PYG{p}{;}
+    \PYG{n}{ViewBag}\PYG{p}{.}\PYG{n}{ClassId} \PYG{p}{=}
+        \PYG{k}{new} \PYG{n+nf}{SelectList}\PYG{p}{(}\PYG{n}{classesQuery}\PYG{p}{.}\PYG{n}{AsNoTracking}\PYG{p}{(),} \PYG{l+s}{\PYGZdq{}Id\PYGZdq{}}\PYG{p}{,}
+        \PYG{l+s}{\PYGZdq{}ClassName\PYGZdq{}}\PYG{p}{,} \PYG{n}{selectedClass}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
