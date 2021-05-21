@@ -1,7 +1,3 @@
-### Lišta záložek
-
-### Mat videa
-
 ### HW
 
 [(7:26) How do computer monitors work? - YouTube](https://www.youtube.com/watch?v=uyLDA9QT8EY)
