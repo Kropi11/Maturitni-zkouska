@@ -1,4 +1,4 @@
-### HW
+## HW
 
 [(7:26) How do computer monitors work? - YouTube](https://www.youtube.com/watch?v=uyLDA9QT8EY)
 
@@ -8,11 +8,11 @@
 
 [(7:35) HDMI, DisplayPort, DVI, VGA, Thunderbolt - Video Port Comparison - YouTube](https://www.youtube.com/watch?v=iFO3EiQbNJ8)
 
-### OSY
+## OSY
 
-### APS
+## APS
 
-### PS
+## PS
 
 [(8:09) History of the Internet - YouTube](https://www.youtube.com/watch?v=9hIQjrMHTv4)
 
@@ -40,4 +40,4 @@
 
 [(13:49) OSPF Explained | Step by Step - YouTube](https://www.youtube.com/watch?v=kfvJ8QVJscc)
 
-### PVA
+## PVA
